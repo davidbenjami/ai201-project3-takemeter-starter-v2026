@@ -1,51 +1,51 @@
 {
   "seed": 42,
-  "n_test": 27,
-  "accuracy": 0.4444444444444444,
-  "f1_macro": 0.20512820512820515,
+  "n_test": 30,
+  "accuracy": 0.7333333333333333,
+  "f1_macro": 0.6444444444444445,
   "per_label": {
     "troubleshooting_request": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
       "support": 4
     },
     "information_request": {
-      "precision": 0.4444444444444444,
-      "recall": 1.0,
-      "f1": 0.6153846153846154,
-      "support": 12
+      "precision": 0.6470588235294118,
+      "recall": 0.8461538461538461,
+      "f1": 0.7333333333333333,
+      "support": 13
     },
     "technical_response_report": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "support": 11
+      "precision": 0.8333333333333334,
+      "recall": 0.7692307692307693,
+      "f1": 0.8,
+      "support": 13
     }
   },
   "confusion": {
     "troubleshooting_request": {
-      "troubleshooting_request": 0,
-      "information_request": 4,
+      "troubleshooting_request": 1,
+      "information_request": 3,
       "technical_response_report": 0
     },
     "information_request": {
       "troubleshooting_request": 0,
-      "information_request": 12,
-      "technical_response_report": 0
+      "information_request": 11,
+      "technical_response_report": 2
     },
     "technical_response_report": {
       "troubleshooting_request": 0,
-      "information_request": 11,
-      "technical_response_report": 0
+      "information_request": 3,
+      "technical_response_report": 10
     }
   },
   "confidence": {
-    "mean_when_right": 0.4731963574886322,
-    "mean_when_wrong": 0.45084288716316223,
-    "accuracy_most_confident_third": 0.7777777777777778,
-    "accuracy_least_confident_third": 0.1111111111111111,
-    "n_per_third": 9
+    "mean_when_right": 0.6321941614151001,
+    "mean_when_wrong": 0.6206592321395874,
+    "accuracy_most_confident_third": 0.8,
+    "accuracy_least_confident_third": 0.6,
+    "n_per_third": 10
   },
   "device": "mps",
   "device_name": "Apple Silicon GPU (MPS)",
