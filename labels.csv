@@ -1,0 +1,3371 @@
+text,label,note
+"You are making the same mistake I did: you are confusing the DRIVE
+interface to the DATA THROUGHPUT interface.  Again from my Mac & IBM info
+sheet {available by FTP on sumex-aim.stanford.edu ([IP omitted]) in the
+info-mac/report as mac-ibm-compare173.txt}:
+Expansion
+Both Mac & IBM
+SCSI: only external device expansion interface common to both Mac and IBM.
+ Allows the use of any device: hard drive, printer, scanner, Nubus card
+ expansion {Mac Plus only}, some monitors, and CD-ROM.  Apple developed some
+ specifications for SCSI controlers while IBM has no exact controller
+ specifications {which results in added incompatibilities on IBM machines}.
+ Main problem:  there are a lot of external devices which are internal
+ terminated which causes problems for more then two devises off the SCSI port
+ {A SCSI chain is supposed to be terminated ONLY at the begining and at the
+ end.  Any other set up causes problems for either Mac or IBM}.
+SCSI-1:  7 devices per SCSI controller.  8-bit asynchronous {~1.5MB/s ave}
+ and synchronous {5MB/s max} transfer base.  16-bit SCSI-1 requires a
+ SCSI-2 controler chip and can provide only fast SCSI-2 not wide SCSI-2
+ which are both 16-bit interfaces {see SCSI-2}.
+SCSI-2: 10 devices per SCSI controller in SCSI-2 mode.  SCSI-2 is fully
+ SCSI-1 complient and tends to be implimented as a very fast SCSI-1 since it
+ needs a different controller interface in both hardware {which tends to be
+ very expendsive} and software.  Transfer speeds are 4-6MB/s with 10MB/s burst
+ {8-bit}, 8-12MB/s with 20MB/s burst {16-bit}, and 15-20MB/s with 40MB/s burst
+ {32-bit/wide and fast}.  SCSI-2 in SCSI-1 mode is limited to 7 devices and
+ reduced 8-bit or 16-bit {fast only} throughput due to the difference between
+ SCSI-1 and wide SCSI-2 ports.
+
+IBM
+HD Interfaces {limited to hard drives by design or lack of development}:
+[...]
+IDE:  Integrated Device Electronics
+ currently the most common standard, and is mainly used for medium sized
+ drives. Can have more than one hard drive. Asynchronous Transfer: ~5MB/s max.
+
+So at its LOWEST setting SCSI-2 interface in Asynchronous SCSI-1 mode AVERAGES
+the through put MAXIMUM of IDE in asynchronous mode.  In full SCSI-2 mode
+it blows poor IDE out the window, down the street, and into the garbage can.
+The problem becomes can the drive mechanisim keep up with those through put
+rates and THAT is where the bottleneck and cost of SCSI-2 comes from.  NOT
+the interface itself but more and more from drive mechanisims to use the
+SCSI-2 through put.  The cost of SCSI interface is a self fulliling
+prophisy: few people buy SCSI because it is so expencive for the PC, which
+in turn convices makes that mass producing SCSI {which would reduce its
+cost} is unwarented, and so SCSI is expencive. {That is the effect of the
+Rule of Scale: the more items sold the less EACH item has to bare the brunt
+the cost of manufacture and so the less each item has to cost}
+
+SCSI-2 allows a drive mechanisims through put to be limited by the DRIVE while
+IDE itself limits the through put.",technical_response_report,AI pre-label; review required; source post 60143
+"Hi netters!
+	I often have troubles with my PC and would like to fix it by myself.  Is
+	there any book that show you how to fix your own PC (hardware, monitor,
+	printer problems..etc).  Of course, no book would tell you the exact
+	problem with your PC, but at least it will give a general idea what
+	might be wrong.  Thanks so lot for your help.",information_request,AI pre-label; review required; source post 58976
+"I got two very similar sounding boards for dirt cheap, too. Their Assy
+numbers were not 4000-series, but your description fits otherwise. They
+are 3Com 3C505's aka Etherlink Plus cards. Check out ftp.3com.com, there
+are drivers and diagnostic programs for just about any and all 3Com
+cards. I concluded that my card was the 505 after I ran their diagnostic
+program for 3C505 succesfully (""..passes with flying colours"") :)
+
+Anybody know of packet drivers for these cards under OS/2..?",information_request,AI pre-label; review required; source post 60371
+"You'll probably get one when you realize that your $100 vesa super
+dooper local bus ultra high tech controller sucks...
+
+With any luck PC bus archeitecture will be doen any with by sbus.
+
+Have you ever seen what happens when you hook a busmaster controller to
+a vesa local bus.  It actually  slows down your system
+
+Maybe my workstation doesn't understand what your vesa local bus
+IDE is
+
+Vesa local bus will be killed off by pcmi? whatever intels spec is.
+VLBUS it not good for much more than vga cards.
+
+To each his own.  I'll laugh when you start crying over how much you
+spent for your 2 little ide drives and then finding out you need more
+space.
+
+Here Here....
+
+don't stick your foot in your mouth when you make a statement you know
+nothing about.
+
+I'd rather wait a second compared to the 5 minutes and ide would take.
+(obviously exaggerated).
+
+Have you ever tried to backup 2 gigs of disk?  Oh I forgot you can't
+because you have an ide and no one makes ide disks that big.
+
+I guess you probably bought a 486sx too
+
+What?  The SCSI-2 FAST,WIDE spec has much more bandwidth than any stupid
+vlbus ide crap....
+
+Stop this thread now, Its just cluttering up bandwidth.  If you want
+to read about scsi vs ide just pay a visit to you local usenet archive.
+
+the best SCSI-2 FAST,WIDE,etc is clearly faster than any the best ide drive.
+All the response given are based upon personal experience with 1 or 2
+drives.  You can't judge such completely different interfaces.
+IDE has the low cost adavantage + a descent performance.
+SCSI has the ability for super high capacity expandibility and speed.
+
+neither one is better in all cases.
+
+If you don't belive what I said about busmastering and vlbus then pick
+up a back issue of PC-week in whihc they tested vlbus, eisa and isa
+busmastering cards.
+
+send flames to /dev/null.....",technical_response_report,AI pre-label; review required; source post 60297
+"I think it's simply because DOS doesn't use the IRQ for anything. OS/2 does,
+so with that you can't share the IRQ.
+
+Anssi",technical_response_report,AI pre-label; review required; source post 60273
+"I'm planning on buying a joystick (first time since I sold
+	my Amiga five years ago :) for a PC. I have no idea what
+	kind of stick I should buy. Many people have recommended
+	variety of Gravis'es models. Are they any good/the best?
+
+	-- Willy",information_request,AI pre-label; review required; source post 60176
+"Hello,
+
+	I have a 486sx25 ISA machine with Pheonix BIOS.  Currently I have
+8 megabytes of RAM installed via eight 1 MG SIMMS on the motherboard: ie.
+both banks are full, and there is no space for more SIMMS.  I am thinking
+of running OS2 on my machine and Possibly Linux with X windows, and I know
+that more RAM would be helpful.  However with SIMMS, the only solution I
+can see is to sell my 8 Megs for about $180, and by 4 4mg SIMMS for about
+$400 used. Apart from the fact that I can't afford the price right now,
+the entire process of selling RAM and buying it used probably means that
+the machine might be down for a number of days which I would rather
+avoid...
+
+So my question is, do the AT RAM boards that plug into a free slot work
+well with a 486 ISA machine. I have seen some being sold used for about
+$90 with 4 Mg with space for another 4Mg's.  If these boards do work, how
+do they do it?  Is a device driver needed, or will the BIOS pickup the
+extra RAM as it does with the SIMMS on the mother board? I know that the
+ISA expansions slots are 16-bits and 486 SIMM memory is 32 bits, so
+probably all of this is just wishful thinking... However any help is truly
+appreciated.
+
+-Eric
+
+[email omitted]",information_request,AI pre-label; review required; source post 60137
+"I just bought an actix graphics engine 32 plus with 2 megs.
+
+I am not impressed...
+
+I have been having all sorts of problems with the board.  Various lock-ups
+in windows, problems with the screen not centering, no flexibilty in choosing
+synch rates for a monitor, buggy windows drivers, lack of 1024x768x64k driver,
+
+If anyone else has one of these cards, please e-mail me...
+
+Looks like i'm going to try the ati ultra plus...",technical_response_report,AI pre-label; review required; source post 60733
+"Hi,
+VLB is defined for 3 cards by 33MHz
+and 2 cards by 40MHz
+
+there are designs with 50MHz and 2 VLB-Slots.
+(s. C't 9.92, 10.92, 11.92)
+
+50MHz and 2 Slots are realy difficult to design.
+
+Better OSs (OS/2 & iX) are able to handle more than 16MB of DRAM,
+if you use EISA-Bus.
+Has someone experience with VLB ??
+I think of SCSI-VLB-Busmaster. The problem is the 16bit Floppy DMA
+controller, which is unable to reach more than 16MB.
+Joerg",information_request,AI pre-label; review required; source post 60233
+"Could some kind soul please email ma a response since i don't have
+much time to read this group.
+
+ Question: I have a 170 MB hard drive which currently has 10 MB left.
+How much space will DoubleSpace allow me to have?? I have a 486 50 w/ 4
+MB Ram if it matters.
+
+Thanks in advance
+
+Jason",information_request,AI pre-label; review required; source post 60521
+"Hello fellow netlanders.
+
+I have a Genius Mouse model GM-6, but no driver for it.
+It's a 3 button mouse. If anyone that;s got one of theese
+could mail me a driver (config.sys or autoexec.bat) I would
+be very happy.",information_request,AI pre-label; review required; source post 58995
+"Hello,
+
+I am looking for a PC card with the following features:
+
+  - Controller for IDE(AT-Bus)-HardDiskDrive
+  - Controller for 2 FloppyDiskDrives
+  - Standard(256KB) VGA Graphics  INCLUDING FEATURE CONNECTOR (important!)
+                                  ===========================
+
+There *are* some manufacturors/distributors of this kind of card, but I have
+not found them yet.
+
+If you can help me, please mail to:  ICH344@DJUKFA11
+                                     [email omitted]
+
+Thanks a lot,
+                                                   Martin Mueller",information_request,AI pre-label; review required; source post 58904
+"I have a 286 with an M205 motherboard.  The Last Byte memory manager (which
+I downloaded for a trial) reports the chipset is an AddTech PCCHIP1 chipset,
+and it is able to activate the ram behind segments A000-FFFF, which can then be
+used for UMBs (except for video/BIOS).  I would like to write my own driver to
+activate the memory.  Does anyone know where I can get programming information
+on this chip?
+
+Phil",information_request,AI pre-label; review required; source post 60168
+"The 2 lines are not a result of the high end trinitron tube, these
+2 wires will be found on all 17"" trinitron tubes (e.g., Mitsubishi 17"",
+Sony 1604, etc).  On 14"" Sony tubes, you'll find one wire.
+
+Their level of annoyance is purely subjective.  I'm so happy with the
+sharpness of the T560i that I don't even notice the lines.
+
+The T560i uses a Trinitron SA tube which, when viewed as a complete tube,
+has a larger diameter than the standard Trinitron tube.  This results in
+a flatter screen than other 17"" monitors using the standard trinitron
+(which has a vertically flat but not horizontally flat surface), and
+apparently the ability to provide a tighter beam focus.",technical_response_report,AI pre-label; review required; source post 60272
+"The joystick reads in anolog values through a digital port. How?
+    You send a command to the port to read it, then you time how long
+    it takes for the joystick port to set a certain bit.  This time
+    is proportional to the joystick position.  Obviously, since time
+    is used as a position, you cannot get rid of this ridiculus waste
+    of time.  If you wrote your own routine instead of the BIOS, it
+    would speed it up some, but the time would still be there.",technical_response_report,AI pre-label; review required; source post 60282
+"How hot should the CPU in a 486-33 DX machine be?
+
+Currently it gets so hot that I can not hold a finger on it for more than
+0.5 s.
+
+I keep a big fan blowing on it, but am considering using a heat sink.
+
+Any advice?",troubleshooting_request,AI pre-label; review required; source post 60693
+"How is the CMOS backed-up? Dry cell batteries or ni-cad cell?
+
+Your batteries may be dead.",technical_response_report,AI pre-label; review required; source post 58921
+"Computer: 286-25 mhz
+Bus: ISA (12.5 mhz)
+Drive: Maxtor 7213A (213 mb)
+
+                                    config.sys / autoexec.bat
+
+                     MS DOS 5             no           WIN 3.1
+                     smartdrv.sys        cache         smartdrv.exe
+
+CORE (V 2.7)         6950 k/sec          1390 k/sec     1395 k/sec
+Norton SI (V 5.0)     730 k/sec           980 k/sec      982 k/sec
+
+I'd still like to here from people with VLB-IDE.
+I still want to know what VLB bus speed is used with IDE drives.
+I still want to know if some (most ?) IDE drives can handle bus speeds > 8 mhz.
+
+PS: A friend with a 286-20 and a new Maxtor 7245 (245 meg IDE) drive gets
+between 800 - 1000 k/sec (can't remember exactly).  I think the bus is running
+at 8 mhz in this case.",information_request,AI pre-label; review required; source post 60245
+"PC Mag only got around 9-10 Winmarks when they tested the Steal 24.  It sounds
+like you are ok.
+jamesc",technical_response_report,AI pre-label; review required; source post 60752
+"I have a WANGTEK tape controller card (Revision E) that was used with the
+Sytos backup system to take backups of a friend's system. That system has
+crashed and I'm attempting to restore it.
+
+Unfortunately, the documentation for this ancient card has been lost in the
+mists of time, and I need to know the DMA, IRQ and address for this card.
+
+Can anyone suggest how I could determine these things?
+
+There is a bank of dip switches on the card which are set to:
+
+1 2 3 4 5 6 7 8 9 10
+    UPUPUP    UPUPUP
+UPUP      UPUP
+------OPEN----------
+
+Thanks for your time.",troubleshooting_request,AI pre-label; review required; source post 60485
+"Excuse me to every one.
+I am an Amiga owner and tired to have the same graphic modes.
+So I saw on nn there was a little bridgeboard that made the
+Amiga's PC slots communicate with the stanndard Amiga's slot.
+The building mother house of this little gadget assure me
+that using this thing I can use all the pc boards included
+the SVGA cards.
+I am interested in computer graphics and I do not know many
+things about pc in general.
+So, what is the best (ISA slot) card on the market ?
+I'd like to reach resolutions like 1280x1024 with 256
+colors or 800x600 with 24 bitplanes.
+
+Any suggestion ??
+
+thankyou in advance
+
+Paolo Silvera -- Certified Commodore Amiga developer
+
+[email omitted]",information_request,cold; labelled unaided; source post 60265
+"I think the difference is about 400 dollars, but I could be wrong.  These
+things change between press time and publication.",information_request,cold; labelled unaided; source post 60574
+"Once in a while you have to put in a good word for something that works
+well.  I have had no problems with my Toshiba 3401.  It works very well with
+DOS and OS/2.  For OS/2, you don't need to load any special drivers.  The
+installation will detect that it is a Toshiba drive and you are done.
+
+BTW, it's also very fast!
+
++---------------------------------------+-----------------------------------+
++---------------------------------------+-----------------------------------+",technical_response_report,cold; labelled unaided; source post 60373
+"I remember reading somewhere (QEMM manual, I think) that
+STACK=9,256 is needed only for the Windows SETUP program.
+Otherwise, use STACK=0,0.
+
+	Rich",technical_response_report,cold; labelled unaided; source post 58832
+"Hi,
+
+    I've just replaced my existing DTC SCSI controller with an Adaptec 1542B,
+and am now having trouble restoring from a Jumbo 250 tape drive.
+
+    I had no trouble installing the Adaptec and DOS recognises both the SCSI
+drive and an existing IDE drive - however when I went to restore the backups
+actual time 15 min!) I have no trouble restoring from the same tape to the IDE
+drive.
+
+    I seem to remember reading that some settings had to be changed to
+enable the Jumbo drive and the Adaptec to work together but I can't find any
+mention of it in the manuals.
+
+ My system config is:
+   i486DX/33 4Mb
+   Adaptec 1542B running 180Mb Fujitsu SCSI
+   IDE Controller running 200Mb IDE
+   Jumbo 250 running off floppy controller on IDE
+
+  Any help would be appreciated
+
+   Thanks,
+
+   Ron. ([email omitted])
+
+Ron Mastus		        		    [email omitted]
+ 						    41 Mariposa Rd
+Phone +61 2 ???-???? (work)		            Bilgola Plateau 2107
+      +61 2 918-8152 (home)			    Australia",troubleshooting_request,cold; labelled unaided; source post 60203
+"This may be a very naive question but is there any basis for the
+claim that a CPU will get hotter when a computationally intensive
+job is running? My friend claims that there will be little difference
+in the temperature of an idle CPU and a CPU running a computationally
+intensive job.
+
+Lino Montuno",information_request,cold; labelled unaided; source post 60748
+"conner peripherals has a 1-800 number with a touch-tone /voice response
+data bank giving all the info.
+
+if you call 1-800 directory assisatnce (1-800-555-1212) and ask for the
+phone number of ""conner peripherals,"" you should get what you need.
+
+[email omitted]
+all the usual disclaimers apply, whatever they may be.",technical_response_report,cold; labelled unaided; source post 60446
+"Hi all,
+
+    I'm looking for some info regarding an old pcmade by Otronics (or
+maybe Oltronics) called the Attache.  This little beauty is an 8088
+/ Z80 luggable with a 4 or 5 inch screen (monochrome CGA) and 2 360
+floppies.
+    For serial ports it has 2 DB-15 connectors (one is labled 'printer')
+and I can't figure out the pinouts for them.  I also don't know if they
+are standard com ports addressable as COM1 and COM2.  I have figured out
+that they'll only work with DOS 2.something.
+
+    If anyone can give me some pointers on this one, I'd be most
+appreciative.  Please reply via email, as I can't keep up with news
+lately.  (Finals are coming up you know :( )
+
+Thanks much,
+Mike Gordon   N9LOI  [email omitted]",information_request,cold; labelled unaided; source post 60726
+"Oh yeah, I just read in another newsgroup that the T560i uses a
+   high quality Trinitron tube than is in most monitors.(the Sony
+   1604S for example) and this is where the extra cost comes from.  It
+   is also where the high bandwidth comes from, and the fantastic
+   image, and the large image size, etc, etc...
+
+It's also where the two annoying lines across the screen (one a third
+down, the other two thirds down) come from.
+
+- Tony
+  [email omitted]",technical_response_report,cold; labelled unaided; source post 60205
+"My least favorite last line of a post.  Um, it is of general interest.
+As I prepare to retire 22 Apollos myself, I'm looking for ways to
+recycle the useful parts.
+
+Mike Simon  [email omitted]",technical_response_report,cold; labelled unaided; source post 60300
+"I think it is an ESDI controller if you need the doco i can help you.
+
+  Stefan",technical_response_report,cold; labelled unaided; source post 60453
+"Cyrix have released a 386 pin-conpatible 486 clone. Designed to upgrade
+old 16 & 20MHz 386's the chips are also clockdoubling. Thus a 16MHz 386
+can be transformed into a 32MHz 486, with a single chip upgrade.
+
+Unfortunately in Australia the DRu2 sells for $700A (16MHz) and $1000A
+(20MHz), about 1.5x the price of a 486dx33 motherboard with two vlb slots!!!
+
+How much do these thing cost in the States?
+How well do they work?
+
+Thanks for any info,
+
+             Steven Pemberton        \o/        486 NoteBook
+      ------------------------------- | ----------------------------
+          [email omitted]      / \          OS/2 2.0",troubleshooting_request,cold; labelled unaided; source post 60764
+"I know of two people who have horrer stories about the DOS 6.0.
+That's 100% of the people I know with DOS 6.0. Both have
+had to reformat their disks and start over.  One had drive D compress and work
+fine, only to compress C: to have the thing choke, spit out an unintelligable
+warning, and then hang.  All that was left on either drive was autoexec.bat
+and config.sys.  Calls to Microsoft only met with busy signals.  After reformatting
+the drive, I'm not sure if he had the guts to reinstall 6.0 or stay with a known
+entity.
+
+The other may have been a marginal drive, however, his upgrade failed,
+he had to format a floppy disk at 6.0, format the drive, and then reinstall.
+
+I make now claims since I was not driving at the time, however, be careful
+and make sure you back important things up.
+
+I am interested in any other people with similar or success stories.....",technical_response_report,cold; labelled unaided; source post 60582
+"The JP5 on the Speedstar 24x is for those systems with boot-up problems.
+If your system fails to boot-up proprtly, please pull off the jumper
+block from jp5. This will not affect the proformance of the SpeedStar 24x.
+
+This is what my manual says about jp5. I never knew that it was there
+but the card is a real ask kicker in my book. It beats the hell out
+of my junk Sony 1604s to the point that I can't even use above 648x480
+mode much...Sam
+Some times an upgrage turns out to be a big overkill, like driving a Sony
+with a 24x that the monitor can't handle. Or installing 60ns simms and
+then finding out that your mother board doesn't have a cmos wait state
+adjustment to take advantage of the new 60ns simms that you just bought!",technical_response_report,cold; labelled unaided; source post 60483
+"The problem is with ISA bus-masters which
+can only address the first 16MBs of system
+memory.  Bus-masters do not use the CPU
+nor the system DMA to do the actual data
+transfer but transfer their data directly
+to the system RAM.
+
+rp93",technical_response_report,cold; labelled unaided; source post 60134
+"T8900DIP.TXT - Jeffrey E. Hundstad ([email omitted])
+
+                     Switch Settings on the Trident 8900C
+
+----------------------------------\         /-----------------|
+                   VGA Graphics Adapter Layout #1 (8-DRAM)
+
+----------------------------------\         /-----------------|
+                VGA Graphics Adapter Layout #2 (2/4/8 - DRAM)
+
+----------------------------------\         /-----------------|
+                VGA GRaphics Adapter Layout #3 (2/4/8 - DRAM)
+
+1.  Dip Switches
+2.  DB-15 connector: For analog monitors.
+3.  DB-9 connector: for TTL monitors. (* NOTE #1)
+4.  Jumers J1, J2, J3, J4 (J3 for layouts #2 and #3, J4 for layout #3)
+5.  Video BIOS: Basic Input/Ouput System.
+6.  TVGA 8900 Chip: VGA GRaphics chip.
+7.  Edge connector: For IBM PC/XT, PC/AT and compatible systems.
+8.  Video DRAM: up to 1MB
+9.  Feature connector: For special applications.
+10. Video DAC
+11. Jumper Blocks JP1 and JP2 (2/4/8 board only)
+* NOTE #1 - Hardware option.  Feature not present for all board versions.
+
+Switch settings for the 6 switch dip box (#1 from figures).
+
+Switch 3:  Scan Rate
+  On  - Less than 48KHz (default)
+  Off - 38-49Khz
+
+Switch 5:  Fast and Slow Address Decode
+  Off - Fast address decode (default)
+  On  - Slow address decode
+
+Switch 6:  8/16 bit Data Path
+  Off - 16-bit data path (default)
+  On  - 8-bit data path
+
+Jumper settings
+
+J1:  Settings for IRQ9
+ 1 2 3     1 2 3
+   xxx     xxx
+ Off (def)   On
+
+J2:  Settings for Bus Size Detections
+1           1 x
+2 x         2 x
+3 x         3
+Autodetect  Standard Interface
+(def)
+
+J3:  Settings for DRAM Configuration
+   1  2  3       1  2  3       1  2  3
+   ----          |  |             ----
+   ----          |  |             ----
+   4  5  6       4  5  6       4  5  6
+
+    Two DRAM      Four DRAM      Eight DRAM
+
+J4:  DRAM Clock Select
+ 1 2 3     1 2 3
+   xxx     xxx
+ 40 MHz    48 MHz
+Two DRAM   4/8 DRAM
+
+SW1 & SW2
+
+Swich Setings       | SW1 | SW2
+--------------------+-----+----
+VGA mode (default)  | On  | On
+EGA mode            | Off | On
+CGA mode            | On  | Off
+MDA/Hercules mode   | Off | Off",information_request,cold; labelled unaided; source post 60488
+"[much discussion about switching 5.25"" and 3.5"" drives removed]
+
+Another (albeit strange) option is using a program like 800 II
+(available via anonymous FTP at many major sites), or FDFORMAT
+(also available via anonymous FTP), that allows you to format
+5.25HD disks to 1.44Meg, or 3.5""HD disks to 1.2Meg (along with
+many MANY other formats!) so you can DISKCOPY (yes, the broken
+MeSsy-DOS DISKCOPY!) the 5.25"" disks onto 3.5"" disks or vice
+versa...  I use this techniques with ""NON-DOS"" self-booting
+game disks on my old Tandy 1000, and it works...  Another program
+named Teledisk (shareware--available on many major BBS's) will
+also make the weird format disks, provided you have 800 II
+or FDFormat installed....  Some disks that won't DISKCOPY
+properly can be readily Teledisk'd into the proper format...
+At least this is a software solution for a hardware/BIOS
+deficiency, eh?",information_request,cold; labelled unaided; source post 60448
+"Is there a FAQ on Cyrix 486DLC? Could anyone please repost it or
+email to me, if I missed it? Thanks in advance.
+
+... Alexander Poylisher, Internet: [email omitted]; FidoNet: 1:2603/106
+---
+ þ Blue Wave/QWK v2.12 þ",troubleshooting_request,cold; labelled unaided; source post 60366
+"No rumour, IBM's clock tripling chip was seen in some trade show last
+fall (COMDEX or something, I wasn't there). All you people who are
+drooling after this chip do realize that it has no FPU, just like
+486SX, that Evil Marketing Ploy(tm) from Intel, don't you? It has 16K
+of internal cache, which probably is where the saved silicon real
+estate went. Because of some contract, IBM is not allowed to sell its
+486 chips to third parties, so these chips are unlikely to become
+available in any non-IBM machines. Of course, nothing prevents other
+companies from implementing a DX3/99, but nobody hasn't even come out
+with a real 486DX (FPU and all) clone yet (although AMD soon will).",information_request,cold; labelled unaided; source post 58924
+"Hi, all. This is my first posting, so be gentle...
+
+I have a Zenith external floppy which has a DB25 connector, and I'd
+like to use it with my Sharp and Toshiba laptops, which also take a
+DB25 for their ext floppy, but it doesn't work.  I have the pinouts
+for the Zenith, and would like to make adapters so I can use it.
+
+Does anyone have pinouts for these or other manufacturers' DB25 ext
+floppy connectors?  I would greatly appreciate this info, either by
+e-mail or fax.
+
+Thanks very much,
+                  Jeff, aka [email omitted]
+                        fax (310) 882-8800",troubleshooting_request,cold; labelled unaided; source post 60570
+"Hi,
+
+I would like to hear the net.wisdom and net.opinions on IDE Controllers.
+I would liek to get a IDE controller card for my VLB DX2 66 Motherboard.
+What are good options for this (preferably under $200). It MUST also work
+under OS/2 and be compatible with Stacker (and other Disk Compression S/W).
+
+Please advise .....
+
+Divya",information_request,AI pre-label; review required; source post 60160
+"I would realy like to hear from someone that has one of these NANAO T560i
+monitors that is driving it with a Diamond SpeedStar 24x. With the 24x
+set up to run at its 58.1 khz 72.0hz output mode, and realy driving the
+hell out of the monitor. Just woundering if the NANAO T560i would fall
+apart with poor low capabilities like my (3) Sony 1604s did with the 24x
+driving their balls off...Sam",information_request,AI pre-label; review required; source post 60480
+"Help....
+
+I need to implement COM3 and COM4 on a board that I'm designing and I'm
+finding it dificult to track down a definition (hardware that is) of COM3
+and COM4.
+
+I have the IO adresses and the fact that COM3 shares IRQ4 with COM1 and COM4
+shares IRQ3 with COM2, except exactly how this IRQ sharing is done is not
+clear especially if the existing COM1/2 does not allow IRQ sharing. Does the
+standard??? allow for a different IRQ to be used and if so how.
+
+Please answer by email to :-
+
+      [email omitted]
+
+thanks in advance
+
+Neil Watkinson.",information_request,AI pre-label; review required; source post 58902
+"Since the losers that sold me the hard disk for my computer are
+so generous, I need the info to set this drive from master to
+slave. Any help would be greatly appreciated.  Please reply via e-mail.
+
+Incidentally, avoid purchasing a computer from ACS in Endicott, NY.
+
+Jeff
+****************************************************************
+*  Four out of five electrons prefer holes for their mutual    *
+*  annhiliation needs. Boycott Sierra. Ignore anybody who      *
+*  purports to be a serious Windows user. Support new makers   *
+*  of hardware and software. Buy Canadian music. Quit smoking. *
+*  Take up running. FM synthesis is the CGA of audio.          *
+*                            [email omitted]        *
+****************************************************************",information_request,AI pre-label; review required; source post 60390
+"Do you have the specs for this monitor?  What have they changed from the
+F550i?
+
+Do you know if their is going to be a new T560i soon? (a T560iW?)
+
+Thanks.",information_request,AI pre-label; review required; source post 60463
+"[...]
+
+I am not an expert. My understanding is the watts output of the power
+supply must exceed the sum of the hard disk watts requirement.
+
+Typically, a 200W power supply is sufficient to power a PC.
+
+Hope this help.
+
+Lau Hon-Wah",technical_response_report,AI pre-label; review required; source post 60237
+"Does it do it to all tapes?  Were the two tapes that it unwound of the same
+type from the same batch?  The reason I ask is that I bought some generic tapes
+that did this and found that the tape markers were not fully punched out and
+had closed the little marker hole.  It was only on a few tapes of a set.
+
+Did you open up the tape cartridge and put the tape back on the reels?
+
+If you have not yet, open it up by removing the two screws on the bottom of
+the tape cartridge and snap the plastic shell away from the metal base.
+As you are pulling the tape through the assembly try not to touch any more
+than you have to.  As you are doing it, look for a couple of little holes in
+the tape.  These are the marker holes which let the tape drive know when it is
+at the end of the tape.  The holes are spaced a couple of inches apart.  My best
+guess is that the drive finds the first marker and then stops on the second
+marker?
+
+Anyhow, If the tape has the holes, then check to see if the mirror on the tape
+is clean.  The function of the mirror is to detect the marker holes.  The
+tape drive shines a light at the mirror and has a pickup in the area where
+the reflection would come out.  When the hole goes by, the pickup detects the
+light that was allowed to pass and it knows when to stop.  If the mirror is dirty
+or out of alighment (unlikely since it is made into the case) you might have
+a problem detecting the end of the tape.
+
+If the tape drive does it on all tapes and the tapes all look good, then either
+the pickup or the LED of the sensor system has failed or is dirty.  If you open
+the drive door you will see the sensor assembly to the left of the R/W head
+assembly.  If it looks clean and nothing is in its way, then the drive may
+need to be serviced.  It is possible that the LED is burned out or the sensor
+is out.
+
+If it is still in warranty, you might be able to send it back to CMS for
+repair.
+
+---
+Scott Hiles
+[email omitted]
+
+Standard disclaimer:
+  The opinions expressed are those of my own and do not necessarily
+  reflect those of the DOD or the Navy.  I accept full responsibility.",technical_response_report,AI pre-label; review required; source post 59001
+"does anybody have any info on this monitor or the manufacturers?
+
+all help through e-mail please.
+
+Scotty.",information_request,AI pre-label; review required; source post 58984
+"Help!!!!!!!!!!!!!!!!!!!!! My computer from Gateway is freezing up on me.
+Gateway tech support couldn't help me. They want more specifics on when
+it freezes up.  I DID!  Anyway, here it is.  If the keyboard is left idle
+in Dos for more than 15 minutes, I can type on the command line, but as
+soon as I hit a carraige return, the computer locks up.  This will happen
+almost every time, whether I've just booted up, reset, or finished using a
+dos program.  Everything works fine if I don't let it sit.  Windows is a
+different story.  If I let the machine sit while in windows for 15 minutes
+or more, it does not freeze up.  However,  I do get frequent application
+errors that kick me out of an application unexpectedly, losing my work.
+I just don't know if this is a hardware or software problem.  Any help
+in diagnosis or things to try, would be greatly appreciated.
+
+P.S.  I do not run any TSRs (except smartdrive) and QAplus diagnostics
+says everything is good.
+
+System is:  486SX-33
+            15"" Crystalscan Gateway Monitor
+            VLB-ATI ultra pro (using mach32 driver build 55)
+            Winchester 170MB HD
+            Microsoft mouse
+Thanks,
+
+El Guapo",troubleshooting_request,AI pre-label; review required; source post 60361
+"OK, I'll try one more time with this one. If ANYONE out there has ANY
+information on MicroScience hard drives and how to set the jumpers
+(and where they are?) for master/slave configurations. I will gladly
+accept any info, as I have a 110M'er sitting in my room collecting dust
+just waiting for me to install huge applications. :) Thanks in advance.
+(And yes, I regulary check the IDE Harddisk Spec that is posted here.)
+
+-= Adam Cheal =-   [email omitted]",information_request,AI pre-label; review required; source post 60404
+"Hi,
+
+I just disassembled my old XT and get 2 disk drives - 30M hard drive and a
+360K floppy drive.  My questions are:
+
+ -can I use these 2 drives as drives D & E on my 386SX25 ?  This 386SX25
+  currently has 80M hard drive, 1.2M & 1.44M floppy drives.
+
+ -if I can, what s/w or h/w do I need ?
+
+ Please send your advice/comments to [email omitted]
+
+ Thanks a lot,
+
+ AV
+
+-- Via DLG Pro v0.995",information_request,AI pre-label; review required; source post 60135
+"Is it possible to buy a serial I/O card with the 16550 UART's built in
+(rather than having to buy them separately, and socketing them in)?
+
+My current I/O card uses 8250's (correct number? The braindead ones anyway).
+It also controls two floppy drives, and two IDE hard drives.
+
+Ideally, I'd like to get a new multi I/O card, that had 2 serial ports with
+16550's and could also control another 2 IDE HD's. It would have to have
+configurable addresses for both the serial ports, and the IDE controller, so
+it could co-exist with my existing card.
+
+Does such a beast exist? Now the hard part - where can I get one in Australia,
+preferably Brisbane?
+
+Thanks,
+Geoff Green ([email omitted])",information_request,AI pre-label; review required; source post 60746
+"Hi,
+
+I'm kind of new at the pc stuff.  My machine has 4 serial ports.  Com 1 and3
+and 2 &4 share same IRQs.  You mean I can't plug a mouse into Com1 and a modem
+into com3 and expect both to work?
+
+If Answer is NO, should I change IRQ's for com ports to be different?  And,
+does it really matter which IRQ I set the ports too?
+
+Phil
+
+Phil Hunt                          ""Wherever you go, there you are!""
+Howtek, Inc.
+
+Internet: [email omitted]   uucp: {decvax|harvard}!mv!howtek!phil",information_request,AI pre-label; review required; source post 60194
+"I have 2 new SMC 270E ARCNET cards for sale . They are brand new. $50 each
+
+[email omitted]
+Wally Waggoner",technical_response_report,AI pre-label; review required; source post 60756
+"Has anyone connected a high-res, fixed frequency monitor to their PC?
+I have a mitubishi monitor that does 1024x768 at 60hz, but won't do
+any other resolutions.  All the video cards designed for this sort of
+thing are very expensive (>$400).  Has anyone done it with an SVGA
+card (I know it can be done, it's just a question of getting the card
+at the right resolution and frequency)?  I'd like to use a mono
+(hercules) monitor as my dos/command line monitor, and switch to the
+mitsu for Windows or X-windows (under Linux or 3BSD).
+
+Any suggestions would be greatly appreciated.  E-mail, please.
+
+Thanks,",information_request,AI pre-label; review required; source post 60925
+"HELP!  I really got ripped off and I need some help unripping myself.
+
+I bought a Maxtor 4380 300mb ESDI HDD from Hi-Tech for $300, then paid to
+get it repaired, for about another $300.  Here's the deal:  The thing works
+fine!  It low level formats, etc without any bad spots at all!  AND THEN...
+(Jaws Music) sectors start going bad!  EEK!!!  One at a time.  Norton disk
+doctor keeps marking some U and some C.  That FIXES it.  For about 5 minutes.
+
+Then next day when I run NDD on it again: NO DICE more uncorrectable and
+correctable sectors.  AHHHHHUUUURRRRRRGGGGGHHHHH!!!!!  So I fugure: ""Ok, NDD's
+just not being thurough enough, I'll use Spinrite, I heard that works well.""
+What happens?  Spinrite goes and returns the clusters to active use!!!
+AHHHUUUURRRRRRGGGGGHHHH!!!!  NDD undoes it of course.  The problem seams to
+be getting worse and worse.  HOWEVER when the HDD is low level formatted
+again the problem goes away for a while, only to return in a day or so.
+
+I'm so pissed off right now I'm considering buying another HDD, and I really
+can't afford it.
+
+I'm using SMARTDRIVE, and WINDOWS 3.1 (I'm not using the 32 bit disk access
+though, I know that can create problems).  The disk is using the second
+option to trick the controller into thinking it's got less then 1024 cyls,
+and everything else selected is standard, maybe I need to use a different
+head skew or something?  I don't know.
+
+ANYONE WHO KNOWS HOW TO FIX THIS PROBLEM PLEASE TELL ME HOW!!!! HELP!!!!",troubleshooting_request,AI pre-label; review required; source post 60556
+"Do you recall which issue this was in? I posted a message related to this a
+while back to provoke an argument so that I could get the straight dope on
+this. This article would probably give me all the definitive answers that I
+want.
+
+Ed Stasic
+[email omitted]",information_request,AI pre-label; review required; source post 60566
+"Here's a document that I wrote some time back.  It's slightly
+out-of-date, now that DOS 6 has been released, but much of it is still
+useful.
+
+     -- Darryl Okahata
+	Internet: [email omitted]
+
+DISCLAIMER: this message is the author's personal opinion and does not
+constitute the support, opinion or policy of Hewlett-Packard or of the
+little green men that have been following him all day.
+
+===============================================================================
+$Id: adaptec.txt 1.8 1993/01/25 00:55:08 darrylo Rel darrylo $
+          Hints and Tips for the Adaptec 1540/1542 SCSI adapter
+
+     This document contains hints and tips for getting the Adaptec
+1540/1542 SCSI adapter to work with various hardware and software
+packages.  They are based upon my experiences with an Adaptec 1542A
+controller, and will, hopefully, help others.  However, note that I
+cannot guarantee that the following will really help you (it works for
+me), and the information in this document could possibly cause you to
+lose some or all of your files on your hard disk.
+
+     IMPORTANT!  BACK UP THE ENTIRE CONTENTS OF YOUR HARD DISK BEFORE
+TRYING ANYTHING BASED UPON INFORMATION IN THIS DOCUMENT.
+
+     Copyright 1993, by Darryl Okahata.  This document may be freely
+copied for personal use only, and may not be reprinted in a for-profit
+publication without the consent of the author.  Please note that I have
+no connection with Adaptec other than as a customer.
+
+Topics covered in this document:
+
+	* Windows 3.1 enhanced mode
+	* Floppy-controller-based tape backup devices
+	* Sound cards
+	* Miscellaneous info
+
+     Please note that parts of this document contain technical, and
+sometimes terse, descriptions of problems.
+
+For reference:
+
+	Adaptec technical support:	(800) 959-7274
+	Adaptec BBS (2400/9600):	(408) 945-7727
+
+Please send comments, corrections, etc. via email to me:
+
+	CompuServe:	75206,3074
+	Internet:	[email omitted]
+
+***** Windows 3.1 enhanced mode:
+
+     The Windows 3.1 install program should automatically configure DOS
+and Windows for use with the Adaptec 1542.  However, just in case
+something went wrong, I'm going to describe some of the changes needed
+to get Windows 3.1 working with the 1542.  Also, you may have noticed
+that installing Windows 3.1 makes your PC run much slower, even when
+you're not running Windows; methods of speeding it up are discussed in
+the section called, ""Windows 3.1 runs slowly"".
+
+* MSDOS configuration:
+
+     The Windows install program adds the SmartDrive disk cache to your
+CONFIG.SYS and AUTOEXEC.BAT files.  If you follow the instructions,
+you'll notice that you'll need to use double-buffering with SmartDrive
+(this is the default setup).  You'll also notice that your system runs
+much, much slower -- in both Windows *AND* MSDOS.  See the section
+called, ""Windows 3.1 runs slowly"", for some ways of speeding your system
+up.
+
+* Windows configuration:
+
+     To get the Adaptec 1542 to work with Windows, make sure that the
+""[388Enh]"" section of the SYSTEM.INI file contains the entry:
+
+	VirtualHDIRQ=Off
+
+I believe that the Windows install program automatically adds this entry
+to SYSTEM.INI, but I'm not sure.  If this doesn't work for you, you
+might want to try adding some more lines:
+
+	VirtualHDIRQ=Off
+	SystemROMBreakPoint=false
+	EMMExclude=A000-CFFF
+
+(You probably don't need the above lines, though.)  The
+""SystemROMBreakPoint"" entry is used to enable support for memory
+managers like QEMM/386MAX (only needed if you use such programs).
+
+* Windows 3.1 runs slowly:
+
+     Once you do get Windows 3.1 running with the 1542, chances are that
+your system is running much slower than before.  If it's not, it's
+probably because:
+
+     1. You happen to be using ASPI4DOS.SYS version 3.1 in your
+	CONFIG.SYS file.  Congratulations -- this appears to be a
+	winning solution.
+
+     2. You are very lucky.  Whether your luck will hold out remains to
+	be seen ....
+
+If your system is running much slower than before, this is almost
+definitely caused by Smartdrive with double-buffering.  According to the
+Windows documentation, and the Microsoft technical note #Q81808
+(""SMARTDrive Double Buffering Required with ASPI4DOS.SYS""), you must use
+Smartdrive with double-buffering enabled.  While this works, it really
+slows down your PC; I once estimated that this slowed my PC down by a
+factor of 5 (FIVE).  As I consider this unacceptable, I looked for other
+solutions.
+
+     Unfortunately, you cannot just disable double-buffering.  If you
+do, Windows 3.1 in enhanced mode will not work, and you might even
+destroy the contents of your hard disk by trying to run Windows 3.1.
+What you can do is one of the following:
+
+     1. Use other drivers that provide double-buffering.  It is my
+	opinion that the unbelievable slowness in Smartdrive is caused
+	either by horribly inefficient double-buffering, or by a bug in
+	Smartdrive.
+
+     2. Use a driver that provides ""VDS"" services (""VDS"" stands for
+	""Virtual DMA Services"").  This is a standard, which is supported
+	by Windows 3.1, that allows bus-mastering disk controllers (like
+	the 1542) to work with Windows.
+
+     After trashing my hard disk countless times, I found the following
+solutions, none of which require using Smartdrive (note, however, that I
+am now getting occasional parity errors, which are probably *NOT* caused
+by these solutions, but might be -- see below).  While the following
+does not require Smartdrive, using some kind of disk cache utility is
+strongly recommended, as this makes Windows run much, much faster:
+
+1. If you do not have the ASPI4DOS.SYS driver, or you do not need ASPI
+   functions (for controlling a CDROM, tape drive, more than two
+   physical hard disks, etc.), you can add the SCSIHA.SYS driver to your
+   CONFIG.SYS file, e.g.:
+
+	DRIVER=c:\SCSIHA.SYS /V386
+
+   (Windows needs the ""/V386"" option.)  This driver MUST be loaded into
+   LOW memory (it cannot be loaded into high memory), and it occupies
+   about 16-20K.  As of November 1992, the SCSIHA.SYS driver could be
+   obtained from the Adaptec BBS at (408)-945-7727 (hopefully, it's
+   still there).
+
+2. If you need ASPI functions and have the ASPI4DOS.SYS driver, version
+   3.0 or 3.0a, you can use both the ASPI4DOS.SYS and SCSIHA.SYS drivers
+   in your CONFIG.SYS file, e.g.:
+
+	DRIVER=c:\ASPI4DOS.SYS
+	DRIVER=c:\SCSIHA.SYS /V386
+
+   Amazingly enough, the SCSIHA.SYS driver can also be loaded high
+   (assuming you have DOS 5.0); I would have thought that this would
+   crash my system, but it doesn't.  I asked Adaptec's technical support
+   about this, and they said that loading SCSIHA.SYS high should be fine
+   as long as ASPI4DOS.SYS is loaded LOW.
+
+   On my system, NOT using SCSIHA.SYS with ASPI4DOS 3.0a would
+   occasionally cause Windows 3.1 to crash upon restarting or exiting
+   Windows, with the additional result of a corrupted disk (some of my
+   C:\WINDOWS\*.GRP files would be corrupted).  For me, these crashes
+   usually occurred while making a different program from PROGMAN.EXE
+   the default Windows shell, and vice-versa.  This is the reason
+   SCSIHA.SYS may be necessary.
+
+   I have absolutely no idea if SCSIHA.SYS is necessary with versions of
+   ASPI4DOS earlier than 3.0.
+
+   Note that many people can use ASPI4DOS 3.0 or 3.0a without
+   SCSIHA.SYS; they do not seem to have any problems at all.  I consider
+   these people lucky.  Others, like me, have had all sorts of problems.
+
+3. In my opinion, the best, but not necessarily the easiest, solution is
+   to upgrade to ASPI4DOS 3.1.  The SCSIHA.SYS driver is no longer
+   needed.  Unfortunately, while you could get previous ASPI4DOS
+   upgrades from the Adaptec BBS, the ASPI4DOS 3.1 driver is not
+   available from the Adaptec BBS.  As far as I know, there are only
+   three ways to get a copy:
+
+      * You can buy the new (as of November 1992) Adaptec EZ SCSI driver
+	kit, which supposedly includes ASPI4DOS 3.1 as well as other
+	drivers, such as CDROM drivers.  I believe the list price is
+	around $75.
+
+      * If you already have a copy of an older version of ASPI4DOS, you
+	can supposedly contact Adaptec to upgrade it to EZ SCSI for
+	around $30.
+
+      * A copy of ASPI4DOS 3.1 is included in Central Point PC Tools 8.0
+	for MSDOS.  Note that the documentation and driver are stored in
+	different directories.  Note further that only ASPI4DOS is
+	included; the CDROM drivers and drivers to support more than two
+	hard disks are not included.  This is where I obtained my copy
+	of ASPI4DOS 3.1.
+
+Note, however, that I am now getting occasional parity errors with
+Windows.  In all probability, defective hardware in my PC is causing
+this, as I upgraded my motherboard just after I found the above
+solutions.  However, because these parity errors occur only during disk
+accesses, there is a very small, but definite, possibility that the
+parity errors are driver-related (for example, changing the bus on/off
+timing for certain disk transfers might cause this).  I've run various
+memory tests for hours at a time, and these tests have found no
+problems.  This problem is probably caused by memory with marginal
+timing requirements, which cause parity errors during disk transfers
+(this is why the memory tests didn't find any problems -- the problems
+show up only under disk I/O).  However, I'm mentioning this just in case
+it isn't a hardware problem.
+
+***** Floppy-controller-based tape backup devices:
+
+     There are two possible problems with using the Adaptec 1542 with a
+floppy-controller-based tape backup device, such as the Colorado Memory
+Systems Jumbo 250:
+
+1. Tape backups/restores can take a very long time.  The tape drive
+   constantly starts, stops, starts, stops, etc.
+
+2. Tape operations may be erratic, or encounter too many tape errors.
+   (This problem might be caused by defective hardware on my 1542.
+   However, I've heard of other people having similar problems, and so
+   I'm mentioning this just in case it is not a hardware problem on my
+   1542.)
+
+* Tape backups/restores take a long time:
+
+     If you have a floppy-controller-based tape backup device, you may
+have to adjust the Adaptec 1540/1542 ""bus on/off timing"" for best
+results when using the tape drive.  Normally, while doing a tape backup
+or restore, the tape drive motor should be continuously running, with
+only an occasional pause.  However, the default bus timing on the
+Adaptec 1540/1542 may cause the tape drive motor to start and stop,
+start and stop, every few seconds.  This causes needless wear to the
+tape and tape drive (however, note that a dirty tape head or a defective
+tape drive can also cause this -- make sure your tape heads are clean).
+This also causes the tape backup or restore to take much, much longer
+than necessary.
+
+     The problem here is that these tape backups use the floppy DMA to
+transfer data in memory to/from the tape drive, and the Adaptec uses DMA
+to transfer data in memory to/from the hard disk.  The floppy DMA needs
+to feed data to the tape drive at a certain rate; if the tape drive is
+not fed data quickly enough by the floppy DMA, the tape drive stops,
+rewinds a bit, and restarts (once enough data is eventually fed to it).
+The default bus timing on the Adaptec (which is really DMA timing) is
+""too large"".  For example, when a backup is done, data has to be
+transferred from a hard disk to memory, and then from memory to the
+tape.  Because the default timing on the Adaptec ""hogs"" the memory too
+much (too much time is spent transferring data from a hard disk to
+memory), not enough time is spent transferring data from memory to the
+tape drive.  As a result, the tape drive constantly starts and stops,
+because data is not fed to it quickly enough.
+
+     The solution is to change the Adaptec's bus on/off timing.  The
+default factory setting is 11 microseconds on, and 5 microseconds off.
+The ""bus on"" timing needs to be lowered to 2-4 microseconds.  This can
+be done in one of two ways:
+
+* If you have ASPI4DOS, you can use the ""/n"" option.  For example, I use
+  a ""bus on"" timing of 4 microseconds, which means that I use the
+  following line in my CONFIG.SYS file:
+
+	DEVICE=c:\aspi4dos.sys /n4
+
+  Note that there is NO space between the ""/n"" and the ""4"".
+
+* If you don't have ASPI4DOS, your only recourse is to try to find a
+  program called ""SETSCSI.EXE"", which is very difficult to find.  The
+  reason is that Adaptec, for reasons of their own, does not seem to
+  want this widely distributed.  I once asked someone who worked for
+  Adaptec, and they asked me to not upload it anywhere.  If you have
+  anonymous ftp access to the Internet, you could try using archie to
+  hunt down a copy; I believe that there are a couple of sites that have
+  it.  If you do find a copy, you run it like so:
+
+	setscsi -n:4
+
+  This adjusts the ""bus on"" timing to 4 microseconds.  Running
+  SETSCSI.EXE without any arguments resets the bus timing back to the
+  factory defaults.
+
+  Note that it seems that you cannot use SETSCSI.EXE if you use
+  ASPI4DOS; SETSCSI.EXE crashed my system if ASPI4DOS was loaded.  I
+  could use SETSCSI.EXE with SCSIHA.SYS, however.
+
+Do not lower the ""bus on"" timing below 2 microseconds, or increase it
+above 11 microseconds.  If you lower it too low, the hard disk
+throughput will suddenly drop; your system will feel slower.  For me, 4
+microseconds works fine.  This value may work fine for you, or you may
+have to adjust it downwards a little.
+
+     Once you've lowered the ""bus on"" timing, tape backups and restores
+should run faster.
+
+     Also, do not experiment with the bus on/off times (with the other
+options that I have intentionally not described), unless you know what
+you are doing.  Bad combinations can cause parity errors and worse, by
+starving memory refresh.
+
+     A program called BUSTIFIX.EXE exists on the Adaptec BBS.  Unless
+this has been upgraded since I last checked (which has been a while),
+this is a self-extracting archive containing a batch file and a couple
+of other files.  This batch file was supposed to allow one to set the
+bus on/off times for the 1540/1542 and others.  However, when I tried
+running this program with my 1542A, my system crashed.  At the time, I
+was running SCSIHA.SYS, and I didn't check to see if there was a
+conflict with it.  Maybe this old program works only with the 1542B,
+although the docs say that it works with the 1542A?
+
+* Erratic tape operations or too many tape errors:
+
+     This ""problem"" may or may not exist.  Although it existed on my
+system, a hardware problem just on my particular 1542 could cause it.
+However, I've heard of other people having similar problems, and so I'm
+mentioning this just in case it isn't a hardware problem just on my
+1542.
+
+     Symptoms of this ""problem"", which persists even after cleaning the
+tape head:
+
+1. Backing up to tape encounters ""unusable sector detected"" errors,
+   resulting in an aborted tape backup.
+
+2. Tape backup works, but the tape compare fails.
+
+3. The tape drive starts, stops, starts, stops, etc. much too often.
+   Unlike the above-mentioned problem (""Tape backups/restores take a
+   long time""), where the tape drive starts and stops every few seconds,
+   this kind of starting/stopping occurs every few 10-20 seconds or so.
+
+4. Fastback Plus 3.1 does not find/see any tape backup devices.  Other
+   programs, like Central Point Backup and the CMS Jumbo software
+   (assuming that you have a CMS Jumbo 250 tape drive) can find/see the
+   tape drive, but Fastback Plus 3.1 cannot.
+
+5. Too many tape read errors.
+
+     Although I do not know what is causing this problem, I discovered
+that using a different floppy controller solves it.  A few months ago, I
+upgraded my motherboard, which contained an integrated floppy
+controller.  As I already had a floppy controller on the 1542, I
+initially disabled the motherboard floppy controller.  After a while, I
+decided to try disabling the 1542 floppy controller and using the one on
+the motherboard.  When I did this, the tape drive (a CMS Jumbo 250)
+reliability increased dramatically, and Fastback Plus 3.1 was suddenly
+able to find and use the tape drive.
+
+     I don't know if this was caused by a hardware problem on my 1542.
+On the one hand, the floppy drives worked great when they were attached
+to the 1542, which seems to say that there was nothing wrong with the
+1542.  On the other hand, the tape drive didn't work well attached to
+the 1542 floppy controller, but it did work when attached to a different
+controller; this could be an indication of a hardware problem on my
+1542.  I did change floppy drive cables, and so it is conceivable that
+the problem was in the cables.  I don't know what the cause really is;
+however, if you're having similar problems, you might want to consider
+trying a new floppy controller.
+
+***** Sound cards:
+
+     Many popular sound cards can play or record digitized sound, and
+this is typically done using DMA.  Like the tape drive DMA, the
+Adaptec's DMA can conflict with the sound card DMA.  Unlike that of the
+tape DMA, this ""conflict"" usually manifests itself as a parity error
+(your system crashes with a parity error message).  What happens is
+that, data is being transferred so quickly by the sound card and the
+Adaptec, memory refresh cannot occur quickly enough, which causes a
+parity error.  Usually, getting a parity error means that there is a
+hardware problem with your system; in this case, however, the parity
+error is not a symptom of bad hardware.
+
+     I've found that such parity errors typically occur while recording
+digitized sound, and the chances of such errors increase as you increase
+the recording fidelity (e.g., higher sampling rate, recording in stereo,
+recording using 16-bits instead of 8, etc.).
+
+     Like the tape drive solution, the solution here is to lower the
+Adaptec's ""bus on"" timing.  See the section on tape drives for
+information on how this is done.  Note, however, that this may or may
+not solve the problem; it may only reduce the probability of a parity
+error.  The software used to record digitized sound can greatly affect
+this problem (i.e., some software is inefficient).  Disk caches, the
+speed of your hard disk, and the amount of disk fragmentation can also
+affect this.
+
+***** Miscellaneous info:
+
+     This section contains miscellaneous hints, tips, and rumors.  Much
+of it is merely information that I've heard or read about, and have not
+verified.  I believe that the following information is correct, but I'm
+not sure.  Use it at your own risk.
+
+* With QEMM 6.00, 6.01, and 6.02, you need to specify the ""DB=""
+  parameter (e.g., ""DB=2""), unless you are using the ASPI4DOS driver.
+  If you don't, QEMM will crash/hang at bootup.  Although the QEMM
+  manual mentions this, the install program does not seem to detect that
+  a 1542 is present and automatically add this option to the QEMM
+  command line (at least, this occurred with the QEMM 6.00 install
+  program -- I haven't tested any other version).  Earlier versions of
+  QEMM probably need this parameter, but I'm not sure (I've never used a
+  version earlier than 6.00).
+
+  If you use ASPI4DOS, you do not need to give QEMM the ""DB="" parameter.
+
+* Some or all versions of the 1542 do not support hard disks over one
+  gigabyte in size.  To support hard disks with capacities over 1GB, you
+  need to get a new ROM BIOS from Adaptec.  I'm not sure if this is
+  still true of the latest 1542Bs being sold by Adaptec.
+
+* To connect a CDROM drive to the 1542, you need a SCSI CDROM drive and
+  some drivers.  Note that some CDROM drives have proprietary interfaces
+  (non-SCSI); these drives cannot be used with the 1542.  You have three
+  choices for CDROM drivers (I have no idea how well the following
+  solutions work, or even if they work -- the following is secondhand
+  information):
+
+     1. You can buy Adaptec's EZ SCSI driver package, which lists for
+	something like $75.  If you already have older Adaptec drivers,
+	you can supposedly upgrade to EZ SCSI for around $30.  Contact
+	Adaptec for details.  The EZ SCSI package supposedly contains
+	everything that you need.
+
+     2. You can buy the CorelSCSI! driver package, which is made by the
+	same people that make CorelDRAW!  This package contains CDROM
+	drivers, SCSI tape drivers, WORM drivers, etc.  I do not know
+	the list price, but I've seen this package sold for around
+	$80-$90.  Note that CorelSCSI! does not come with the ASPI4DOS
+	driver, which is needed.  If you do not already have ASPI4DOS,
+	you may be better off getting Adaptec's EZ SCSI instead.
+
+     3. [This method is obsolete, as the following drivers have been
+	obsoleted by Adaptec's EZ SCSI kit, but I'm mentioning it in
+	case someone already has these drivers.]  You can use the
+	drivers in the Adaptec ASW-1410 kit (ASPI4DOS) and the ASW-410
+	kit (ASPI CDROM drivers).  You will have to get a copy of
+	MSCDEX.EXE (a high-level CDROM driver), if it is not included in
+	the ASW-410 kit, but this is available from several bulletin
+	boards.
+
+* To use a SCSI tape drive with the 1542, you need software that knows
+  how to talk to a SCSI tape drive.  Software that I've heard about are
+  (again, like the above section on CDROM drives, I have no idea how
+  well the following solutions work, or even if they work -- the
+  following is secondhand information):
+
+     1. Central Point PC Tools 8.0 for MSDOS supposedly supports a large
+	number of SCSI tape drives.  It comes with SCSI drivers
+	(ASPI4DOS 3.1) as well as Central Point Backup.
+
+     2. The CorelSCSI! driver package contains a SCSI tape backup
+	program (see the above section on CDROM drives for more
+	details).  However, note that CorelSCSI! does not come with, but
+	requires, ASPI4DOS.
+
+* I've seen advertisements that sell the 1542 in three configurations:
+
+     1. 1542 SCSI controller with hard disk ROM BIOS.
+     2. 1542 SCSI controller w/BIOS and Adaptec ASPI drivers.
+     3. 1542 SCSI controller w/BIOS, Adaptec ASPI drivers, and
+	CorelSCSI! drivers/programs.
+
+  I imagine that Adaptec now sells the 1542 in a fourth configuration:
+
+     4. 1542 SCSI controller w/BIOS and EZ SCSI drivers (including ASPI
+	drivers).
+
+* Those people who use Unix might be interested in a version of GNU tar
+  for MSDOS that talks to a SCSI tape drive via the ASPI4DOS driver (you
+  need this driver before you can use this program).  I've never used
+  this version of GNU tar, but I've heard that it works (I don't know
+  how well, though).  If you have anonymous ftp access to the Internet,
+  a copy can be found on wsmr-simtel20.army.mil and mirror sites:
+
+	PD1:<MSDOS.DSKUTL>
+	ASPIBIN.ZIP  67841 920131 Gnu Tar for SCSI tape drives, Adaptec 154xx
+	ASPIPAT.ZIP  21206 920131 Patches for ASPIBIN relative to Gnu Tar 1.10
+	ASPISRC.ZIP 221370 920131 Src for Gnu Tar for SCSI tape, Adaptec ctrlr
+
+  I have no idea if a copy can be found on Compuserve; UNIXFORUM might
+  have it, if any forum does.
+
+* As far as MSDOS is concerned, the 1542A and the 1542B controllers are
+  the same; with MSDOS, the 1542A should work as well as the 1542B.
+  However, the hardware for these two boards is not 100% identical, and
+  there is at least one (NON-MSDOS) program that initially did not work
+  with a 1542A, but did work with a 1542B (BSD386 -- a 386 version of
+  BSD Unix).
+
+* In case anyone's curious, here's an edited copy of my CONFIG.SYS file:
+
+	FILES=40
+	BUFFERS=40
+	BREAK=ON
+	STACKS=10,256
+	DEVICE=c:\sys\dev\aspi4dos.sys /d /n4
+	DEVICE=C:\QEMM\QEMM386.SYS on RAM ROM DMA=32 ST:M X=F800-FFFF
+	DOS=HIGH,UMB
+	DEVICEHIGH=c:\sys\dev\nnansi.sys
+	DEVICEHIGH=C:\DOS\SETVER.EXE
+	shell = c:\dos\command.com /p
+
+  Note that I'm using QEMM and ASPI4DOS 3.1.  If I were using ASPI4DOS
+  3.0 or 3.0a, I'd probably have to use a CONFIG.SYS that looked like:
+
+	FILES=40
+	BUFFERS=40
+	BREAK=ON
+	STACKS=10,256
+	DEVICE=c:\sys\dev\aspi4dos.sys /d /n4
+	DEVICE=C:\QEMM\QEMM386.SYS on RAM ROM DMA=32 ST:M X=F800-FFFF
+	DOS=HIGH,UMB
+	DEVICEHIGH=c:\sys\dev\scsiha.sys /V386
+	DEVICEHIGH=c:\sys\dev\nnansi.sys
+	DEVICEHIGH=C:\DOS\SETVER.EXE
+	shell = c:\dos\command.com /p
+
+  If I weren't using ASPI4DOS, I'd probably use something that looked
+  like:
+
+	FILES=40
+	BUFFERS=40
+	BREAK=ON
+	STACKS=10,256
+	DEVICE=c:\sys\dev\scsiha.sys /V386
+	DEVICE=C:\QEMM\QEMM386.SYS on RAM ROM DB=32 DMA=32 ST:M X=F800-FFFF
+	DOS=HIGH,UMB
+	DEVICEHIGH=c:\sys\dev\nnansi.sys
+	DEVICEHIGH=C:\DOS\SETVER.EXE
+	shell = c:\dos\command.com /p
+
+  However, if I used a floppy-controller-based tape drive, or if I
+  planned to record high-quality sound from a sound card, I would still
+  need some way of changing the Adaptec's bus on/off times.  The first
+  two versions of CONFIG.SYS take care of this, but this last version
+  doesn't.
+
+Local Variables:
+fill-column:	72
+eval:		(auto-fill-mode nil)
+End:",technical_response_report,AI pre-label; review required; source post 60207
+"I bet it suddenly started sticking when you  started leaving the PC running the
+menu all night.  There is a limitation/bug in the date roll-over software in
+PC's that means you have to be doing something like waiting for keyboard input
+via a DOS call rather than a BIOS call (as menus often use) otherwise the code
+to update the date after midnight never gets called.
+
+Somebody might be able to correct the details in case I've mis-rememberred
+them, but I think you have to change the menu program (if you have the sources)
+or add a TSR or system patch or something.  As far as I know the CMOS clock
+keeps the right time (in fact about 7 seconds/day better than DOS's clock).
+
+Mark Aitchison, University of Canterbury.",technical_response_report,AI pre-label; review required; source post 60472
+"Would someone please email me the pinout for a PS/2 6-pin mini DIN mouse
+port?  I'm trying to make an adapter for a serial mouse, and the dealer who
+knows what adapter works with the mouse I bought doesn't have it in stock.
+I have several different adapters, but none of them make sense based on
+what sketchy information I have about the port (they have connections to
+""reserved"" pins).",information_request,AI pre-label; review required; source post 60457
+"If you are talking about laser jet 4 then I believe it has to be postscript.
+I don't see any advantage to using PCL when you have a peice of hardware
+plugged into the LJ4 that is doing the work and it can support any language
+that is suited for the job.  Besides I don't think PCL is even capable of
+handling 1200 dpi specifications.  I only have experience with the Laser
+Master Winjet 1200 which brings the LJ4 up to 1200 dpi and it uses postscript.
+It also has a fast print mode which is not postscript, and it is at a lower
+resolution (600dpi I think), but it is FAST!!!!  This particular product
+uses your host processor to process the postscript, so even with a decent
+PC you know it's going to be slow i.e. slow compared to a high-end workstation
+processed PS.
+
+The quality difference is very noticable and is almost worth the wait (for
+the PS processing) - I'm rather impatient.
+
+We were using it for B&W camera images (RS-170).  The gray scale image was
+accepted by MS Word and handed to the Winjet PS printer driver which converts
+the image into postscript and then hands it off to the Winjets postscript
+processor.  The postscript is rendered into RAM (lots of it) and when it
+is done it shoots it directly to the printer.  The PS processor can also
+accept PS files created from other sources including DOS applications, but
+Windows has to be running at the time of printing.  The PS processor is
+responsible for the halftoning and I'd say it does a pretty good job.  Our
+camera images came out very good in my opinion.  (not as good as Laser Master's
+demo though).
+
+I don't know how many other similar products are out there but I would be
+surprised if there are several.
+
+Gordon Lang",technical_response_report,AI pre-label; review required; source post 60255
+"thought I'd post this as well as e-mail it, just in case anyone else is
+interested in this info.....
+
+In article <[email omitted]>
+
+I suggest that you go direct to the original (and preferred...best quality)
+source for all of this, just as you would (at least, should) for the chips
+themselves:  National Semiconductor.  you can reach them at 1-800-272-9959.
+they no longer package the data sheets in a book, as they did when I got
+mine, but you can get them as individual sets of data sheets.  you want, as
+a minimum, the following:
+
+   *) 2 sets of data sheets:
+      *) NS16450/INS8250A/NS16C450/INS82C50A
+      *) NS16550AF
+
+   *) 2 application notes (yes, GET THESE!):
+      *) AN-491 The NS16550A: UART Design and Application Considerations
+      *) AN-493 A Comparison of the INS8250, NS16450 and NS16550AF Series
+         of UARTs
+
+both of the application notes I listed have proven to be AT LEAST as
+valuable as the data sheets themselves (more, actually).  AN-491, in
+particular, is an exceptionally well-written application note that goes
+into detail about how and why the 16550 does what it does, and how best
+to take advantage of it.
+
+btw, they send these out free, as long as you don't abuse it.
+
+later,
+   --jim",technical_response_report,AI pre-label; review required; source post 60356
+"Has anyone here dealt with Tangent?  I'm looking at an 486 system
+ they have that has an EISA backplane with a VESA slot for video.
+ The SCSI contoller they use is made by Aorta.  I've never heard
+ of this brand.  Can anyone comment on Tangent or the controller?
+
+ Thanks,
+ David",information_request,AI pre-label; review required; source post 58999
+"First off, with all these huge software packages and files that
+they produce, IDE may no longer be sufficient for me (510 Mb limit).
+Second, (rumor is) Microsoft recognizes the the importance of SCSI
+and will support it soon. I'm just not sure if it's on DOS, Win, or NT.
+At any rate, the deal is with Corel who makes (I hear) a good
+cohesive set of SCSI drivers.",technical_response_report,AI pre-label; review required; source post 60232
+"Is there anybody who has (or can point me in the right direction) any
+information about protected mode? Also interested in protected mode viewed from
+a OS point of view.
+
+	Thanks in advance
+		Kjetil Kolin",information_request,AI pre-label; review required; source post 60759
+"My Western Digital also has three sets of pins on the back. I am using it with
+another hard drive as well and the settings for the jumpers were written right
+on the circuit board of the WD drive......MA SL ??
+
+I can't remember what the last one was. If you can't find these markings on the
+circuit board, I'll open my machine and tell you what mine are.......
+
+Kevin Holly
+McMaster University, Hamilton, Ontario
+[email omitted]",technical_response_report,AI pre-label; review required; source post 60208
+"Hi,
+
+I've got a Victor PC/XT with a 20 MB harddisk in it. The controller is
+a Toshiba MFM controller, with an additional 9 pins connector.
+
+There are 2 busses from my harddisk to this controller. One with 9 wires
+and another with 34 wires.
+
+The controller has two connectors for a 9 wire-bus and one for a 34 wire
+bus.
+
+Now I got a 20 MB harddisk from a friend of mine, and I wondered whether
+I can connect this second harddisk to the same controller (there is room
+for a 9 wire-bus, but not for the 34 wire bus)
+
+How can I solve my problem, any suggestions?
+
+If you need more info, mail me, please ([email omitted]).
+
+--Bas.",information_request,AI pre-label; review required; source post 60276
+"Two questions:
+1: I'm trying to figure out how to access cmos advanced chip setting on a
+EISA motherboard (AIR) that has AMI bios..specifically I would like to set
+the atclk or wait states or bus speed on this board, I can't seem to be
+able to do it..any help in this area would be greatly appreciated.
+
+2: I am looking for a phone number for WANGTEK tape drives, specifically I
+am looking for jumper settings on a 5099EN24 drive..
+
+Thanks in advance.
+Tony",information_request,AI pre-label; review required; source post 60235
+"I recently purchased the then current Pkg.# 486dx-33 for $2395 (but changed
+to NEC 3FGx monitor upgrade). Buy this Pkg. #3 now - for $100 more, you now
+get a bigger HD - 340mb with @256 HD cache. 30 days ago, when I bought this
+pkg., it was 245mb with @132K HD cache. This is a great deal although it is
+generally recommended you at least upgrade to the 15' Zeos (CTX) monitor for
+$99 more I believe.  Whether you also upgrade to the Diamond Viper video
+card is your choice. I stayed with the Diamond Speedstar Pro. Zeos Tech
+Support is really good - call after normal business hours to get the
+fastest access. The hardest part about buying a Zeos is the wait till it is
+delivered - once you order you can hardly wait to get it! There are quite a
+few good mail order houses around - lots of bang for buck with Zeos.",technical_response_report,AI pre-label; review required; source post 60209
+"I'm looking into getting an external, reasonably fast (<350 ms avg access time)
+Multispin CD-ROM drive that supports ""Photo CD Multi Session"", has audio
+output, and SCSI interface for connection to the PAS16 SCSI port. Does anyone
+have any comments/experiences/warnings/recommendations they'd like to share
+concerning the Texel DM-5024 and/or Toshiba TXM-3401E and/or others. THANKS!
+
+						Hal R. Brand
+						[email omitted]",information_request,AI pre-label; review required; source post 61011
+"Does anybody out there have or used to have an HD controller from
+Perstor System Inc. (which is out of business I believe)?  My friend
+received an old PC which happens to have such a controller and I am
+having a hard time trying to add another HD to the card.
+
+I believe the controller is supposed to control MFM drives as RLL
+drives??
+
+Here the model info on the card, but any other similar model will
+probably do.
+
+Perstor System Inc.
+Model: PS 180-16FN
+Rev: 2.2 ECN 9-21
+
+I would appreciate your reply directly to my e-mail address below.
+
+Thanks,
+
+Ray  ([email omitted])",information_request,AI pre-label; review required; source post 60869
+"If anyone has any experience with the ALR ProVEISA 486DX2 system I would
+be interested to hear your impressions of it, and of ALR in general.
+
+Thank you.
+
+/mark
+
+---
+ * WinQwk 2.0b#108 * Mark Seltzer,28 Ravina Cres,Toronto,Ont M4J 3M1,Canada.
+   RoseMail 2.10 : RoseNet<=>Usenet Gateway : Rose Media 416-733-2285",information_request,AI pre-label; review required; source post 60417
+"I seem to recall that 486s run somewhere close to the boiling point of water.
+Anyone have an exact temperature?
+
+Anyway, putting a CPU fan/heat sink on it won't hurt and could help. Depends
+on how paranoid you are...",technical_response_report,AI pre-label; review required; source post 60700
+"The floppy is served by DMA on the motherboard,
+and original DMA-controller can't reach more than the first
+16MB (The address-space of the ISA-bus)
+joerg",technical_response_report,AI pre-label; review required; source post 60419
+"there is a file out there (look for it with archie) that is called
+'theref22.zip' which has lots of info on various PC things,
+amongst which is also a detailed description of all Floppy controller
+commands, I think hard drive controller commands are not there.
+
+it is possible to read an entire track including all gaps, sector
+headers etc.   by setting sector size to something very large (like
+8K).
+
+willem",technical_response_report,AI pre-label; review required; source post 60149
+"Yeah.  Sounds typical.  Windows makes all sorts of extra demands on hardware,
+and therefore your machine can't keep up with things.  Ever notice how when
+acessing the floppies in Windows, everything else slows to a crawl?  I
+imagine your backup and evertyhing else that is running fights for CPU time,
+and sometimes the backup program loses.  Be glad.  I can't even run in
+medium speed with CP backup on my machine, supposedly because I have a SCSI
+machine which places extra demands on the data bus.
+
+don",technical_response_report,AI pre-label; review required; source post 60444
+"I used the standard installation program to put MS-DOS 6.0 on my
+machine with Stacker 3.0 already installed.  No problems.  I kept Stacker,
+rather than switch.
+	I am very pleased with the memory I gained since I did not have a
+memory manager.  I also like the multiple boot feature.",technical_response_report,AI pre-label; review required; source post 60689
+"Wow, you guys are really going wild on this IDE vs. SCSI thing, and I think
+it's great!
+
+However, I think that some people (such as myself) would benefit from answers
+to the simple(?) question:  Which would YOU choose, and why?
+
+Like lots of people, I'd really like to increase my data transfer rate from
+the hard drive.  Right now I have a 15ms 210Mb IDE drive (Seagate 1239A), and
+what I would say is a standard (not special, no cache I believe) IDE controller
+card on my ISA 486-50.
+
+I'm currently thinking about adding another HD, in the 300Mb to 500Mb range.
+And I'm thinking hard (you should hear those gears a-grinding in my head)
+about buying a SCSI drive (SCSI for the future benefit).  I believe I'm getting
+something like 890Kb/sec transfer right now (according to NU).
+
+How would this
+number compare if I bought the state-of-the-art SCSI card for my ISA PC, and
+the state-of-the-art SCSI hard drive (the wailing-est system I could hope for)?
+
+Obviously money factors into this choice as well as any other, but what would
+YOU want to use on your ISA system? And how much would it cost?
+
+Along those lines, what kind of transfer rate could I see with my IDE HD's if I
+were to buy the top-of-the-line IDE caching controller for my 200Mb, 15ms HD?
+And how much would it cost?
+
+I actually have a PAS-16, and could (what a waste I guess it would be...) hook
+up a SCSI HD through it's SCSI port which yields an optimum of 690Kb/sec.
+Actually, I have a borrowed 12ms Fujitsu HD hooked up through it now (and
+own the Trantor HD drivers for the PAS-16 SCSI port).  Is this SCSI port a
+SCSI-2 port?  How could I tell?  Is the Fujitsu 2623A a SCSI-2?  Are all SCSI
+HD's SCSI-2?
+
+Thanks for any comments.
+
+Randy",information_request,AI pre-label; review required; source post 61009
+"Hai,
+
+In a few days I'm going to buy a new motherboard with local-bus(ses).
+It comes with a Cirrus Logic VLB card which has 2Mb RAM onboard.
+It can do true-color but I don't know what type of card it is.
+I read that Cirrus Logic cards aren't exactly the fastes around.
+
+My old system had a TSENG 4000. I was pretty pleased with it, so I
+consider buying a W32/TSENG card. I'd like to know a few things:
+
+	- How is the speed/performance in DOS/Windows/Unix/OS/2
+	  Graphics & Text (also compared to S3 cards for example)
+	- What resolutions (including no. of colors) does it
+	  support (text & graphics)
+	- How many RAM can be installed and what type of RAM
+	- Compatibility with old TSENG 4000
+	- Support in software
+
+If anyone has any experience with this card (good or bad) I'd like
+to know. If you have a better alternative than the W32 please tell
+me about it.
+
+For the people in Holland:
+Kan iemand me misschien vertellen waar de W32 in Nederland te verkrijg
+is? Het liefst in de omgeving van Amsterdam!
+
+Thanks in advance,			Erik Stel ([email omitted])",information_request,AI pre-label; review required; source post 60490
+"[much deleted]
+
+amazing.  I could not find _one_ reference to waffle in all of this.
+
+followups redirected out.",technical_response_report,AI pre-label; review required; source post 60572
+"I would like advice on how to configure my 486 to accept:
+- Com1 + Com2  (currently on IRQ 4 and 3)
+- LPT1 (IRQ7)
+- Bus Mouse (IRQ5)
+- Sound Card (no idea what to do - can be set to any)
+-
+using IRQ2 for Bus MOuse gobbled up too many cycles, and caused
+loss of communications with floppy disks, and a few other
+problems.
+
+I could, I suppose, switch the 2 com devices externally, and disable
+the second port on the Super IO card, but I really want to
+have them both available.
+
+COuld the sound card use IRQ2 without horsing up the works?
+
+All replies apppreciated - and I only just subscribed to this
+newsgroup - I assume there is an FAQ somewhere (rather, I'm
+sure someone will tell me about it....)
+
+thanks
+Mark Fraser",troubleshooting_request,AI pre-label; review required; source post 58912
+"How about 250MB/s for 64-bit VLB or 350MB/s for QuickRing {Apple's
+implimentation of VLB (Byte 10/92:132)} QuickRing is interesting in that
+it allows interleaving with other card so that the 350MB/s can be divided
+among many cards at the same time {NuBus 90 and MCA are about the only card
+interfaces able to DO anything with that kind of speed and even NuBus 90
+ditzes around at ~30MB/s with a burst mode: 80MB/s.
+""MCA {Also called Micro Channel}
+ IBM's 16 and 32-bit bus; ""allows use of more than one CPU in a computer""
+ (DCT) and anything can talk to anything, >>as fast as the two components
+ involved can handle it.<< Never took off because it was incompatible with ISA
+ and EISA.  Planned to be bus interface of IBM PowerPC 601 (Carl Jabido).
+
+IDA can't handle VLB speed never mind QuickRings's speed so it is out.
+EISA pokes along at NuBus Mac II speeds {~15MB/s burst mode: 33MB/s}
+ so VLB and QuickRing are slowed down by it.
+PCI is a competing interface that is still in development.",technical_response_report,AI pre-label; review required; source post 60146
+"why does my keyboard not have a cents key ?
+C
+
+like to have my 2 cents worth or $ 0.02 (boaring)
+
+                                                       -David
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+China Cat BBS                               c-cat![email omitted]
+(301)604-5976 1200-14,400 8N1               ...uunet!mimsy!anagld!c-cat!david
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=",information_request,AI pre-label; review required; source post 60887
+"I think it would be a great idea to have a new group created:
+
+comp.sys.ibm.pc.flame.therapy
+
+anybody agree?",technical_response_report,AI pre-label; review required; source post 58826
+"Selling -
+
+          Arnet Multiport card. Four serial ports on one card (16450s)
+with docs and drivers for OS/2 and DOS (works great with Unix flavors
+too).  Aggregate is probably around 64Kb.
+
+   Offers?  Also willing to swap for monitor.
+
+                                    Lee  ([email omitted])",technical_response_report,AI pre-label; review required; source post 60528
+"In PC Magazine April 27, 1993:29 ""Although SCSI is twice as fasst as ESDI,
+20% faster than IDE, and support up to 7 devices its acceptance ...has
+long been stalled by incompatability problems and installation headaches.""
+note what it does NOT site as a factor: PRICE.
+int eh same article the PC would will get plug and play SCSI {from the
+article it seems you get plug and play SCSI-1 only since SCSI-2 in FULL
+implimentation has TEN NOT 7 devices.}
+SCSI-1 intergration is sited as another part of the MicroSoft Plug and play
+program.",technical_response_report,AI pre-label; review required; source post 60197
+"Good luck finding an MX17S.  When I was looking around back in
+December/January, Mag wasn't producing any because they couldn't get
+tubes from Sony.  I asked when they expected to restart production as
+I was willing to wait a few months to get an MX17S but they said not
+any time soon.  I wound up getting a T560i and am extremely happy with
+it.
+
+David",technical_response_report,AI pre-label; review required; source post 60243
+"Windows Sources Magazine reviewed a number of 17"" monitors recently
+and they too said that the Nanao T560i was the best monitor to get if
+you had the money. But they also said that the Mitsubishi Diamond Pro
+17 is the next best choice and that it has superb picture quality.
+This monitor can be had for around $1070.
+
+Has anyone actually seen any of these? I am also thinking of buying a
+17"" monitor and was going to consider the Mitsubishi. If I remember
+correctly, I think its viewing area is 16"" measured diagonally.
+
+Thanks.",information_request,AI pre-label; review required; source post 60195
+"Hi All,
+
+  I have heard that somewhere there exist programmable keyboards, eg. one
+can program displays on the keys to show some specific characters, et.c.
+  Does it mean that there is some way of transmitting some ""non-trivial"" data
+to the KB (as opposed to standard NumLock/... On-Off, typeamatic specs.) from
+inside the PC software? I have not found any corresponding reference in the
+specs for the 8042 PC-KB interface. Anyone have any ideas? (Except that they
+may encode data by the sequences of the standard commands mentioned above,
+which wouldn't look too neat, besides, what would one do from an XT?)
+
+  Great thanks in advance,
+
+Andrew.",information_request,AI pre-label; review required; source post 58905
+"Like who, f'rinstance?  When I bought my system (November), no first, second,
+or third tier vendor could touch the price for the hardware/software
+combination I got from GW2000.
+
+If you were selling as many systems as fast as GW2000, you'd end up with four
+or five pissed-off customers too.  And four or five ecstatic ones.  And lots
+of satisfied ones...
+
+Don't minimize this; if you buy mail order, it's a good thing to know that
+you'll get replacements parts, no questions asked, in a day or two, via FedEx.
+
+Which they do in the vast majority of cases.  Remember that it's only the
+people on the tails of the curve who are motivated to write -- the ones who
+love it, and the ones who hate it.  You don't hear from the folks in the
+middle very often...
+
+They have rough edges, no doubt about it; but they give good value per dollar,
+and use almost all top-quality components.",technical_response_report,AI pre-label; review required; source post 60141
+"Help!
+  I'm trying to configure NCSA Telnet v2.3.05 to work with a 3C503 ethernet
+board.  I can use FTP fine, but whenever I attempt to use Telnet, the
+machine hangs with a blank screen and a blinking green cursor.  Any ideas?
+
+Please e-mail:
+	[email omitted]
+	[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60559
+"Well it seems that I have a soundblaster card for sale since
+I recently purchased a SBPro. The card comes complete, In mint
+condition; with box, manuals,docs ,disks and original packaging.
+Make an offer..._Canadian_ inquiries prefered!
+Respond before APRIL 28!!!!!!!!!!!!!
+
+e-mail at [email omitted]
+
+J.M.",technical_response_report,AI pre-label; review required; source post 60729
+"Pentium processors / motherboards are not available to the general public as
+of yet.  Intel has released them to companies such as Gateway and Dell
+to do testing, etc.  It'll be a while...
+
+Mike Bitz                   Internet: [email omitted]
+Research and Development              [email omitted]
+Dakota State University       Bitnet: [email omitted]",technical_response_report,AI pre-label; review required; source post 60379
+"I got a harddisk shipped with an IDE specification but not the
+SCSI spec. Would someone tell me how to set the jumper on
+the harddrive? Thanks.  Please email response.
+
+Philip Sinn
+[email omitted]
+University of Washington",information_request,AI pre-label; review required; source post 60543
+"I need some help with a multi port serial board of unknown origin.  I'm
+hoping someone knows what this board is, or, even better, what the various
+switches and jumbers are used for.
+
+Anyway, here's  description of the card:  It is a 16-bit card, although
+I noticed that none of the contacts in the 16-bit extension are connected
+to anything.  It has 4 NS16550AN chips in sockets, and 4 corresponding
+connecters labeled COM1 - COM4.  There is also an external female connector
+with 37 pins.  There are 8 banks of 8 switches, 2 banks of 4 switches, and
+7 jumpers.  I believe that I have determined, by following traces, that
+SW5 and SW6 (12 switches in all) control the interrupt level for each of
+the COM ports.  SW5[1-4] are for IRQ3, SW5[5-8] are for IRQ4, and SW6[1-4]
+are for IRQ5.  The other switches are beyond my meager ability to follow.
+
+The only identification printed on the board is ""MULTI SERIAL PORT BOARD""
+across the bottom.  There is a box for serial number, but it is blank.
+Immediately below the words ""SERIAL NO"", but not in the box left for
+the S/N, are the numbers ""1990 2 8"".
+
+Anyone have any clues?  Your help is greatly appreciated.",information_request,AI pre-label; review required; source post 60732
+"Hi there.  We just bought a 486 DX2/66 Gateway system with a 2 meg ATI
+Ultra Pro video card.  Everything seems to work fine except for the
+Windows Drivers for 800x600 24 bit, and 800x600 and 1024x768 16 bit
+modes.  The fonts and icons start deteriorating after windows startup,
+and within minutes of use, everything on the screen is totally
+unintelligible.  Naturally, I called Gateway tech support to inquire
+about this.  The technician asked me about the drivers, and I told him it
+was version 1.5, build 59.  He told me that the 16 and 24 bit drivers for
+the ATI Ultra Pro simply do not work!!!  Is this true?  If so, I'm simply
+amazed.  How could this be?  The strange thing is I would have expected
+to see some discussion on here (unless the subject has made the FAQ!!!).
+
+One very suspicious point that came up later was that he stated that none
+of the Windows Accelerator boards have working 16 and/or 24 bit drivers
+for Windows 3.1.  I easily challenged him on that because I've been
+running a Diamond 24x in 15 bit mode at home for 4 months now, and I have
+""Well, Diamond has been working on those drivers much longer.""  Anyway, I
+just wanted to see if anyone else had any trouble and what they did about
+it.  Any feedback will be appreciated.
+
+The system configuration is:
+
+Gateway 486 DX2/66 Local Bus
+16 Megs Ram
+SCSI HD & CD-ROM
+Ultrastor 34F Local Bus SCSI controller
+ATI Ultra Pro Local Bus with 2MB VRAM
+DOS 6.0
+Windows 3.1
+Mach 32 drivers version 1.5 (build 59)
+
+Thanks in advance.",troubleshooting_request,AI pre-label; review required; source post 60711
+"I am looking for a CDROM audio cable to connect my Toshiba 3401B (L/R audio) to
+the Pro Audio Spectrum 16 sound card.  Thanks in advance for any pointers...
+
+-Steve
+  ___   _____   ____   _  _   ____       _       __           Steve La
+/ ___) (_   _) | ___) | || | | ___)     | |     /  \       Network Manager
+\__  \   | |   | _)_  | || | | _)_      | |__  | || |     [email omitted]
+(____/   |_|   |____)  \__/  |____)     |____) |_||_|      (310) 985-4750
+CALSTATE UNIVERSITY LONG BEACH, 1250 Bellflower Blvd. Long Beach, CA  90840",information_request,AI pre-label; review required; source post 60586
+"What do I need to do to configure this drive as a slave?
+Model# CP30101G
+
+Please reply via e-mail. Thanks!!
+
+Jeff
+****************************************************************
+*  Four out of five electrons prefer holes for their mutual    *
+*  annhiliation needs. Boycott Sierra. Ignore anybody who      *
+*  purports to be a serious Windows user. Support new makers   *
+*  of hardware and software. Buy Canadian music. Quit smoking. *
+*  Take up running. FM synthesis is the CGA of audio.          *
+*                            [email omitted]        *
+****************************************************************",information_request,AI pre-label; review required; source post 60432
+"I have one and it is my favorite CD-ROM drive so far.  I also have
+a NEC-74 and have had experience with several other drives (Various
+Phillips drives)
+
+	The 3401 is faster than the NEC, I like its door better (the NEC
+needs 2 hands), the XA handling (The NEC needs to be re-booted to go from
+XA to ROM while the 3401 does it on the fly), All in all I am seriously
+considering replacing my NEC with another Toshiba.
+
+						JWS",technical_response_report,AI pre-label; review required; source post 60370
+"The above does not tell the proper story of SCSI:
+SCSI-I: 8-bit asynchronous {~1.5MB/s ave}, synchronous {5MB/s max} transfer
+base.
+SCSI-1{faster} this requires a SCSI-2 controller chip and provides
+ SCSI-2 {8-bit to 16-bit} speeds with SCSI-1 controlers.
+SCSI-2: 4-6MB/s with 10MB/s burst{8-bit}, 8-12MB/s with 20MB/s burst {16-bit},
+and 15-20MB/s with 40MB/s burst{32-bit/wide and fast}.  16-bit SCSI can be
+wide or fast, it depends on how the port is designed{The Quadras will support
+fast SCSI but not wide when the OS SCSI manager is rewritten since the
+Quardas use a SCSI-1 {non-wide} port}.
+
+The article in PC Mag 4/27/93:29 was talking about SCSI-1 {SCSI-2 uses
+TEN (10) devices in it native mode, outside its native mode it behaves a
+lot like SCSI-1 (7 devices, slower through put}
+
+as for ""20% faster then IDE"" that seems to be 8-bit SCSI-1 using a SCSI-2
+contoler chip {The Mac Quadra uses a SCSI-2 controler chip for its SCSI-1
+and gets 6MB/s through put for asynchronous {8-bit} SCSI-1, far in excess of a
+normal SYNCHRONOUS SCSI-1 output} 120% of 8.3 is 9.96 which is near
+the burst of a SCSI-1 machine with a SCSI-2 controller chip.
+
+The PC world seems to have SCSI-1 and SCSI-2 mixed up.  Fact is SCSI-2
+controler chips allow near SCSI-2 speeds through a SCSI-1 device
+{As shown in the Mac Quadra} which skews some of the data of SCSI-1 vs
+IDE or ESDI test. I agree that the article COULD have stated that the ""20%
+faster then IDE"" came off a SCSI-1 device with a SCSI-2 chip.  Maybe it
+was there and the EDITOR killed it because the article was dealing with
+SCSI-1 NOT SCSI-2 and he did not understand the effect of a SCSI-1 device
+with a SCSI-2 controller chip.
+SCSI-1 chips are limited to 5/MB max.  SCSI-1 devices with SCSI-2 chips
+{becoming common} produce up to 10Mb/s in 8-bit mode and 20MB/s in 16-bit
+mode {the fast version, SCSI-1 ports cannot use wide SCSI}.  Of cource
+the prime piece of wierdness is that SCSI-1 devices HAVE SCSI-2 chips
+{or more accurately the machine does}. This allows the best of BOTH
+worlds: high SCSI-2 speeds and cheeper SCSI-1 costs {FULL SCSI-2 hardware
+(port, electronic controller, etc) is VERY expensive.  It ALSO creates
+a logistic NIGHTMARE as to how fast SCSI-1 goes.
+
+When one knows the FACTS behind the numbers then one realizes that the
+article knows what it is talking about {even if it does not tell HOW the
+figures came about} while  [email omitted] is throwing out
+ranges that don't tell SQUAT {Since he IGNORES SCSI-1 devices with
+SCSI-2 chips his ranges tell even LESS then intended.} }",technical_response_report,AI pre-label; review required; source post 60247
+"The last I heard, the author was having some problems in his immediate
+family and had delayed the continuation of development for a time.
+This was some months ago.
+
+It's a shame.  The driver is the best memory manager I have found
+ANYWHERE.  It doesn't require V8086 mode (like QEMM) so it works with
+Ultima 7.  It doesn't take ANY memory (runs, then exits).
+
+If only the EMM provider were a little faster and more stable.",technical_response_report,AI pre-label; review required; source post 60550
+"PLEASE: response directly to me ([email omitted])
+        by email.  IF there are a sufficient number of interesting
+        responses, I will post a summary (on April 24 or 25).
+
+I have waded through the mass of SCSI-IDE posting, but
+I missed any answers to a question posted early on --
+
+Has anyone (successfully) put both SCSI and IDE hard drives
+on the same system?
+
+I am particularly interested in having the SCSI as the _boot_ drive.
+
+For those who have managed this feat, I would appreciate
+a bit more information, such as what drives, which SCSI controller,
+and (if possible) what motherboard & BIOS
+(plus any other relevant info.).
+
+Thanks in advance,
+Robert Luoma      ([email omitted])
+   --> all flames will be stored on my WORN drive <--",information_request,AI pre-label; review required; source post 60563
+"I am looking at buying some Companion brand VLB/ISA/EISA motherboards with
+HINT chipsets.  Has anybody had any experience with this board (good or bad)?
+Any information would be helpful!
+
+thanks",information_request,AI pre-label; review required; source post 60424
+"As of today I will no longer be a contact for Zeos International on the net.
+This responsibility has been taken over by another tech ([email omitted]) and I
+am moving up and on (mo money, mo money :)).  I just wanted to thank all of the
+netters who have supported and encouraged the participation of Zeos on the net.
+I personally feel it is important for companies such as Zeos to provide their
+customers with as easy access as possible when they have questions/problems and
+being on the net is an big step in the right direction.  I hope that other
+companies will follow suit (as Weitek and others have done). Again, thanks.
+
+---JRE---",technical_response_report,AI pre-label; review required; source post 60262
+"I believe that any VL/EISA/ISA motherboard that uses the HINT chipset
+is limited to 24-bit EISA DMA (where 'real' EISA DMA is 32-bit).  The
+HINT EISA DMA has the 16 mb ram addressing limitation of ISA.  For this
+reason I would pass.  I own one of these (HAWK VL/EISA/ISA) and am look-
+ing to replace it for exactly this reason.
+
+Please double-check me on this.  In other words, call the motherboard
+manufacturer and ask them if the motherboard supports true 32-bit EISA
+DMA.
+
+Other than this limitation, the motherboard works quite well (I am using
+mine with DOS 5, Windows 3.1, and UNIX S5R3.2).  Also with Adaptec 1742a
+EISA SCSI host adapter.",technical_response_report,AI pre-label; review required; source post 60696
+"XGA or XGA-2?  For the original XGA you just need something that can do
+1024x768 at 45/90Hz interlaced (just tell them ""8514 compatible"" and they
+should get the idea).  For the XGA-2, get what you like.  I prefer multi-
+syncs like the IBM 6319, the NECs or even a fixed frequency monitor like
+my home Viewsonic 6.  I like the Multisyncs because it's easy to run them
+in modes like 800x600x64k colors noninterlaced, or at higher modes like
+1360x1024x16.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Dick Kaul            | My opinions only, not official IBM positions, etc--
+IBM XGA Development  | they'd make me wear a suit if I were to speak for IBM.
+Boca Raton, FL       | ""Shhhh... The maestro is decomposing.""
+[email omitted]",technical_response_report,AI pre-label; review required; source post 60170
+"I just installed a DX2-66 CPU in a clone motherboard, and tried mounting a CPU
+cooler on the chip.  After about 1/2 hour, the weight of the cooler was enough
+to dislodge the CPU from its mount.  It ended up bending a few pins
+on the CPU, but luckily the power was not on yet.  I ended up
+pressing the CPU deeply into its socket and then putting the CPU
+cooler back on.  So far so good.
+
+Have others had this problem?  How do you ensure that the weight of
+the CPU fan and heatsink do not eventually work the CPU out of its
+socket when mounting the motherboard in a vertical case?",information_request,AI pre-label; review required; source post 60695
+"Hello folks!
+
+I have an Archive XL5580 (internal QIC-80) tape drive, which is pretty
+comparable to the Colorado Jumbo 250.  Since I have two floppy drives in
+my system, I'm using a small card (not accelerated) made by Archive to
+attach my tape drive as a third floppy device.
+
+The problem: Although the DOS-based QICstream software works just fine,
+both the Norton and Central Point backup programs for Windows fail unless
+I switch the machine to non-turbo speed (I'm using a 486DX/33 EISA).  Since
+the DOS software works, it can't be a hardware problem, can it?  Has anyone
+seen similar problems?  Any solutions?  Thanks in advance.",troubleshooting_request,AI pre-label; review required; source post 60158
+"I recently decided to try using emm386.exe for a memory manager and when I
+tried to print to my printer in lpt1 from word55 I wouldn't work.  It would
+send the linefeeds for the top margin and then the printer READY light would
+go off and stop working.  I disabled emm386.exe and the problem went away.
+I would like to continue using emm386.exe if possible.  I would greatly
+appreciate any comments or suggestions!!  please send them to [email omitted],
+
+[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60474
+"We are trying to connect an Olivetti XM4311 5"" floppy drive as the second
+drive on a Panasonic 286 machine.  It seems to sort of talk to it (gets it
+spinning and stepping) but gives a ""Disk not ready"" error.
+
+There are two jumpers (which seem to work best open), a 3 position DIP
+switch, and a 8 position DIP switch.  We don't know how to set the DIP
+switches and think that may be the problem.
+
+Any information, or advice (other than ""junk the stupid thing"" :) would be
+most appreciated, thanks.  (email reply preferred).
+
+[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60375
+"Hi!
+I got hold of an old Zenith 286 Laptop with model# ZWL-183-45
+
+The hard-disk is dead but the rest seems to work. I took the Zenith apart and found a very strange
+disk for wich I now try to replace.
+
+The disk is marked JVC, model JD3824R00-1.
+Has anyone any specs. on this disk or suggestion where i can find it or a cheap replacement for it.
+
+Thanks for your help.
+
+-- Michael
+
+Michael Thurbin ([email omitted])",information_request,AI pre-label; review required; source post 60363
+"This might be a silly question but I have to ask it anyway. I am in
+the process of purchasing an EISA/VL Bus 486 DX2-66 computer and I
+found two places that sell machines that have what I want and have the
+same price. The first is Ares and they use a Cache motherboard (that's
+the brand of the motherboard) with OPTI chip set, the other is Micron
+(formerly Edge Technology) and they use the Micronics EISA/VLB
+motherboard.
+
+I said that this might be a silly question since I believe that
+Micronics is a very well known motherboard manufacturer while I never
+heard of Cache! I am however leaning towards the Ares machine because
+my impression is that they are known for building good, solid machines
+and they have good tech support (24 hr, 7 days/wk), and a better
+warrantee (2 years).  Micron, on the other hand, seems to have
+recently aquired Edge Technologies and I'm not sure how much I should
+trust the company.
+
+I would REALLY appreciate any input on this. Is the Micron machine the
+clear choice?  Does anyone know anything positive or negative about
+either company? Has anyone ever heard of Cache motherboards? Should I
+go with Micron just because it has the Micronics motherboard? etc.
+
+Thanks very much in advance for any information.",information_request,AI pre-label; review required; source post 60188
+"They don't have a conflict because technically LPT1: does not use
+IRQ7!.
+     The Parallel printer processor (the actual number escapes
+me) contains a printer control register which enables the chip
+to transmit an interrupt to the interrupt controller as IRQ7,
+then onto the main processor as Int 0x0F. By default the parallel
+printer processor does not enable it's interrupt line therefore
+no Int 0x0F's will be sourced from the printer controller chip,
+thus enabling other devices to use the actual IRQ7.
+
+     Note, this applies to COM ports also which by default do not
+route interrupts to the system bus, although COM's software
+usually enable this feature as it make monitoring COM port
+activity easier than polling the serial UART, thus probably
+getting the sound card slighty confused!.
+
+Windows may be a different story....",technical_response_report,AI pre-label; review required; source post 60476
+"What is address interliving? and memmory modules  interliving?
+Thanks in advance for the info.
+Robert.",information_request,AI pre-label; review required; source post 60387
+"We are trying to install a donated hard disk (Miniscribe
+vintage 1988) on a supercheap ancient Compaq XT for
+use in education.  The only problem is that the
+supercheap Compaq didn't come with the manual and I
+haven't been able to figure out how to start the SETUP
+program.
+
+I began using PCs after 286s were invented, so I have
+a couple of basic questions:
+
+1.  Did XT-class computers even *have* SETUP programs?
+
+2.  If they did (or, do), how do I access it?
+
+If anybody has any good advice on how to proceed or
+what to do next or what to look out for, please let me
+know.  E-mail is best, but I'll also be watching the
+newsgroup postings.
+
+Thanks in advance,
+-Robert",information_request,AI pre-label; review required; source post 60263
+"Hi everyone,
+	I have a question regarding my stack on my pc.  I am programming
+in Turbo C 3.0 and my program is rather large (model large too).  I keep
+getting errors that I am running out of memory after a while of running the
+program. When I compile the program, it says I have 4.45 meg of RAM so
+I can't seem to explain why it crashes.
+
+All it is doing is running in a loop while the operator is idle and
+after a while of sitting, it will screw up all the variables. This leads
+me to believe that my stack is filling up and overflowing.
+
+Does the program take memory up when it is calling void functions
+that do not return anything??
+
+	I have been working on this problem for days and I would really
+appreciate any responce.  If this is not the correct newsgroup, I will
+gladly re-post, but this is the only I could find.
+
+Thanks in advance,
+Sean Mars
+Email [email omitted]
+Carroll College
+Waukesha, WI",troubleshooting_request,AI pre-label; review required; source post 60779
+"In evolution of 80-x86 data path width has been doubled from
+8 to 16 t0 32 bits but the speed of data processing has not increased at
+same rate.The question is Why? What is relationship bettween data path width and data processing speed?
+Thanks in advance for the input.
+Robert.",information_request,AI pre-label; review required; source post 60386
+"Hi to all you PC gurus!
+
+I'm new to these groups and so please forgive me if my questions are frequently
+asked, but I don't know the answer :) I've been recently having some problems
+with my 386 computer with a Seagate 40 meg hard drive. I occasionally find
+corrupted files, but most of the time programs work fine. Are there any utilities
+that are easily available that can help me determine whether or not the problem
+is a result of the hard drive vs an ill-behaved program or some other hardware
+item? Are there utilites to determine whether or not the hard drive is properly
+aligned etc? As might be expected, I would greatly appreciate any help on this
+matter. I'm considering just reformatting the disk and reinstalling everything
+(and hoping that will fix the problem), but I would like to have some assurance
+of what the problem cause is.
+
+Also, can someone give me an opinion on DOS 6.0? Are the compression and
+defragmentation routines good enough to consider the upgrade if I don't have
+those routines already (as opposed to buying them separately)?
+
+Much thanks in advance for any help.
+
+Mitchel Soltys
+[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60244
+"You can try to get into the setup byt pressing CTRL-ALT-INS or
+	CTRL-ALT-PrintScreen on most PC's. That should give you an option
+	to set regarding the drives to boot from.",technical_response_report,AI pre-label; review required; source post 60251
+"Recommended for what, DOS? That is a junk.
+
+	Linux + gcc. Fire up gcc to compile libc and kernel at the
+	same time running X11R5.
+
+	Bad memory, bad motherboard, bad cache.
+
+	change wait state of RAM.
+	turn off turbo.
+	change bus speed
+	swap RAM.
+
+H.J.",technical_response_report,AI pre-label; review required; source post 60656
+"Technically there is no reason why a chip set cannot support a 486DX50 and
+a 25MHz local bus.
+
+I'm waiting for the mezzianine (sp?) VL bus that will be decoupled from
+the main CPU clock and allow for many more slots due to the user of buffers.
+
+This will allow the use of ever faster CPUs with the same standard I/O
+cards. Until the next buss spec...
+
+Guy",technical_response_report,AI pre-label; review required; source post 58998
+"I've seen a listing of a Seagate 1G IDE hard drive.
+
+Windows NT already supports SCSI, a variety of adapters, for disk,
+tape, and CD-ROM.  So does OS/2 2.0.",technical_response_report,AI pre-label; review required; source post 60428
+"I was just reading in PC Magazine that the peripherals in a PC with an
+ISA bus can only access 16MB of memory.  Also, that some video cards on
+the ISA bus look for a memory aperture to map their memory to.  So that
+if I wanted to put 16MB of memory on my PC, my video card wouldn't have
+anywhere to map it's memory to.
+
+Can someone explain this in more detail.  Is there a way around this
+limit.
+
+If you email me a response, I will summarize.
+	-Bo	[email omitted]",information_request,AI pre-label; review required; source post 60298
+"Has anyone taken a look at the new ViewSonic 17? They claim
+   1280x1024 at 76Hz.  How does it compare with the T560i in terms of
+   price, and quality of display?
+
+I'm interested in the new ViewSonic 17 as well.  Has anyone seen one
+of these monitors in the flesh?
+
+- Tony",information_request,AI pre-label; review required; source post 60694
+"Did I once hear that in order for the date to advance, something, like a
+clock, *has* to make a Get Date system call? Apparently, the clock
+hardware interrupt and BIOS don't do this (date advance) automatically. The
+Get Date call notices that a ""midnight reset"" flag has been set, and then
+then advances the date.
+
+Anybody with more info?",information_request,AI pre-label; review required; source post 60487
+"B
+
+You shouldn't have troubles.  I have heard of machines having problems
+with slower than recommended memory speeds, but never faster.
+
+Sure.  I have 4 70ns SIMMs in one bank and 4 60ns SIMMS in the other ( I
+have a 486 ).  I wouldn't recommend mixing speeds within a bank, just to
+be on the safe side.
+
+-rdd
+[email omitted]
+
+---
+ . WinQwk 2.0b#0 . Unregistered Evaluation Copy
+ * KMail 2.95d W-NET HQ, hal9k.ann-arbor.mi.us, +1 313 663 4173 or 3959
+
+----",technical_response_report,AI pre-label; review required; source post 58917
+"There is a benchmark program called COMPTEST said CYRIX CPUs have a bug
+so they cannot run the program. Also may be NeXTSTEP 486?
+
+						regards,
+
+						Desmond Li
+						LUT, UK.",technical_response_report,AI pre-label; review required; source post 60540
+"MINE has a 16450 sodered right on the card.  Why would you need the 16550
+anyway?  From what I've heard, when you're multitasking, its FIFO buffer keeps
+you from loosing data.  Is this right?
+
+Bryan Luff
+Math & Comp. Sci.
+Cal. U. of PA",technical_response_report,AI pre-label; review required; source post 58994
+"^^^
+How long does he have to take in fixing it?  Does he have to use new
+parts when he repairs it or can he substitute used parts without your
+knowledge?  Can he charge you for repairs that should be under warranty
+but he claims are due to improper maintenance on your part?
+
+When it comes to local dealers:
+
+- Have fun getting consistently good support.  Most of their ""techs"" are
+re-treaded salesmen, not trained technicians, with a high turnover rate.
+
+- Have fun getting in-warranty work done quickly and courteously.
+
+- Have fun getting out-of-warranty work done cheaply, or even done
+period, unless you are on a paid service contract.
+
+Having been both a service technician, and a service manager, at a
+ComputerLand franchise and another retail computer place, I know what
+I'm talking about.
+
+I also know the ""local service"" scam that retail computer dealers like
+to push when they're selling.  It's that same old song that car dealers
+having been singing for years -- ""Buy from me and you'll get good
+service. We always treat our customers right!  Buy from my competition
+and you'll be sorry if you need service.""
+
+Experienced mail order buyers know that there are some mail order
+companies that give excellent service, including overnight replacement parts,
+on-site calls, etc. There are probably some local dealers that can give you
+good service, too. But if you think all local dealers give consistenly good
+service, you are wrong.  I have many anectdotes to prove my point,
+but I'm sure there are others on the net can do a better job than I can.
+
+- Ted Drude ([email omitted])",technical_response_report,AI pre-label; review required; source post 58993
+"Can anybody send CONNER CP-321 harddisk specifications?
+It has 612 Cyl, and 4 HD, but I am more intrested in its time-out values,
+precomp, etc.
+
+Heikki Haldre Internet: [email omitted]",information_request,AI pre-label; review required; source post 60423
+"Sorry if this has been beaten to death on this forum.
+
+I am looking seriously at buying a 486 DX / 33 from Gateway.
+I will probably buy it without a monitor, as I've heard negative
+stuff about Gateway monitors.
+
+I've also heard its tough to get through to technical
+support.
+
+I'm seeking opinions on whether or not its wise to go ahead
+based on criteria such as price, warranty service, general
+ruggedness of the system, reliability of the machine and of
+Gateway too, and so on.
+
+Please advise!!
+
+Thanks in advance!
+
+Vasudev Murthy",information_request,AI pre-label; review required; source post 60684
+"I am looking for good add-on font cartridge for HP LaserJet II.
+I found in PC Magazine article IQ Enginnering and Pacific Data Products
+are well-known maker of cartridge for HP LaserJet series. But I couldn't find
+the model name of these products.
+
+Any suggestions please.
+
+Thanks in advance,
+
+  Hakamata Atsushi
+  Sony Corporation    Osaki Technology Center",information_request,AI pre-label; review required; source post 60508
+"Hay all:
+
+    Has anyone out there heard of any performance stats on the fabled p24t.
+ I was wondering what it's performance compared to the 486/66 and/or
+pentium would be.  Any info would be helpful.
+
+Later
+BoB",information_request,AI pre-label; review required; source post 60718
+"(How is 0-40 twice 1.25? Do you just pick whatever SCSI setup that makes
+the statment ""correct""?)
+Even if you could make such a statement it would be meaningless unless
+you understood that ESDI and IDE (I include SCSI and ATA) are
+completely different (ESDI is device-level, like MFM/RLL).
+
+Great, you can compare two numbers (ATA has several speed modes, by the
+way) but what the article said was misleading/wrong.
+
+I would recommend people call the NCR board and download the ANSI specs
+if they are really interested in this stuff.
+
+Something is missing there. :) Anyway, I agree. There's a lot of
+opportunity for marketing jingo like ""SCSI-2 compliant"" which tells
+you nothing about the performance, whether it has ""WIDE"" support, etc.
+
+What does it use? Hopefully a good NCR chip (e.g. 53c710)",technical_response_report,AI pre-label; review required; source post 60294
+"misc.entrepreneurs,misc.wanted,pnw.forsale,uw.pc.ibm,seattle.forsale,uw.
+.forsale,misc.forsale,
+misc.forsale.computers.d,misc.forsale.computers.pc-clone,misc.forsale.co
+omputers.other,
+Distribution: world
+Reply-To: [email omitted]
+Keywords:
+
+	I need  100 simms and 100 sipps 1MB, but price should be around $17-20/piece.
+I am waiting for an offer.
+
+	Yuri Yulaev
+	6553, 38th ave NE
+	Seattle WA 98115
+	(206) 524-2806,524-9547 (home)
+	(206) 685-3793 (work)
+	(206) 524-7218 (FAX)
+INTERNET: [email omitted]
+UUCP:	  uw-beaver!atmos.washington.edu!yuri",information_request,AI pre-label; review required; source post 60391
+"I just bought a new IDE hard drive for my system to go with the one
+I already had.  My problem is this.  My system only had a IDE cable
+for one drive, so I had to buy cable with two drive connectors
+on it, and consequently have to switch cables.  The problem is,
+the new hard drive's manual refers to matching pin 1 on the cable
+with both pin 1 on the drive itself and pin 1 on the IDE card.  But
+for the life of me I cannot figure out how to tell which way to plug
+in the cable to align these.
+Secondly, the cable has like a connector at two ends and one between them.
+I figure one end goes in the controler and then the other two go into
+the drives.  Does it matter which I plug into the ""master"" drive
+and which into the ""Slave""?  any help appreciated.  thanks...",information_request,AI pre-label; review required; source post 60820
+"Netters!
+
+I need a cdrom drive as my order was cancelled and thought 'Why not ask
+the net.community'? I was ordering a Nec CDR-74 but saw so much cheaper
+ones that I want to know more.
+The drive will be used to install software and (if available) for listening
+to CD's. Perhaps some day I'll want to use it to read the other CD's, but
+that's not really relevant at the moment.
+
+I've been offered the following CD-ROM players, for the prices stated.
+They all claim to have SCSI-I, and operate under OS/2.
+The drives are not listed in the cdrom-faq and therefor, please give
+your opinions on the drives, i've got the impression that they're not
+all SCSI. Actually the Nec was listed as non-scsi in the cdrom-faq and as
+a compatible SCSI product in the os2faq.
+
+I've calculated the prices as having dutch guilders times 2. It's actually
+about times 1.8.
+
+Mitsumi CRMC     $240
+Philips LMS-I    $300
+Philips 205      $350
+Toshiba ?        $370
+Nec CDR-74       $650
+
+Who bought that Trantor that is in the faq? It's extremely cheap and SCSI,
+so what's the trick or where can I order it (Holland using MasterCard).
+
+Trantor T128     $200
+
+regards, JV
+                                                                /////
+name:    J-V Meuldijk                                          [ o o ]
+address: gildelaar 4                                            \_=_/
+         4847 hw teteringen       fax:     +3176-600220         _| |_
+         holland                  e-mail:  [email omitted]      / \_/ \
+_____________________________________________________________oOOO___OOOo__",information_request,AI pre-label; review required; source post 60239
+"I've been intently following the MAG thread while waiting for
+mine to arrive in the mail. There seems to be a lot of
+complaints about minor alignment problems with the MX15F. One
+article contained a comment that the owner called the factory
+and was told that his screen rotation was within spec (1/4"").
+
+Well, my monitor arrived last night and, sure enough, it has
+a very noticable barrel distortion. It's not dramatic, but it
+is there and it is especially noticable when the image doesn't
+fill the entire screen. The fact that it is worse on the right
+side doesn't help matters.
+
+What I'm trying to find out is if these minor imperfections
+are the norm or are most of their monitors perfect? I don't want
+to send it back and get one with the same or an even worse
+problem. Does the factory consider this kind of thing normal
+and ship their monitors with less than perfect alignment?
+Are other netters just living with these kind of imperfections?",troubleshooting_request,AI pre-label; review required; source post 60240
+"I need to know the Pins to connect to make a loopback connector for a serial
+port so I can build one.  The loopback connector is used to test the
+serial port.
+
+Thanks for any help.
+
+Steve",information_request,AI pre-label; review required; source post 60536
+"National Semiconductor are one that I know of.
+
+Cheers,
+Ben
+Ben Elliston
+Bachelor of Engineering (Computer Engineering)
+University of Canberra
+
+Email:      [email omitted]
+
+Also:       [email omitted]
+UUCP:       ..!uunet!munnari!sserve.adfa.oz.au!compsol!root
+FidoNet:    3:620/262
+If a train station is where the train stops, what's a workstation?!
+
+ * Origin: % Compact Solutions % Canberra ACT Australia % (3:620/262)",technical_response_report,AI pre-label; review required; source post 60489
+"Does anyone have enough experience to report whether disk data
+compression has any effect on the optimal disk sector interleave?
+Offhand, I expect that the time required to decompress disk data
+would increase the optimum disk sector interleave.
+                                              - Alan Hinds",information_request,AI pre-label; review required; source post 60736
+"OK, the small programme that can be used to switch a SunCD drive into
+2048 bytes/block mode for use with MSDOS/Adaptec/APSI it now available
+by 'ftp' from
+
+	ftp.novell.de ([IP omitted]) pub/pc/adaptec/cdblksize.zip",technical_response_report,AI pre-label; review required; source post 60155
+"My fiance has a pc-junior and wants to upgrade to a full 386.  Does anyone
+know if we could use the monitor it came with on a new machine?  I heard
+it's MCGA or EGA, but not sure which.  Also, does it use cards, so we can
+use the drive controller, floppy, etc?
+
+Thanks for the help!
+-Bryan",information_request,AI pre-label; review required; source post 60377
+"Maybe its a monitor problem.  You mentioned that you swapped cards, but not
+monitors.  Perhaps that could be it.
+
+Dan",technical_response_report,AI pre-label; review required; source post 58840
+"yo,yo,yo .
+the western digital hd will hve it marked either s,m,a
+put jumper on the s ""its printed on the circuitry underkneth it.
+
+hope i helped i had the same problem.
+bye..
+later daze.
+[email omitted]",technical_response_report,AI pre-label; review required; source post 60500
+"A weird thing has happened to my computer lately,
+it gets locked (stops doing anything) at any instance
+without any reason whatsover. I might be using
+Edit and gets locked, or i might be at the prompt
+at the same occurs. It happens almost once every 3 times
+i connect the computer, Does Anyone have the slight idea
+what's wrong with it?
+
+(If i try to use CTRL-ALT-DEL after that, no response. I have
+to turn it off and back on again)
+
+Thanks. Any help will be really appreciated.
+
+E-mail if possible as sometimes i can't access this service.
+
+Enrique",troubleshooting_request,AI pre-label; review required; source post 60494
+"[stuff deleted]
+                                       ^^
+
+  Just a note, even though the 805 can address 2 megs of dram, the
+Stealth 24 VLB can only handle 1 meg, unless Diamond has a newer
+design (or some special deal with Zeos).
+
++----------------------------------------------------------------+
+Stephen Lau, Elec. Engineering, Univ. of Hawaii
+*Using a friend's account while waiting for my new grad. account*
++              Death to FM synthesis! Go Gus!                    +",technical_response_report,AI pre-label; review required; source post 58983
+"Can somone explain to me all the stuff about modems...
+like v.32 v.42 HST USRobotics...
+
+why cheap 14.4 can' t cannot connect fast to some modems...
+
+just explain to me everything!!!  thanks..
+
+... We must believe in free will.  We have no choice.
+___ Blue Wave/QWK v2.12",information_request,AI pre-label; review required; source post 60517
+"I have a Conner-disk model CP30061G (200Mb ??) with no info at all. The only thing I know is that
+is normally used with Compaq-machines.
+Please, send me information on switch-settings, geometry and so on.
+It looks like a normal IDE-disk but is it possible to use it with a standard IDE-controller??
+
+-- Michael",information_request,AI pre-label; review required; source post 60362
+"I can't imagine why someone would leave their computer on all of
+the time to start with. Its like leaving your lights tv, radio
+and everything in the house on all of the time to me.....Nuts",technical_response_report,AI pre-label; review required; source post 60478
+"HI,
+    Recently, when I run the Norton Disk surface test, I realize a slow
+down in harddisk accessing.  At begining of the test, the harddisk will
+be checked at the speed that usually is.  As the surface test scaned
+half way through my harddisk, a tremendous slow down occured.  The
+expected time for operation will jump from 3 to 6 minutes.  I try to use
+some of the harddisk tools to check if there is any physical damage to
+my harddisk and report always turn out to be none.  The surface test
+only slow down for a certain section of the disk and turn back to the
+original speed after it gets over the section.  I am wondering whether
+it is a harddisk problem or some other problems. Anyway help or comment
+will be appriciate....
+                                                 Shane Cheney Wang",troubleshooting_request,AI pre-label; review required; source post 60186
+"I own an 80386sx, 16Mhz, 2Mb ram machine and am finding it too slow for
+certain games such as X-wing. I was in a Computer store there the other
+day and saw a series of Gamecards which claim to speed up your machine
+to up to 80Mhz! I was wondering if anyone out there who has a similar
+machine had bought one or seen one of these Gamecards and whether or not
+they do actually work!
+	Any help here would be much appreciated,
+		Thanks in advance,
+			Greg.",information_request,AI pre-label; review required; source post 60669
+"Fellow netters,
+
+I'm in the market for a hand scanner.  However, I don't know anyone who has
+one.  I have my eye on two choices.
+
+Dexxa:  This scanner is available at Wal-Mart for $90.  It includes GrayWorks
+software and provides 400 dpi and 32 grayscales (I think).  The OCR software
+Catchword is available through mail-order for about $90 also.
+
+Mustek:  (Gray Artist for Windows)  This scanner offers 256 grayscales
+(according to Cad & Graphics) and 800 dpi.  It is available for $169
+mail-order and comes with Perceive OCR and Picture Publisher LE.
+
+I am also looking at a Genius hand scanner (B105) from Cad & Graphics.  It
+is basically the same as the Mustek scanner except for the resolution (400
+dpi) and price ($149).
+
+Basically, I would like recommendations on which to buy.  I have heard that
+Logitech makes the best and manufactures Dexxa scanners.  But which one is the
+best buy?  Would 800 dpi really be helpful (output would be no better than HP
+LaserJet III or Canon BJ-200 - 300x300 to 360x360)?  I am leaning toward the
+Mustek because it offers the most features and is in the middle in terms of
+prices.  Which should I buy?
+
+If you have a hand scanner, please let me know whether or not you would
+recommend it.  Also, if you know of another scanner within the price range
+(under $225) that would be a better deal, please E-Mail me.  Any and all help
+would be greatly appreciated.
+
+- Kevin Harter",information_request,AI pre-label; review required; source post 60439
+"Re: Problems with S3-initialization
+
+As described the manual the following steps must be done for th initialization
+of the S3 card.
+
+InitDisplay;
+	(*BIOS-Call
+		with AX-Reg = 4F02H
+		with BX-Reg = 105H for 1024 x 768 x 256 resolution
+		Interrupt 10H *)
+Unlock Register Lock 1 (CR38)
+	(* For access to S3 Register Set *)
+Unlock Register Lock 2 (CR39)
+	(* For access to Syst. Control and Syst. Extension Register *)
+Unlock Graphic Command Group (CR40)
+	(* Set Bit 0 to 1 in Syst. Configuration Register *)
+Unlock Advanced Display Functions
+	(* Set Bit 0 to 1 in Function Control Register *)
+
+After these operations the FIFO-stack of the S3 should be empty.
+When we watch the status (Graph. Proc. Status), we always get
+the value 0FH instead of 0H.
+Full would mean 0FFH (8 places occupied), empty would mean 0H
+(0 places occupied).
+
+It is possible to read this register in two different ways.
+Both times we get different results.
+
+Our machine is a 486 DX/2 with EISA bus and a S3 86C805 local bus.
+
+--> any ideas?
+
+Andreas Disteli
+Institut fuer Computersysteme, ETH Zuerich
+email: [email omitted]",technical_response_report,AI pre-label; review required; source post 60219
+"I am selling a USR HST 14.4k baud modem with v42bis compression upgrades.
+THere is no manual, as it was lost going from one side of the U.S. to the other at some point.  THe modem is setup for max throughput, and it has built in help, but a quick reference guide on the bottom of it, so its use it not difficult by any means.
+Any offers?",technical_response_report,AI pre-label; review required; source post 58980
+"[deleted]
+
+I'm sorry if I'm misunderstanding your post, but DRAM *does not* have to
+be refreshed on *each access cycle*.  So cycle time does *not* have to be
+twice the access time *because of refresh phase*.
+
+The access time usually means the delay time from falling edge of raw
+address strobe (RAS) to data bus driven.
+
+DRAM access cycle timing chart can be roughly shown as following (some
+signals are intentionally omitted);
+
+ADDR --<RA><CA>-------<RA><CA>--------- RA=Raw Address, CA=Column Address
+RAS  ~~~~\________/~~~~~\________/~~~~~		~=High, _=Low, -=Floating
+CAS  ~~~~~~~\_______/~~~~~~\_______/~~~		<..>=driven either H or L
+DATA ---------<VALID>--------<VALID>---
+           +---- access time (or RAS access time)
+
+Yes, the cycle time is more than twice as the access time but *not*
+because of the refresh phase.  The refresh can be done either as a
+trailing phase of normal access cycle or as an individual cycle.
+
+[other stuff deleted]
+
+Ken Nakata",technical_response_report,AI pre-label; review required; source post 60193
+"Still no good.  WatchIT TV will not work on a with local bus video.
+It will not work in any high reolution modes either.  The people who
+make the card assure me that they will have a card available in June
+that supports both local-bus and hi-res.  BTW does anyone know the
+name of the company who makes watchit tv?  Phone #?  BBS? Internet?
+
+Thanks
+
+Michael Grant
+([email omitted]) or
+([email omitted])",troubleshooting_request,AI pre-label; review required; source post 60281
+"[]
+
+	""These LPT1, COM1, disk controller are call devices.  There are
+	devices that requires exclusive interrupt ownership, eg. disk
+	controller (I6) and keyboard (I1).  There are also devices that
+	does not require exclusive ownership, ie. it will share an
+	interrupt with another device, eg. LPT1""
+
+No.  In a standard ISA bus, the one that almost all non-laptop PCs use,
+two separate interface cards cannot share an interrupt.  This is due to
+a screwup in the bus design.  For example, if your Soundblaster wants
+to drive interrupt number 7, then it must hold a certain bus wire to 0
+or 1 at all times, depending on whether or not it wants an interrupt.
+This precludes letting another card assert interrupt number 7.
+
+When two or more devices in an ISA bus PC share an interrupt, it's
+because they're implemented by a single card.
+
+  -=- Andrew Klossner  ([email omitted])",technical_response_report,AI pre-label; review required; source post 60697
+"I just purchased a Viewsonic 17 and and Orchid P9000.  In short, I am happy
+with the monitor and unhappy with the card.  I have spent a lot more time
+futzing with the card, so that is what I am going to write about.  The monitor
+is pretty.  The moires I had under Simcity on my 17"" Magnavox went away.  It
+isn't as heavy as I thought it would be (45 lbs, I think).  So much for the
+monitor.  On to the bitch session and test results.
+
+In going with the modern trend, the Orchid P9000 card only supports 16 colors
+in 640x480 mode without a driver.  Of course, this breaks any DOS program
+which uses SVGA modes (like most of my CD-ROMs).  The Compudyne Whiplash VGA,
+Orchid Fahrenheit 1280, and Orchid F. VLB all share this limitation.  Those
+are all S3 cards, which means it is an S3 problem for them (the P9000 uses
+a Weitek VGA chip which also doesn't support them).  The Hercules Graphite
+card does seem to have these modes, but I didn't run the same test cases as
+I did on the other boards during the brief time I had it.  It was able to
+print the splash screen for the Grolier's Encyclopedia, though, which the S3
+cards just printed as hash, which is why I suspect the SVGA modes are supported.
+
+The supported resolutions really annoy me.  You can do 1280x1024 at 75Hz if
+you tell the driver you have an NEC 5FG (they only have about six monitors
+listed plus 'Generic', and if you choose Generic you can't get any high
+refreshes at ALL).  But at 1024x768 you are limited to 70Hz.  Seems to me
+that the hardware should be able to support the bandwidth (if it can do 75Hz
+at 1280 it sure should be able to do it at 1024!).  Higher vertical resolution
+was the main reason I bought the card over the Orchid F. VLB I currently have,
+and it will do 1024x768x70 Hz as well.
+
+The higher graphics modes all crash HP Dashboard.  I just got off the phone
+with Orchid, and with the 1.1 drivers (I don't know what I have) he was unable
+to recreate the problem.  On the plus side, their tech rep was as helpful as
+he could be and booted up the program on his computer to verify he didn't have
+the problem.  He didn't know why they limited the refresh to 70 Hz either.
+
+The board is faster that the OFVLB for most things according to the Hercules
+Speedy program. This program tests various operations and reports the results
+in pixels/second.  I don't have the numbers for the Graphite card, but they
+were close to half of the OFVLB (ie, slower) but that was running in a 20MHz
+386, ISA, so the numbers aren't really comparable.  The following numbers
+were all obtained using a 486, 33 MHz, AIR motherboard (UMC chipset), with
+8 MB memory.  I give ranges because the program reports the numbers as it
+computes them, and these tend to jump around a bit.
+
+K means thousand (not 1024), M means million, pixels per second
+
+             Orchid Fahrenheit VLB                  Orchid P9000
+Chip                 S3 805                          Weitek 9000
+DIB to Screen        182K - 190K                     228K - 240K
+Memory to Screen     5.9M - 6.2M                     8.4M - 8.9M
+Screen to Screen     14M - 14.8M                     29M - 30.8M
+Vector, solid        2.4M                            2.8M - 2.9M
+Vector, styled       55K - 58K                       449K - 473K
+Polygon, shaded      1.8M - 2.1M                     1.6M - 1.9M
+Polygon, hatched     6.9M - 7.9M                     1.3M - 1.7M
+Ternary Rops         1.9M - 2.4M                     477K - 520K
+Font                 130K - 160K                     46K - 55K / 1.2M
+
+The DIB to Screen test takes a device independent bitmap of a face and transfers
+it to the screen.  I have no idea what is being done internally as far as
+conversions go.  The memory to screen takes the same face and copies it to
+the screen, my guess is after it has been rasterized into a bitmap that can
+just be copied to the video display.  The screen to screen test copies that
+face from place to place on the screen.  Awesome!  Interestingly, the solid
+vectors and shaded polygons show no improvement, and hatched polygons (ie,
+filled with cross-hatching) and Ternary Rops (whatever they are.  Graphics
+operations like XORs maybe????) are a dead loss on the 9000.  I give two
+numbers for the 9000 fonts, because I think they are caching.
+When the fonts are first drawn on the screen they are done fairly slowly --
+1/3 the speed of the OFVLB.  Then the speed increases dramatically.  Sounds
+like programming to a benchmark to me....
+
+I make no claims that these numbers mean anything at all.  Its just what
+I saw when I ran them on my computer.  I normally don't write disclaimers,
+but this time maybe I'd better.  My testing is totally unconnected with my
+work (I program under UNIX on Decstations) is done completely without the
+knowledge, blessing, or equipment of my company.
+
+geoff sherwood",technical_response_report,AI pre-label; review required; source post 60275
+"This may be the dumbest question of the year, but is there a
+way to 'piggyback' or expand a 6-slot motherboard (all 16-bit)
+to get the usual 8?  My case has slots for 8, and I'd like to
+get a scanner, but with all my other cards I'm already max'd out!
+I'm hoping that a simple solution exists, e.g. an adapter that turns
+one slot into three.  I don't mind if it turns it into 8-bit slots,
+as I can put my I/O card, MIDI card, and Soundblaster card there.
+My other cards are 16 bit (IDE/Floppy, SVGA, modem).
+
+If there is such an expander, does that screw up performance of
+everything else?  I'd hate to buy a new motherboard! :-(",information_request,AI pre-label; review required; source post 58927
+"You might try asking on one of the comp.sys.ibm.* echos (the best one
+may be comp.sys.ibm.pc.hardware).  I say this because the conversion
+seems more geared toward a PC user wanting to use that monitor, than
+an Atari user who already can use the monitor (unless maybe they
+want to really go wild - converting the monitor to VGA, then
+using it as a VGA monitor with a Falcon :-)
+
+   As for graphics cards, assuming that the Atari monitor can be
+modified/adapted to handle VGA signals, you should probably be able
+to use any VGA card (at least with a res around 640x400).  I haven't
+tried this, but that would be my guess...
+
+				Robert Anisko
+				[email omitted]
+
+...you might want to price mono VGA monitors anyways - it may be cheaper
+to go that route than to do the conversion; besides, with the Falcon and
+beyond, VGA/SVGA/multisync monitors will probably be the way to go...",technical_response_report,AI pre-label; review required; source post 60745
+"What 4 or more com port boards are available for PCs?
+We want standard com ports, so no need to mention the expensive
+coprocessed ones.
+
+They should either be able to share IRQs or be able to use IRQs 8-15.
+
+Thanks for any info...",information_request,AI pre-label; review required; source post 60482
+"I have a 386/40 motherboard with AMI BIOS.
+I haven't located the little motherboard manual yet,
+and suddenly it's giving me 10 beeps when I turn the power on.
+It was working fine this morning,
+then gave all kinds of problems, in Windows and outside it.
+After multiple reboots, now it only gives 10 beeps and sits there?
+
+Anybody know what 10 beeps means?
+Thanks.",troubleshooting_request,AI pre-label; review required; source post 60557
+"I think the original respondent (Guy Dawson?) was refering to something
+much more elementary.
+
+Every partition (whether it is the entire disk or not) has two FATs and
+an initial directory.
+
+If you have a small disk (50 meg or less), I would recommend that it remain
+a single partition. Unless you have some other consideration.
+
+If you have a large disk (greater than 200 meg), multiple partitions can
+make sense.",technical_response_report,AI pre-label; review required; source post 60305
+"Computers are a special case.. and it's a pretty good idea to
+ leave them on.. cuz everytime you turn on a computer, you're
+ putting a surge of electricity through its delicate components.
+  Imagine you're turning on your computer 5 or more times a day.
+ You're increasing the chances of damaging the chips, memory,
+ etc on all the components of your computer. So you may save
+ a few cents here and there in electricity bills, but it won't
+ look like much when it come time to fix your computer.
+
+					My $.02 worth..
+					  N. Ngo",technical_response_report,AI pre-label; review required; source post 60492
+"While rummaging through a box of old PC (5150) parts, I found a half-size
+board that looks like a comm port board.  It was made by Forte Data Systems and
+has a copyright date of 1986 on it.  The board provides a male 24-pin connector
+and has 3 jumpers of 3 pins each, two labelled A B C.  I plugged it into my PC
+and ran Advanced diagnostics several times, changing the jumper positions each
+time, but the system did not recognise a comm port.
+
+Does anyone have a clue as to what this board might be or how to configure it?
+I could use another comm port if it's free.
+
+Bryan",information_request,AI pre-label; review required; source post 60175
+"Who said ISA was necessary?  EISA or VLB are the only interfaces worth
+investing thousands of dollars (e.g. a new pc's worth of money ) in .
+
+You didn't read to carefully.  VLB-IDE uses the same connection mechanism
+as standard IDE.  If transfer rate is limited by IDE, whether it's
+interfaced to ISA, EISA or VLB matters not.
+
+On mine, for one thing.  SCSI blows IDE out of the water, hands down.  If
+IDE has better throughput, why isn't it used on workstations and file
+servers?
+
+No, that's the nice thing -- on a multitasking OS, SCSI can use both drives
+at once.  I've got unix loaded on one of my pcs (along with windogs) and the OS can only use one of the two IDE drives at one time.  It's pretty ugly.
+
+I just bought at Quantum 240 for my mac at home.  I paid $369 for it.  I
+haven't seen IDE drives cheaper.
+
+No, actually, we're talking about SCSI being expensive simply because
+nobody did a common interface for the PC.  If they had a common (read:
+easily implemented) method of adding scsi to a PC (like as in a Sun or
+Mac), then you'd find SCSI the connection medium of choice.
+
+On a single drive, SCSI is more expensive.  But, you bought your PC for
+expandibility, so, you'd want to add more drives or whatever.  The
+following are why I find SCSI intrinsically better than IDE:
+
+A (partial?) list:
+	1.  You can add many different types of devices and access them
+	concurrently.
+	2.  A SCSI device works on many different machines (I have a mac
+	and a PC at home and moving hard drives between them is VERY nice
+	with SCSI -- hook them up and away they go)
+	3.  SCSI devices work together better than IDE devices.  For
+	instance, recently, I added an older connor 100 meg IDE to a maxtor
+	212 meg IDE.  The connor *MUST* be setup as the slave.  It will
+	work no other way.  On SCSI, you set the address, check the
+	termination, plug it in, and away it goes.
+	4.  I have a problem with IDE's mutual exclusion - I notice that
+	the time it takes to switch from accessing drive c: to drive d: is
+	quite long as compared to the time it takes to switch from drive c:
+	to d: on a SCSI system.  Under a multitasking OS, this is very
+	noticable, as many things can be going on at once.
+
+One neat thing that I've noticed lately (a fringe benefit) has been the
+ability to add older (almost dead) drives as storage on a SCSI system with
+little problem -- we've got a bunch of almost dead 20 meg drives that I've
+added to my PC.  I've now got the interface full, but, it does allow me to
+have 4 20 meg drives, 1 240 meg drive, 1 tape drive, and 1 105 meg drive
+all on the same card.
+
+Simply put, SCSI is handier than IDE.  No mysterious jumpers to figure out.
+
+Greg.",technical_response_report,AI pre-label; review required; source post 60357
+"1. Dont rely on benchmarks. They often show incorrect due to different
+   TSR programs.
+
+2. SCSI often needs a driver to get the speed from the card.
+
+3. Make sure the card is operating in synchronus mode which is 2x faster.
+
+4. You can disable disconnect and get some kB/s but just to loose the mouse
+   or other int`s when diskaccesing.
+
+(I get 2.3MB/s with DX50 LB and SCSI LB and Maxtor LXT340SY - Coretest)
+(I get 1.3MB/s                                              - Sysinfo)
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Jens Ejvinson			------------------------------
+Nackstavagen 32C VII		Internet: [email omitted]
+S-853 52  Sundsvall		------------------------------
+SWEDEN
+Tel: +46-(0)60-117775			- ACT Sweden -
+Fax: Nope!			 Advanced Computer Technology
+BBS: Not yet...
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-",technical_response_report,AI pre-label; review required; source post 58968
+"With a sound card on interrupt 5, two serial ports (one for modem on i4,
+one for Miracle Piano on i3) and a printer port on i7, I have run out of
+low interrupts.  What I would like is a mouse port with an interrupt of
+10, 11, or 12 (which ever interrupt the PS/2 mouse port uses) in in ISA
+i486 computer.  I called technical support of Microsoft, Logitech, & ATI
+(checked what interrupts the mouse port on the ATI video cards can use)
+and they all said the only interrupts possible on these cards was ones
+lower than 7.  Does anyone know of any board for an ISA bus which will
+allow a mouse port (or even a serial port) with high interrupts?
+
+Loran Yourk             (708)979-9378
+AT&T                    [email omitted]",information_request,AI pre-label; review required; source post 60414
+"I have a similar configuration: Colorado 250mb on 66 DX/2 tower.
+
+	You got suckered in the same way I did.  Silly me, believing
+	that the ""250"" logo on the front meant actual carrying capacity.
+	The people who do this sort of thing for a living call it
+	""marketing.""  Lawyers who prosecute it call it ""fraud.""
+	Perhaps we can have a bunch of other duped buyers march on
+	their corporate headquarters.
+
+	This is a bit long.  My system takes about 45 minutes to do
+	the same thing.  Usually 4.5 hours, particularly if the tape
+	is grinding away the whole time means that your block size for
+	the write is too small.  Is there any way to change the block
+	size or write buffer size so it's bigger?
+
+	This is because the files are opened by DOS.  The files in the
+	TAPE directory are likely the executable file or the configuration
+	file for the tape system.  I would recommend running the backup
+
+	The 250mb cartridges won't do you any good since the drive
+	won't write 250mb of physical data on the tape.",technical_response_report,AI pre-label; review required; source post 60191
+"In addition to startup time, I leave things running because my PC doubles as
+a fax machine.
+
+However, this is off the original subject. I didn't get the replies on BIOS,
+CMOS, and DOS clock/date logic. All I know is that I've been running this way
+for many months and it is only recently, the last month, that I have noticed
+the intermittent clock problem. As I stated, it is not always the date that
+doesn't roll forward, sometimes I notice that the clock is several minutes
+behind where it ought to be.
+
+When unattended, the following are generally running minimized in Win 3.1:
+
+Clock, WinFax Pro 3.0, Print Manager, MS-Word 1.1, File Manager, Program
+Manager
+
+A random screen saver is generally running too.",troubleshooting_request,AI pre-label; review required; source post 60652
+"And again......
+               title says it all. WHY?
+
+                      Lee ([email omitted])",information_request,AI pre-label; review required; source post 60527
+"Just to let all you faithful Mitsumi CD Rom owners....
+
+Ever notice QEMM can't load you CD Rom driver high?  Ain't it a bitch?
+
+Well, you can call up Quarterdeck's BBS and get a hold of the new drivers
+that CAN be loaded high.  Sorry , I don't have their # on me. :-(
+
+I tested them out and the seem to work great!",technical_response_report,AI pre-label; review required; source post 60399
+"I recently bought a monichrome VGA monitor for $99 that will do
+1024x768 non-interlaced, which seems like a good deal. However, it is
+a fixed-scan rate monitor, and only handles 52 kHz horizontal, I
+think. With my Trident card it works only in graphics modes 5e and 62
+- not much use, since just about any application will set the mode to
+something else, especially if it wants to do text, I suppose. Anyway:
+
+ - is there any way that I can use this as a general-purpose VGA
+   display with a 1-meg trident 8900C card?
+
+ - if not, can I do so with some sort of different VGA card?
+
+				Peter Desnoyers",information_request,AI pre-label; review required; source post 60174
+"Being a big fan of the official IBM keyboards, I have a PS/2 keyboard attached
+to my clone computer.  I want to know if there is a software utility
+out there that can be used to switch the locations of the ctrl and
+cap locks keys.  Even better, does IBM or any third party make ctrl
+and cap lock key replacements that can be used to visually switch
+the keys as well?",information_request,AI pre-label; review required; source post 60578
+I have the PAS16 / Toshiba 3401 combo and have no problems with it.,technical_response_report,AI pre-label; review required; source post 60288
+"The only difference is the time the driver gets loaded. mouse.sys will be
+loaded during the config.sys and therefor before the command.com. mouse.com
+will be loaded during autoexec.bat and so after the command.com.
+
+mouse.com could be started from the commandline after the booting and it
+could - perhaps - be unloaded, if no other driver is loaded after it.
+The working of both drivers is totally the same.
+
+When I ran dos, I preferred loading most of the drivers in autoexec.bat,
+because some programs won't run with some drivers and I could choose the
+ones I needed during startup. But with DRDOS6, this advantage is gone,
+because DRDOS lets you choose in config.sys which drivers should be loaded.
+
+Michael",technical_response_report,AI pre-label; review required; source post 60657
+"Do all SCSI cards for DOS systems require a separate device driver to be loaded
+into memory for each SCSI device hooked up?  Will this also be true of the 32-bit
+OS's?
+
+Thanks.
+
+Randy",information_request,AI pre-label; review required; source post 60974
+"For what it's worth (I haven't confirmed it), a Diamond tech-rep told
+me that ALL S3-based video cards use port addresses 0x2E0 and 0x2E8.
+If this is true, it appears that you canNOT use more than one S3 card
+in your system.
+
+Lance Hartmann ([email omitted])
+               Yes, that IS a '%' (percent sign) in my network address.
+All statements, comments, opinions, etc. herein reflect those of the author
+and shall NOT be misconstrued as those of IBM or anyone else for that matter.",technical_response_report,AI pre-label; review required; source post 60364
+"In article <[email omitted]>, [email omitted] (R.
+ites:
+a
+The newer the drive, the less problem you will have. The old ten and fifteen
+meg full heights were power hogs, but I have over twenty units that I set up
+running flawlessly with half height drives and/or hard cards.",technical_response_report,AI pre-label; review required; source post 60355
+"I've acquired an old Logitech Series 7 (3-button) mouse, and I'm told
+that this is a bus mouse.  Does anyone want to unload an old
+(pc-clone) bus-card for this mouse?
+
+email replies to:  [email omitted]
+
+thanks.",information_request,AI pre-label; review required; source post 58343
+"Today I recieved a in-warranty replacement for my
+Diamond Speedstar 24X.  On the card I've noticed a few
+changes; mostly there is a new jumper labeled JP5.
+(The card is revision 5A)
+
+My detective work has shown that this jumper simply
+connects/disconnects the BALE line on the 64-pin part
+of the ISA bus.
+
+The question I have is simple:
+To those people who own this revision of the Speedstar 24X,
+what does the manual claim that this jumper does?
+
+To anyone with an ISA-reference, what is the function of the
+BALE line?
+
+On a related note:
+Are there any FTP sites which contain a descriptive reference to
+the ISA bus?  My motherboard manual has a simple pin-to-signal-name
+chart, but that is it.
+
+-Douglas
+
+_________________________________________________________
+ ________   ___    ___
+ _| |__|  | |  \__/  |
+  Bradley   University     armpit of Illinois... Peoria""",information_request,AI pre-label; review required; source post 60396
+"G'day All,
+
+I was looking to build a Parallel Port Digital to Analogue Converter the other
+day and came across this schematic which I promptly threw together on a piece
+of VeroBoard:
+
+     P2----22k----+
+     P3----48k----|
+     P4----100k---|
+     P5----200k---|
+     P6----400k---|
+     P7----800k---|    10uf electrolytic
+     P8----1M6----|  +
+     P9----3M2----+---||--+----------
+            47nF ceramic  -
+                          -
+     P25------------------+----------
+
+(Please excuse the obvious limits of the Lower ASCII char set :=)
+
+I have it all constructed here and sitting inside a nice little grey ABS box.
+
+Unfortunately I can't get it to work... I have a little demo here by the name
+of Cronologia (Which the schematic came from) and all I can get it to pump
+out of the box is data type hash/static with a small amount of music signal
+behind it - it's even worse than the speaker inside the machine.
+
+Does anybody out in net.colourful.computer.world have any ideas/suggestions/
+better designs/improvements/wastepaper bin... etc?
+
+Many thanks for a reply via this conference or email.
+
+  //
+\X/  Regards, Jason.
+---
+
++-------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
++-------------------------------------------------------------------------+",troubleshooting_request,AI pre-label; review required; source post 60213
+"I have a question regarding sending a NULL character across ethernet
+connection. The actual problem is that emacs (Unix editior) needs
+the NULL character for setting a mark and unfortunately we don't know
+how to sent that from IBM PCs across ethernet. I am wondering if anyboy
+knows the keyboard combination for sending the NULL character.
+BTW control,shift 2 which Ctrl @ does not work.
+
+Thanks
+
+Saeid",information_request,AI pre-label; review required; source post 60662
+"Well, my 14inch VGA 1024x758-interlacing 2.5 year old no brand monitor just
+bit the bullet. I pressed the power switch and a few seconds later, the power
+light went out with a POP. Gawd, it's only been two and half years.
+
+How long would normal monitors last? I think the problem with my monitor is
+the power switch... but the image was getting pretty dim anyway (I needed to
+have my contrast all the way to the max...). And the screen did flicker from
+time to time. Is this normal (hehehe) or do I just have the worst of luck???
+
+Question: What do I do now???? Buy a new one? Get it fixed? Save up for a
+*really* good one and get by with a cheap EGA monitor for now? I rather save
+my money to upgrade my 386SX to 486-66 though...
+
+Thanks!",troubleshooting_request,AI pre-label; review required; source post 58830
+"Someone Else, could you please comment on that. I have just bought
+a Twincom 14.4DFi, which has a Rockwell chipset. It wasn't cheap
+so I would like to hear of problems I'm likely to run into.
+
+Phew, I was lucky! The Twincom internal version has a 550A and one
+of the Rockwell chips is marked RC144DP.
+
+But still I would like to hear more of the above mentioned firmware
+problems.
+
+Niels",information_request,AI pre-label; review required; source post 60516
+"Hi there,
+
+I think it is time to create a MS DOS 6.0  FAQ since lots of questions
+about it are actually flooding the net.  I won't be able to write it
+my self because of the lack of time/knowledge/experience.
+
+Perry Egelmeers",technical_response_report,AI pre-label; review required; source post 60565
+"I have the same question as Guido. It is possible to use the ESDI drive as a master and the IDE drive as the slave ?
+At the moment , I have been using the ESDI drive and recently I bought a IDE drive to use as the 2nd drive .
+The person in the computer shop told me that it is not possible to run 2 disk controller cards together on the same motherboard ( ESDI AND IDE ) but I think there might be some way of making them work. Can anybody enlighten me on this?
+And it is possible to  run a ESDI HDD using a IDE controller? or vice versa?
+Can anybody please help me out on this?
+Your help will be very much appreciated.
+
+G.Chow
+
+[email omitted]
+[email omitted]
+[email omitted]",information_request,AI pre-label; review required; source post 60198
+"I also use IRQ 5.  But there is one disadvantage.  Some games assume that
+the board is using IRQ 7 and have no way to adjust this setting.  I had
+trouble with some of the Lucas Films games.",technical_response_report,AI pre-label; review required; source post 60164
+"Just a quick THANKS to the many who explained the backing up of my
+masters.  Apparently they are NOT copy-protected; I just used a program that
+is unable to handle high-density (old shit).  I was surprised to hear that
+""NO programs on high-density disks have copy protection,"" which someone
+back there said.  Huh!  Learn something new every day!
+
+						- Mitch",technical_response_report,AI pre-label; review required; source post 58911
+"Hi,
+
+I'm looking to buy a 17"" monitor soon, and it seems that I can't decide what
+monitor I should buy. I have a MAG 17S (this is a .25 dpi version and it using
+a TRINITON tube) and a NANAO 560i in mind.
+
+Does anyone know of any specification or problems these monitor have?
+
+Actually, any related opinions at buying a 17"" monitor will be welcomed.
+
+ Thanks in advance,
+
+ [email omitted]",information_request,AI pre-label; review required; source post 60169
+"Hi,
+	would someone please email (and post)
+the AVI (Microsoft) file format.  I wish to
+do some research using this format, as there
+are disks available with video clips.  It is
+interesting because it interleaves sound and
+video.
+
+Thank you
+
+Mark Gregory Lecturer [email omitted] PH(03)6603243 FAX(03)6621060
+Royal Melbourne Institute of Technology,
+Department of Communication and Electronic Engineering,
+P.O. Box 2476V, Melbourne, Victoria, 3001. AUSTRALIA.",information_request,AI pre-label; review required; source post 60577
+"Is it possible to connect a atari monochrome monitor to some kind of VGA card?
+
+If someone have done this please let me know how.
+
+	Thanx
+
+      __   __         _  _
+     l  \ /  l  ___  ( \/ )          Max Brante   [email omitted]
+     l l l l l / _ \  \  /
+     l l\_/l l( (_) l /  \	Institutionen f|r teknisk databehandling
+     l_l   l_l \__l_l(_/\_)               Uppsala Universitet",information_request,AI pre-label; review required; source post 58923
+"After a rough start purchasing a 486 system (see earlier post), I'm trying
+again.  I'm looking at the following system offered by EPS Technologies:
+
+- 486dx 33mhz w/ 256K static RAM cache,AMI Bios
+- 3 32-bit VESA local bus slots, 3 16-bit slots, 1 8-bit slot
+- Teac 1.2 & 1.44 mb floppy drives
+- Maxtor 170 MB hard drive (15 ms) IDE w/64K cache buffer
+- 32-bit vesa local bus video card w/ 1mb RAM 1024 X 768 NI (I *think* it's an
+   Orchid Fahrenheit 1280 card)
+- 14"" NI Multisync monitor 1024 X 768
+- 101 Keyboard
+- 200 Watt power supply
+- Windows 3.1, Mouse, DOS 6.0
+- *3* years limited warranty
+- 1 year on-site service
+
+I'm probably going to add the $125 for a 15"" flat-screen digital monitor, and
+will also want to go for at least 8 mb RAM ($159 extra).
+
+Has anyone bought from EPS Technologies, particularly a system like the one
+I'm considering.  I'm especially interested in their warrantee and service.
+Can anyone recommend other companies who offer similar packages, with support,
+and comparable prices (I see FastMicro just bit it...).
+Thanks in advance,
+
+-Toby Loftus
+TAL@BROWNVM
+[email omitted]
+Brown University",information_request,AI pre-label; review required; source post 58973
+"^^^^^^^^^^^^
+How do you do bus-mastering on the ISA bus?
+
+If we're talking ISA (AT) bus here, then you can only have 1 DMA channel
+active at any one time, presumably transferring data from a single device.
+So even though you can have at least 7 devices on a SCSI bus, explain how
+all 7 of those devices can to DMA transfers through a single SCSI card
+to the ISA-AT bus at the same time.
+
+Also, I'm still trying to track down a copy of IBM's AT reference book,
+but from their PC technical manual (page 2-93):
+
+""The (FDD) adapter is buffered on the I.O bus and uses the System Board
+direct memory access (DMA) for record data transfers.""
+I expect to see something similar for the PC-AT HDD adapter.
+So the lowly low-density original PC FDD card used DMA and the PC-AT
+HDD controller doesn't!?!?  That makes real sense.",technical_response_report,AI pre-label; review required; source post 60466
+"Hi.  Recently my svga monitor has been acting up by taking about
+3 minutes to warm up.
+
+Previously, when I first start up my PC I can see all the
+CMOS messages (RAM test ...etc) but now I've got to wait
+for about 3min before the display shows anything and
+it starts up with a bright white flash.  This only happens
+when the system has been off for a long time (eg overnight).
+If it was only off for a couple of hours and then turned on
+again, the display works as normal like before.
+
+Does anyone know what is causing this?  Is it a warning that
+it will give up soon or just signs of aging (the system is a
+386sx and its about 3 yrs old).  I've used systems at work for
+years and never seen this happen to a monitor yet.
+
+I'd really appreciated any help that you fellow netters can offer.
+Thanks a lot.
+
+Edwin",troubleshooting_request,AI pre-label; review required; source post 60296
+"Please help if you can with the following strange problem:
+
+  The Maxtor 340 drive in my 386 clone would from time to
+  time, for no obvious reason spin down completely (one can
+  tell by the sound) and simply refuse to be accessed. DOS
+  reacts with an error (Drive D: cannot be accessed or
+  something the like). Unfortunately, I cannot just reproduce
+  the error. Sometimes it occurs more often, sometimes
+  less. The last time it happened was when I wanted to
+  demonstrate some software to a colleague.
+    I would like to know if anybody has experienced similar
+  problems. I don't like to take the thing to the dealer
+  only to be told that there's nothing wrong with it. I
+  checked the other post in this group about Maxtor, and
+  I don't seem to be the only one who has problems. However,
+  no one describes the same problem, and I also have a
+  different configuration.
+
+  Thanx in advance for any e-mailed help.
+
+  Peter
+
+LIST OF EQUIPMENT
+  Computer ""Mandax"" Mainboard 386-33, 2MB
+  Adaptec 1542 SCSI Master
+  Maxtor LXT340S SCSI-II Hard Drive
+  NEC CDR-83 CD-ROM Reader (problem remains with CD-ROM removed)
+  ET4000 VGA Card
+
+CONFIG.SYS
+  files=30
+  device=C:\dos\setver.exe
+  device=C:\windows\himem.sys
+  device=C:\system\aspi4dos.sys
+  device=C:\system\aswcdnec.sys /d:neccd
+  DOS=HIGH
+  COUNTRY=041,,C:\dos\country.sys
+  device=C:\dos\display.sys CON=(EGA,,1)
+
+AUTOEXE.BAT
+  C:\windows\smartdrive.sys
+  PATH=C:\windows;c:\dos
+  SET TEMP=C:\dos
+  MODE CON CODEPAGE PREPARE=((437) C:\DOS\EGA.CPI)
+  MODE CON CODEPAGE SELECT=437
+  KEYB SG,,C:\DOS\KEYBOARD.SYS
+  C:\SYSTEM\MSCDEX /D:NECCD /L:d /v",troubleshooting_request,AI pre-label; review required; source post 58909
+"Hi world,
+
+        I want to buy a Spirit II 14400 Data/Fax modem (made in U.S.A.).
+Have anyone heard about it or using it? What is it's performance? Is it
+stable or not? Please give me some advice.
+
+        In addition, I heard a news from local distributor that a new
+28800baud CCITT ROM (the distributor said it will be the new CCITT
+standard.) for this modem will be produced at the end of this
+year. After replaced the old ROM by this 28800 ROM, this Spirit II can
+transfer data at 28800baud without any hardware alternation. Is this
+new true and possible? Would the telephone line really able to transfer
+at such high speed? Please give me some advice.
+
+        At last, can anyone tell me how to contact with the central
+dealer QuickComm. Inc.? (I am not sure whether it in U.S.A. or not.)
+Please leave me a e-mail.
+
+Thank you very much.
+
+Leung (from Hong Kong University)",information_request,AI pre-label; review required; source post 60378
+"Howdy,
+
+Sorry if this has been covered before:
+
+One of my PC illiterate friends asked me to help him install DRDOS 6.0 on his
+NEC Powermate SX (386SX 16).  Of course, I said ""No problem"" and went to work.
+Unfortunately, the DRDOS refuses to recognize the hard drive during
+installation, even though I am still able to boot off of the hard drive using
+the old DOS.  After openning it up I discovered it was using an 8-bit
+Seagate SCSI controller on a ST-157N SCSI 40Mbtye drive.  I then booted
+with DRDOS 6.0 off of the floppy a second time and ran fdisk to see if
+I could access the drive.  Lo and behold the primary 46.5 Mbyte partition
+was intact (created by DOS 3.1 no less, I didn't think you could go over a
+32Mbyte partition in the older DOSes. I could be wrong...).  I then tried
+to remove the primary partition, which it wouldn't allow me to do.  I am
+unaware of anything special that has to be done with a SCSI drive (I
+kinda expected it to work just like an IDE/MFM/RLL drive for DOS
+installations).  Any suggestions would be greatly appreciated (except for
+""Throw it in the garbage and buy a new PC"")...
+
+Thanks in advance,
+
+Paul ""Mr. SCSI... NOT!"" Fincke",troubleshooting_request,AI pre-label; review required; source post 58986
+"Please reply via e-mail since this is job related:
+
+I have a Colorado Jumbo back-up system at one of my places of
+employment and it has eaten two tapes by winding the tape off the spool.
+
+Is there an easy fix or is the tape drive fried? Does it simply need
+cleaning?
+
+Any and all comments will be appreciated!
+
+Stephen Husak",troubleshooting_request,AI pre-label; review required; source post 58966

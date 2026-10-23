@@ -1,0 +1,286 @@
+text,label,note
+"You are making the same mistake I did: you are confusing the DRIVE
+interface to the DATA THROUGHPUT interface.  Again from my Mac & IBM info
+sheet {available by FTP on sumex-aim.stanford.edu ([IP omitted]) in the
+info-mac/report as mac-ibm-compare173.txt}:
+Expansion
+Both Mac & IBM
+SCSI: only external device expansion interface common to both Mac and IBM.
+ Allows the use of any device: hard drive, printer, scanner, Nubus card
+ expansion {Mac Plus only}, some monitors, and CD-ROM.  Apple developed some
+ specifications for SCSI controlers while IBM has no exact controller
+ specifications {which results in added incompatibilities on IBM machines}.
+ Main problem:  there are a lot of external devices which are internal
+ terminated which causes problems for more then two devises off the SCSI port
+ {A SCSI chain is supposed to be terminated ONLY at the begining and at the
+ end.  Any other set up causes problems for either Mac or IBM}.
+SCSI-1:  7 devices per SCSI controller.  8-bit asynchronous {~1.5MB/s ave}
+ and synchronous {5MB/s max} transfer base.  16-bit SCSI-1 requires a
+ SCSI-2 controler chip and can provide only fast SCSI-2 not wide SCSI-2
+ which are both 16-bit interfaces {see SCSI-2}.
+SCSI-2: 10 devices per SCSI controller in SCSI-2 mode.  SCSI-2 is fully
+ SCSI-1 complient and tends to be implimented as a very fast SCSI-1 since it
+ needs a different controller interface in both hardware {which tends to be
+ very expendsive} and software.  Transfer speeds are 4-6MB/s with 10MB/s burst
+ {8-bit}, 8-12MB/s with 20MB/s burst {16-bit}, and 15-20MB/s with 40MB/s burst
+ {32-bit/wide and fast}.  SCSI-2 in SCSI-1 mode is limited to 7 devices and
+ reduced 8-bit or 16-bit {fast only} throughput due to the difference between
+ SCSI-1 and wide SCSI-2 ports.
+
+IBM
+HD Interfaces {limited to hard drives by design or lack of development}:
+[...]
+IDE:  Integrated Device Electronics
+ currently the most common standard, and is mainly used for medium sized
+ drives. Can have more than one hard drive. Asynchronous Transfer: ~5MB/s max.
+
+So at its LOWEST setting SCSI-2 interface in Asynchronous SCSI-1 mode AVERAGES
+the through put MAXIMUM of IDE in asynchronous mode.  In full SCSI-2 mode
+it blows poor IDE out the window, down the street, and into the garbage can.
+The problem becomes can the drive mechanisim keep up with those through put
+rates and THAT is where the bottleneck and cost of SCSI-2 comes from.  NOT
+the interface itself but more and more from drive mechanisims to use the
+SCSI-2 through put.  The cost of SCSI interface is a self fulliling
+prophisy: few people buy SCSI because it is so expencive for the PC, which
+in turn convices makes that mass producing SCSI {which would reduce its
+cost} is unwarented, and so SCSI is expencive. {That is the effect of the
+Rule of Scale: the more items sold the less EACH item has to bare the brunt
+the cost of manufacture and so the less each item has to cost}
+
+SCSI-2 allows a drive mechanisims through put to be limited by the DRIVE while
+IDE itself limits the through put.",technical_response_report,AI pre-label; review required; source post 60143
+"Hi netters!
+	I often have troubles with my PC and would like to fix it by myself.  Is
+	there any book that show you how to fix your own PC (hardware, monitor,
+	printer problems..etc).  Of course, no book would tell you the exact
+	problem with your PC, but at least it will give a general idea what
+	might be wrong.  Thanks so lot for your help.",information_request,AI pre-label; review required; source post 58976
+"I got two very similar sounding boards for dirt cheap, too. Their Assy
+numbers were not 4000-series, but your description fits otherwise. They
+are 3Com 3C505's aka Etherlink Plus cards. Check out ftp.3com.com, there
+are drivers and diagnostic programs for just about any and all 3Com
+cards. I concluded that my card was the 505 after I ran their diagnostic
+program for 3C505 succesfully (""..passes with flying colours"") :)
+
+Anybody know of packet drivers for these cards under OS/2..?",information_request,AI pre-label; review required; source post 60371
+"You'll probably get one when you realize that your $100 vesa super
+dooper local bus ultra high tech controller sucks...
+
+With any luck PC bus archeitecture will be doen any with by sbus.
+
+Have you ever seen what happens when you hook a busmaster controller to
+a vesa local bus.  It actually  slows down your system
+
+Maybe my workstation doesn't understand what your vesa local bus
+IDE is
+
+Vesa local bus will be killed off by pcmi? whatever intels spec is.
+VLBUS it not good for much more than vga cards.
+
+To each his own.  I'll laugh when you start crying over how much you
+spent for your 2 little ide drives and then finding out you need more
+space.
+
+Here Here....
+
+don't stick your foot in your mouth when you make a statement you know
+nothing about.
+
+I'd rather wait a second compared to the 5 minutes and ide would take.
+(obviously exaggerated).
+
+Have you ever tried to backup 2 gigs of disk?  Oh I forgot you can't
+because you have an ide and no one makes ide disks that big.
+
+I guess you probably bought a 486sx too
+
+What?  The SCSI-2 FAST,WIDE spec has much more bandwidth than any stupid
+vlbus ide crap....
+
+Stop this thread now, Its just cluttering up bandwidth.  If you want
+to read about scsi vs ide just pay a visit to you local usenet archive.
+
+the best SCSI-2 FAST,WIDE,etc is clearly faster than any the best ide drive.
+All the response given are based upon personal experience with 1 or 2
+drives.  You can't judge such completely different interfaces.
+IDE has the low cost adavantage + a descent performance.
+SCSI has the ability for super high capacity expandibility and speed.
+
+neither one is better in all cases.
+
+If you don't belive what I said about busmastering and vlbus then pick
+up a back issue of PC-week in whihc they tested vlbus, eisa and isa
+busmastering cards.
+
+send flames to /dev/null.....",technical_response_report,AI pre-label; review required; source post 60297
+"I think it's simply because DOS doesn't use the IRQ for anything. OS/2 does,
+so with that you can't share the IRQ.
+
+Anssi",technical_response_report,AI pre-label; review required; source post 60273
+"I'm planning on buying a joystick (first time since I sold
+	my Amiga five years ago :) for a PC. I have no idea what
+	kind of stick I should buy. Many people have recommended
+	variety of Gravis'es models. Are they any good/the best?
+
+	-- Willy",information_request,AI pre-label; review required; source post 60176
+"Hello,
+
+	I have a 486sx25 ISA machine with Pheonix BIOS.  Currently I have
+8 megabytes of RAM installed via eight 1 MG SIMMS on the motherboard: ie.
+both banks are full, and there is no space for more SIMMS.  I am thinking
+of running OS2 on my machine and Possibly Linux with X windows, and I know
+that more RAM would be helpful.  However with SIMMS, the only solution I
+can see is to sell my 8 Megs for about $180, and by 4 4mg SIMMS for about
+$400 used. Apart from the fact that I can't afford the price right now,
+the entire process of selling RAM and buying it used probably means that
+the machine might be down for a number of days which I would rather
+avoid...
+
+So my question is, do the AT RAM boards that plug into a free slot work
+well with a 486 ISA machine. I have seen some being sold used for about
+$90 with 4 Mg with space for another 4Mg's.  If these boards do work, how
+do they do it?  Is a device driver needed, or will the BIOS pickup the
+extra RAM as it does with the SIMMS on the mother board? I know that the
+ISA expansions slots are 16-bits and 486 SIMM memory is 32 bits, so
+probably all of this is just wishful thinking... However any help is truly
+appreciated.
+
+-Eric
+
+[email omitted]",information_request,AI pre-label; review required; source post 60137
+"I just bought an actix graphics engine 32 plus with 2 megs.
+
+I am not impressed...
+
+I have been having all sorts of problems with the board.  Various lock-ups
+in windows, problems with the screen not centering, no flexibilty in choosing
+synch rates for a monitor, buggy windows drivers, lack of 1024x768x64k driver,
+
+If anyone else has one of these cards, please e-mail me...
+
+Looks like i'm going to try the ati ultra plus...",technical_response_report,AI pre-label; review required; source post 60733
+"Hi,
+VLB is defined for 3 cards by 33MHz
+and 2 cards by 40MHz
+
+there are designs with 50MHz and 2 VLB-Slots.
+(s. C't 9.92, 10.92, 11.92)
+
+50MHz and 2 Slots are realy difficult to design.
+
+Better OSs (OS/2 & iX) are able to handle more than 16MB of DRAM,
+if you use EISA-Bus.
+Has someone experience with VLB ??
+I think of SCSI-VLB-Busmaster. The problem is the 16bit Floppy DMA
+controller, which is unable to reach more than 16MB.
+Joerg",information_request,AI pre-label; review required; source post 60233
+"Could some kind soul please email ma a response since i don't have
+much time to read this group.
+
+ Question: I have a 170 MB hard drive which currently has 10 MB left.
+How much space will DoubleSpace allow me to have?? I have a 486 50 w/ 4
+MB Ram if it matters.
+
+Thanks in advance
+
+Jason",information_request,AI pre-label; review required; source post 60521
+"Hello fellow netlanders.
+
+I have a Genius Mouse model GM-6, but no driver for it.
+It's a 3 button mouse. If anyone that;s got one of theese
+could mail me a driver (config.sys or autoexec.bat) I would
+be very happy.",information_request,AI pre-label; review required; source post 58995
+"Hello,
+
+I am looking for a PC card with the following features:
+
+  - Controller for IDE(AT-Bus)-HardDiskDrive
+  - Controller for 2 FloppyDiskDrives
+  - Standard(256KB) VGA Graphics  INCLUDING FEATURE CONNECTOR (important!)
+                                  ===========================
+
+There *are* some manufacturors/distributors of this kind of card, but I have
+not found them yet.
+
+If you can help me, please mail to:  ICH344@DJUKFA11
+                                     [email omitted]
+
+Thanks a lot,
+                                                   Martin Mueller",information_request,AI pre-label; review required; source post 58904
+"I have a 286 with an M205 motherboard.  The Last Byte memory manager (which
+I downloaded for a trial) reports the chipset is an AddTech PCCHIP1 chipset,
+and it is able to activate the ram behind segments A000-FFFF, which can then be
+used for UMBs (except for video/BIOS).  I would like to write my own driver to
+activate the memory.  Does anyone know where I can get programming information
+on this chip?
+
+Phil",information_request,AI pre-label; review required; source post 60168
+"The 2 lines are not a result of the high end trinitron tube, these
+2 wires will be found on all 17"" trinitron tubes (e.g., Mitsubishi 17"",
+Sony 1604, etc).  On 14"" Sony tubes, you'll find one wire.
+
+Their level of annoyance is purely subjective.  I'm so happy with the
+sharpness of the T560i that I don't even notice the lines.
+
+The T560i uses a Trinitron SA tube which, when viewed as a complete tube,
+has a larger diameter than the standard Trinitron tube.  This results in
+a flatter screen than other 17"" monitors using the standard trinitron
+(which has a vertically flat but not horizontally flat surface), and
+apparently the ability to provide a tighter beam focus.",technical_response_report,AI pre-label; review required; source post 60272
+"The joystick reads in anolog values through a digital port. How?
+    You send a command to the port to read it, then you time how long
+    it takes for the joystick port to set a certain bit.  This time
+    is proportional to the joystick position.  Obviously, since time
+    is used as a position, you cannot get rid of this ridiculus waste
+    of time.  If you wrote your own routine instead of the BIOS, it
+    would speed it up some, but the time would still be there.",technical_response_report,AI pre-label; review required; source post 60282
+"How hot should the CPU in a 486-33 DX machine be?
+
+Currently it gets so hot that I can not hold a finger on it for more than
+0.5 s.
+
+I keep a big fan blowing on it, but am considering using a heat sink.
+
+Any advice?",troubleshooting_request,AI pre-label; review required; source post 60693
+"How is the CMOS backed-up? Dry cell batteries or ni-cad cell?
+
+Your batteries may be dead.",technical_response_report,AI pre-label; review required; source post 58921
+"Computer: 286-25 mhz
+Bus: ISA (12.5 mhz)
+Drive: Maxtor 7213A (213 mb)
+
+                                    config.sys / autoexec.bat
+
+                     MS DOS 5             no           WIN 3.1
+                     smartdrv.sys        cache         smartdrv.exe
+
+CORE (V 2.7)         6950 k/sec          1390 k/sec     1395 k/sec
+Norton SI (V 5.0)     730 k/sec           980 k/sec      982 k/sec
+
+I'd still like to here from people with VLB-IDE.
+I still want to know what VLB bus speed is used with IDE drives.
+I still want to know if some (most ?) IDE drives can handle bus speeds > 8 mhz.
+
+PS: A friend with a 286-20 and a new Maxtor 7245 (245 meg IDE) drive gets
+between 800 - 1000 k/sec (can't remember exactly).  I think the bus is running
+at 8 mhz in this case.",information_request,AI pre-label; review required; source post 60245
+"PC Mag only got around 9-10 Winmarks when they tested the Steal 24.  It sounds
+like you are ok.
+jamesc",technical_response_report,AI pre-label; review required; source post 60752
+"I have a WANGTEK tape controller card (Revision E) that was used with the
+Sytos backup system to take backups of a friend's system. That system has
+crashed and I'm attempting to restore it.
+
+Unfortunately, the documentation for this ancient card has been lost in the
+mists of time, and I need to know the DMA, IRQ and address for this card.
+
+Can anyone suggest how I could determine these things?
+
+There is a bank of dip switches on the card which are set to:
+
+1 2 3 4 5 6 7 8 9 10
+    UPUPUP    UPUPUP
+UPUP      UPUP
+------OPEN----------
+
+Thanks for your time.",troubleshooting_request,AI pre-label; review required; source post 60485
