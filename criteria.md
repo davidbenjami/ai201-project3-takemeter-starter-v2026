@@ -1,143 +1,44 @@
-# Acceptance criteria — TakeMeter
+# Acceptance criteria — Unit 5 draft
 
-Five criteria that say what "working" means for this classifier, written in
-unit 5 **before** anything was trained.
+Community: `comp.sys.ibm.pc.hardware` from the 20 Newsgroups archive.
+Taxonomy: `troubleshooting_request`, `information_request`, and `technical_response_report`.
 
-**All five are yours this time.** None are given. You've had two projects of
-practice.
+These are draft targets based on the taxonomy and the 20-post preview. Review them against the final 200 labeled posts **before training**; do not lower a target after seeing model results.
 
-An acceptance criterion names a number. *"The model is accurate"* is an
-opinion. *"Every label has an F1 of at least 0.60 on the held-out set"* is a
-criterion.
+## 1. Overall accuracy
 
-Under each, write a sentence or two on **why that number**. A reason that says
-something about your data or your taxonomy earns credit — *"I picked 0.60 F1
-for `reaction` because it's my smallest label and I only have about 50
-examples of it"*. A reason that could be attached to any project does not.
+The model has at least **0.65 accuracy on each of the three seeds**.
 
-> Missing your own targets next unit costs you nothing. Setting a target so
-> easy you can't miss it does.
+**Why this target:** There are three labels, so a uniform guess is about 0.33. A 0.65 target requires the model to distinguish current hardware failures from general information questions and technical responses.
 
 ---
 
-## Pick numbers you can defend
+## 2. Macro F1
 
-Not numbers that sound impressive. Three labels means a coin-flip guesser gets
-about 33%, so a target of 0.40 is barely a target. Your number should sit
-somewhere you'd honestly call useful.
+The model has at least **0.60 macro F1 on each seed**.
 
-**Cover at least three of these five areas.** They're here as prompts, not as a
-form to fill in — a criterion that fits none of them is fine if it names a
-number.
-
-| Area | A question it could answer |
-|---|---|
-| Overall accuracy | How often does it need to be right to be worth using? |
-| Per-label performance | Is one label allowed to be much worse than the others? |
-| Balance | How lopsided can your label counts get before it's a problem? |
-| Consistency | If someone else labelled the same posts, how often should you agree? |
-| Confidence | Should a confident prediction be right more often than an unsure one? |
-
-Two things worth knowing before you pick numbers, because both will affect
-whether you hit them:
-
-- **Your smallest label will have the jumpiest score.** If a label has 50
-  examples, about 8 land in the test split. An F1 computed on 8 examples moves
-  a lot between seeds. A target for that label should be looser than one for
-  your biggest label, and saying so is a good reason.
-- **Unit 6 tests across three seeds, and the target has to hold across all
-  three.** A target of 0.65 against results of 0.71, 0.62, 0.68 is a **miss**.
-  Pick with that in mind — it is stricter than it first sounds.
+**Why this target:** Macro F1 gives each label equal weight. That matters because the preview has more information requests than troubleshooting posts, and accuracy alone could hide weak performance on the smaller class.
 
 ---
 
-## 1.
+## 3. Per-label performance
 
-<!-- Your criterion. It must name a number. -->
+Each label has an F1 of at least **0.50 on each seed**.
 
-
-
-**Why this target:**
-
-
+**Why this target:** The hardest distinction is between a request for help with a current fault and a general request for specifications or recommendations. A floor for every label checks that the model learned more than the most common category.
 
 ---
 
-## 2.
+## 4. Label balance
 
-<!-- Your criterion. -->
+In the final 200 rows, each label represents at least **20%** and no more than **60%** of the dataset.
 
-
-
-**Why this target:**
-
-
+**Why this target:** The 20-post preview is 50% information requests, 40% technical responses, and 10% troubleshooting requests. The final set needs more troubleshooting examples to meet this target; keeping all three labels within the stated range prevents one from dominating and leaves useful support in the stratified test split.
 
 ---
 
-## 3.
+## 5. Confidence
 
-<!-- Your criterion. -->
+Among test predictions with confidence of **0.80 or higher**, at least **70%** are correct.
 
-
-
-**Why this target:**
-
-
-
----
-
-## 4.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
-
----
-
-## 5.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
-
----
-
-<!-- ─────────────────────────────────────────────────────────────────────────
-     UNIT 6 — read this before you change anything above.
-
-     If a criterion turns out to be BROKEN rather than merely unmet, you can
-     revise it, and that earns credit. But never delete or edit the original
-     line. Add the revision underneath, like this:
-
-         ## 2. Every label performs acceptably
-
-         The model performs well on all labels.
-
-         **Why this target:** ...
-
-         > **Revised in unit 6:** Every label has an F1 of at least 0.60 on
-         > the held-out set.
-         >
-         > **Why revised:** "performs well" gave me nothing to check. I
-         > couldn't produce a verdict from it at all.
-
-     That's a revision because the criterion couldn't be MEASURED.
-
-     Lowering a target because you missed it is not a revision, and it costs
-     you the point:
-
-         ✗ "Overall accuracy of at least 0.65" → "at least 0.55", because
-            0.65 turned out to be optimistic for 200 examples.
-
-     A number you missed stays where it is, gets diagnosed, and gets a fix
-     attempted. That's where the points are.
-     ───────────────────────────────────────────────────────────────────────── -->
+**Why this target:** Confident predictions should be dependable enough to distinguish from uncertain cases. This is especially useful when the post describes both an existing fault and a request for general information.

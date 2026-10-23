@@ -1,10 +1,7 @@
-# Your label definitions, one per line, as `label: definition`.
-#
-# Copy these from your README so the baseline is judged on exactly the
-# definitions you wrote. baseline.py reads this file.
-#
-# Delete the examples below and put yours in.
+# Draft taxonomy for the 20 Newsgroups comp.sys.ibm.pc.hardware sample.
+# Copy these exact definitions into the README. The 20-post preview is AI-labeled
+# and needs your review; it is not the final 200-row assignment dataset.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+troubleshooting_request: asks for help diagnosing or fixing a current hardware fault or malfunction
+information_request: asks for hardware instructions, specifications, compatibility, recommendations, or reference information without centering on a current fault
+technical_response_report: explains, answers, evaluates, argues about, or reports hardware experience without making a primary request for help
