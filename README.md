@@ -39,140 +39,109 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
-
-
----
+This project classifies posts from the `comp.sys.ibm.pc.hardware` Usenet community. It separates requests to fix a current hardware problem from general hardware information requests and technical explanations or experience reports. The hardest boundary is whether a question is about a present malfunction or asks for general specs, compatibility, or buying advice.
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
+### `troubleshooting_request`
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
+**Definition:** Asks for help diagnosing or fixing a current hardware fault or malfunction.
 
-### `label_one`
+**Example 1:** “I have a 386/40 motherboard with AMI BIOS… suddenly it's giving me 10 beeps when I turn the power on. It was working fine this morning… Anybody know what 10 beeps means?”
 
-**Definition:**
+**Example 2:** “I have a WANGTEK tape controller card … and need to know the DMA, IRQ and address.”
 
-**Example 1:**
->
+### `information_request`
 
-**Example 2:**
->
+**Definition:** Asks for hardware instructions, specifications, compatibility, recommendations, or reference information without centering on a current fault.
 
-### `label_two`
+**Example 1:** “Is there any book that show you how to fix your own PC?”
 
-**Definition:**
+**Example 2:** “How much space will DoubleSpace allow me to have?”
 
-**Example 1:**
->
+### `technical_response_report`
 
-**Example 2:**
->
+**Definition:** Explains, answers, evaluates, argues about, or reports hardware experience without making a primary request for help.
+
+**Example 1:** “I think it's simply because DOS doesn't use the IRQ for anything. OS/2 does…”
+
+**Example 2:** “The joystick reads in analog values through a digital port. You send a command to the port to read it…”
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `troubleshooting_request` and `information_request`.
 
-**The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
-
----
+**The decision rule I used every time:** If the writer is trying to fix a fault that is happening to their current system, label it `troubleshooting_request`. If they want general specifications, compatibility, instructions, or product advice, label it `information_request` even if they mention their computer.
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+**Where the posts came from:** The 20 Newsgroups archive, `comp.sys.ibm.pc.hardware` group. The preview contains 20 posts; `candidate_posts.csv` contains 200 sampled candidate posts. Headers and quoted material were removed for the text field, and emails/IP addresses were masked.
 
-**Where the posts came from:**
+**How I labelled them:** Rows 1–20 and 41–200 were AI pre-labelled under the definitions above, and every one is marked `AI pre-label` in the `note` column. Rows 21–40 are reserved for my own unaided (cold) labels and are not in `labels.csv` yet. `labels.csv` currently holds 180 rows, which is below the 200 the brief asks for.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
-
-**Counts per label:**
+**Counts per label (`labels.csv`, 180 rows):**
 
 | Label | Count | Share |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+|---|---:|---:|
+| `troubleshooting_request` | 24 | 13% |
+| `information_request` | 82 | 46% |
+| `technical_response_report` | 74 | 41% |
+| **Total** | **180** | **100%** |
+
+No label is above the 70% cap. `troubleshooting_request` is below the 20% floor in criterion 4: posts about a present fault are less common in this sample than requests for specs, compatibility or buying advice. I did not move borderline posts into that label to hit the target.
+
+**Off-topic posts:** For-sale ads were labelled `technical_response_report` because they make no request. "Wanted to buy" posts were labelled `information_request`.
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* A user describes a RAM upgrade and asks whether an expansion board would work.
 >
-> *Could have been:*
+> *Could have been:* `troubleshooting_request` or `information_request`
 >
-> *I chose, because:*
+> *I chose:* `information_request`, because the computer is not failing; the writer asks about compatibility and an upgrade path.
 
 **2.**
-> *The post:*
+> *The post:* A reply explains the lines visible on Trinitron monitors and comments on a specific display.
 >
-> *Could have been:*
+> *Could have been:* `information_request` or `technical_response_report`
 >
-> *I chose, because:*
+> *I chose:* `technical_response_report`, because it provides an explanation and experience without asking for information.
 
 **3.**
-> *The post:*
+> *The post:* A user is trying to restore a system from a tape controller but lacks its settings.
 >
-> *Could have been:*
+> *Could have been:* `information_request` or `troubleshooting_request`
 >
-> *I chose, because:*
-
----
+> *I chose:* `troubleshooting_request`, because the missing settings block a current recovery task.
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Status:** Trained once on `labels.csv` (180 rows) with notebook sections 1–5. The run wrote `results.json` and `test_split.csv`.
 
-**Base model:**
+**Hardware:** Apple Silicon GPU (`mps`), torch 2.14.1.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Base model:** `distilbert-base-uncased`
 
-**Anything I changed from the defaults, and why:**
+**Settings:** 3 epochs, learning rate `2e-5`, batch size 16, max length 128, seed 42. These are the notebook defaults, unchanged.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
-
-
-
----
+**Split sizes (stratified 70/15/15):** train 126 · validation 27 · test 27. Only 4 `troubleshooting_request` posts landed in the test split, so that label's F1 will move a lot between seeds.
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Labels for a 20-post preview from `comp.sys.ibm.pc.hardware`.
+- *What came back:* Suggested labels and reasons under the three draft definitions.
+- *What I changed:* I marked every suggestion as AI pre-labelled and left it for my review; none is counted as cold.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Clear definitions, boundary rules, and numeric acceptance criteria.
+- *What came back:* Draft criteria for accuracy, macro F1, per-label F1, class balance, and confidence.
+- *What I changed:* I tied the boundary rule to current hardware faults versus general information requests and noted that the final dataset needs more troubleshooting examples.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** 180 of the 180 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and the `note` column marks each one. When I review a row with `label_helper.py`, its note changes to `reviewed, kept` or `reviewed, changed from …`. Rows 21–40 are my cold labels and are not labelled yet.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
