@@ -77,16 +77,16 @@ This project classifies posts from the `comp.sys.ibm.pc.hardware` Usenet communi
 
 **Where the posts came from:** The 20 Newsgroups archive, `comp.sys.ibm.pc.hardware` group. The preview contains 20 posts; `candidate_posts.csv` contains 200 sampled candidate posts. Headers and quoted material were removed for the text field, and emails/IP addresses were masked.
 
-**How I labelled them:** Rows 1–20 and 41–200 were AI pre-labelled under the definitions above, and every one is marked `AI pre-label` in the `note` column. Rows 21–40 are reserved for my own unaided (cold) labels and are not in `labels.csv` yet. `labels.csv` currently holds 180 rows, which is below the 200 the brief asks for.
+**How I labelled them:** Rows 1–20 and 41–200 were AI pre-labelled under the definitions above, and every one is marked `AI pre-label` in the `note` column. I labelled rows 21–40 myself without help (cold), and they are marked `cold; labelled unaided`. `labels.csv` holds all 200 rows.
 
-**Counts per label (`labels.csv`, 180 rows):**
+**Counts per label (`labels.csv`, 200 rows):**
 
 | Label | Count | Share |
 |---|---:|---:|
-| `troubleshooting_request` | 24 | 13% |
-| `information_request` | 82 | 46% |
-| `technical_response_report` | 74 | 41% |
-| **Total** | **180** | **100%** |
+| `troubleshooting_request` | 28 | 14% |
+| `information_request` | 89 | 45% |
+| `technical_response_report` | 83 | 42% |
+| **Total** | **200** | **100%** |
 
 No label is above the 70% cap. `troubleshooting_request` is below the 20% floor in criterion 4: posts about a present fault are less common in this sample than requests for specs, compatibility or buying advice. I did not move borderline posts into that label to hit the target.
 
@@ -117,15 +117,17 @@ No label is above the 70% cap. `troubleshooting_request` is below the 20% floor 
 
 ## The Training Run
 
-**Status:** Trained once on `labels.csv` (180 rows) with notebook sections 1–5. The run wrote `results.json` and `test_split.csv`.
+**Status:** Trained on the final `labels.csv` (200 rows) with notebook sections 1–5. The run wrote `results.json` and `test_split.csv`.
 
 **Hardware:** Apple Silicon GPU (`mps`), torch 2.14.1.
 
 **Base model:** `distilbert-base-uncased`
 
-**Settings:** 3 epochs, learning rate `2e-5`, batch size 16, max length 128, seed 42. These are the notebook defaults, unchanged.
+**Settings:** 5 epochs, learning rate `5e-5`, batch size 16, max length 128, seed 42.
 
-**Split sizes (stratified 70/15/15):** train 126 · validation 27 · test 27. Only 4 `troubleshooting_request` posts landed in the test split, so that label's F1 will move a lot between seeds.
+**What I changed from the defaults, and why:** I raised the epochs from 3 to 5 and the learning rate from `2e-5` to `5e-5`. A first run with the defaults on an earlier 180-row version of the data predicted almost every post as `information_request`. With only about 140 training posts, the default settings left the model too few update steps to learn the smaller labels.
+
+**Split sizes (stratified 70/15/15):** train 139 · validation 31 · test 30. Only 4 `troubleshooting_request` posts landed in the test split, so that label's F1 will move a lot between seeds.
 
 ## How I Used AI
 
@@ -141,7 +143,7 @@ No label is above the 70% cap. `troubleshooting_request` is below the 20% floor 
 - *What came back:* Draft criteria for accuracy, macro F1, per-label F1, class balance, and confidence.
 - *What I changed:* I tied the boundary rule to current hardware faults versus general information requests and noted that the final dataset needs more troubleshooting examples.
 
-**Pre-labelling disclosure:** 180 of the 180 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and the `note` column marks each one. When I review a row with `label_helper.py`, its note changes to `reviewed, kept` or `reviewed, changed from …`. Rows 21–40 are my cold labels and are not labelled yet.
+**Pre-labelling disclosure:** 180 of the 200 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and the `note` column marks each one as `AI pre-label; review required`. They have not been reviewed one by one yet. The other 20 rows (21–40) are my own cold labels, marked `cold; labelled unaided`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
