@@ -75,7 +75,7 @@ This project classifies posts from the `comp.sys.ibm.pc.hardware` Usenet communi
 
 ## The Dataset
 
-**Where the posts came from:** The 20 Newsgroups archive, `comp.sys.ibm.pc.hardware` group. The preview contains 20 posts; `candidate_posts.csv` contains 200 sampled candidate posts. Headers and quoted material were removed for the text field, and emails/IP addresses were masked.
+**Where the posts came from:** The 20 Newsgroups archive, `comp.sys.ibm.pc.hardware` group. The preview contains 20 posts; `candidate_posts.csv` contains 200 sampled candidate posts. Posts were fetched with scikit-learn's `fetch_20newsgroups` (training split, `remove=("headers", "footers", "quotes")`), filtered to posts of at least 40 characters, de-duplicated, and sampled with `random_state=42`.
 
 **How I labelled them:** Rows 1–20 and 41–200 were AI pre-labelled under the definitions above, and every one is marked `AI pre-label` in the `note` column. I labelled rows 21–40 myself without help (cold), and they are marked `cold; labelled unaided`. `labels.csv` holds all 200 rows.
 
@@ -83,12 +83,12 @@ This project classifies posts from the `comp.sys.ibm.pc.hardware` Usenet communi
 
 | Label | Count | Share |
 |---|---:|---:|
-| `troubleshooting_request` | 28 | 14% |
-| `information_request` | 89 | 45% |
-| `technical_response_report` | 83 | 42% |
+| `troubleshooting_request` | 52 | 26% |
+| `information_request` | 71 | 36% |
+| `technical_response_report` | 77 | 38% |
 | **Total** | **200** | **100%** |
 
-No label is above the 70% cap. `troubleshooting_request` is below the 20% floor in criterion 4: posts about a present fault are less common in this sample than requests for specs, compatibility or buying advice. I did not move borderline posts into that label to hit the target.
+No label is above the 70% cap, and every label is inside the 20–60% band in criterion 4. Before my review, `troubleshooting_request` was only 14%: the AI pre-labels had filed 23 posts about a present fault as `information_request`. I moved them because my decision rule says so, not to hit the target.
 
 **Off-topic posts:** For-sale ads were labelled `technical_response_report` because they make no request. "Wanted to buy" posts were labelled `information_request`.
 
@@ -143,7 +143,7 @@ No label is above the 70% cap. `troubleshooting_request` is below the 20% floor 
 - *What came back:* Draft criteria for accuracy, macro F1, per-label F1, class balance, and confidence.
 - *What I changed:* I tied the boundary rule to current hardware faults versus general information requests and noted that the final dataset needs more troubleshooting examples.
 
-**Pre-labelling disclosure:** 180 of the 200 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and the `note` column marks each one as `AI pre-label; review required`. They have not been reviewed one by one yet. The other 20 rows (21–40) are my own cold labels, marked `cold; labelled unaided`.
+**Pre-labelling disclosure:** 180 of the 200 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and I reviewed every one of them. I kept 135 and changed 45, and the `note` column records which (`AI pre-label; reviewed, kept` or `AI pre-label; reviewed, changed from <label>`). Most changes were on the hardest boundary: 23 `information_request` → `troubleshooting_request`, plus 9 `technical_response_report` → `information_request`, 6 `information_request` → `technical_response_report`, 4 `technical_response_report` → `troubleshooting_request`, 2 `troubleshooting_request` → `information_request`, and 1 `troubleshooting_request` → `technical_response_report`. The other 20 rows (21–40) are my own cold labels, marked `cold; labelled unaided`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

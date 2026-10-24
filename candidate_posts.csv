@@ -48,13 +48,13 @@ Rule of Scale: the more items sold the less EACH item has to bare the brunt
 the cost of manufacture and so the less each item has to cost}
 
 SCSI-2 allows a drive mechanisims through put to be limited by the DRIVE while
-IDE itself limits the through put.",technical_response_report,AI pre-label; review required; source post 60143
+IDE itself limits the through put.",technical_response_report,"AI pre-label; reviewed, kept; source post 60143"
 "Hi netters!
 	I often have troubles with my PC and would like to fix it by myself.  Is
 	there any book that show you how to fix your own PC (hardware, monitor,
 	printer problems..etc).  Of course, no book would tell you the exact
 	problem with your PC, but at least it will give a general idea what
-	might be wrong.  Thanks so lot for your help.",information_request,AI pre-label; review required; source post 58976
+	might be wrong.  Thanks so lot for your help.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 58976"
 "I got two very similar sounding boards for dirt cheap, too. Their Assy
 numbers were not 4000-series, but your description fits otherwise. They
 are 3Com 3C505's aka Etherlink Plus cards. Check out ftp.3com.com, there
@@ -62,7 +62,7 @@ are drivers and diagnostic programs for just about any and all 3Com
 cards. I concluded that my card was the 505 after I ran their diagnostic
 program for 3C505 succesfully (""..passes with flying colours"") :)
 
-Anybody know of packet drivers for these cards under OS/2..?",information_request,AI pre-label; review required; source post 60371
+Anybody know of packet drivers for these cards under OS/2..?",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60371"
 "You'll probably get one when you realize that your $100 vesa super
 dooper local bus ultra high tech controller sucks...
 
@@ -112,17 +112,17 @@ If you don't belive what I said about busmastering and vlbus then pick
 up a back issue of PC-week in whihc they tested vlbus, eisa and isa
 busmastering cards.
 
-send flames to /dev/null.....",technical_response_report,AI pre-label; review required; source post 60297
+send flames to /dev/null.....",technical_response_report,"AI pre-label; reviewed, kept; source post 60297"
 "I think it's simply because DOS doesn't use the IRQ for anything. OS/2 does,
 so with that you can't share the IRQ.
 
-Anssi",technical_response_report,AI pre-label; review required; source post 60273
+Anssi",technical_response_report,"AI pre-label; reviewed, kept; source post 60273"
 "I'm planning on buying a joystick (first time since I sold
 	my Amiga five years ago :) for a PC. I have no idea what
 	kind of stick I should buy. Many people have recommended
 	variety of Gravis'es models. Are they any good/the best?
 
-	-- Willy",information_request,AI pre-label; review required; source post 60176
+	-- Willy",information_request,"AI pre-label; reviewed, kept; source post 60176"
 "Hello,
 
 	I have a 486sx25 ISA machine with Pheonix BIOS.  Currently I have
@@ -147,7 +147,7 @@ appreciated.
 
 -Eric
 
-[email omitted]",information_request,AI pre-label; review required; source post 60137
+[email omitted]",information_request,"AI pre-label; reviewed, kept; source post 60137"
 "I just bought an actix graphics engine 32 plus with 2 megs.
 
 I am not impressed...
@@ -158,7 +158,7 @@ synch rates for a monitor, buggy windows drivers, lack of 1024x768x64k driver,
 
 If anyone else has one of these cards, please e-mail me...
 
-Looks like i'm going to try the ati ultra plus...",technical_response_report,AI pre-label; review required; source post 60733
+Looks like i'm going to try the ati ultra plus...",technical_response_report,"AI pre-label; reviewed, kept; source post 60733"
 "Hi,
 VLB is defined for 3 cards by 33MHz
 and 2 cards by 40MHz
@@ -173,7 +173,7 @@ if you use EISA-Bus.
 Has someone experience with VLB ??
 I think of SCSI-VLB-Busmaster. The problem is the 16bit Floppy DMA
 controller, which is unable to reach more than 16MB.
-Joerg",information_request,AI pre-label; review required; source post 60233
+Joerg",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60233"
 "Could some kind soul please email ma a response since i don't have
 much time to read this group.
 
@@ -183,13 +183,13 @@ MB Ram if it matters.
 
 Thanks in advance
 
-Jason",information_request,AI pre-label; review required; source post 60521
+Jason",information_request,"AI pre-label; reviewed, kept; source post 60521"
 "Hello fellow netlanders.
 
 I have a Genius Mouse model GM-6, but no driver for it.
 It's a 3 button mouse. If anyone that;s got one of theese
 could mail me a driver (config.sys or autoexec.bat) I would
-be very happy.",information_request,AI pre-label; review required; source post 58995
+be very happy.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 58995"
 "Hello,
 
 I am looking for a PC card with the following features:
@@ -206,7 +206,7 @@ If you can help me, please mail to:  ICH344@DJUKFA11
                                      [email omitted]
 
 Thanks a lot,
-                                                   Martin Mueller",information_request,AI pre-label; review required; source post 58904
+                                                   Martin Mueller",information_request,"AI pre-label; reviewed, kept; source post 58904"
 "I have a 286 with an M205 motherboard.  The Last Byte memory manager (which
 I downloaded for a trial) reports the chipset is an AddTech PCCHIP1 chipset,
 and it is able to activate the ram behind segments A000-FFFF, which can then be
@@ -214,7 +214,7 @@ used for UMBs (except for video/BIOS).  I would like to write my own driver to
 activate the memory.  Does anyone know where I can get programming information
 on this chip?
 
-Phil",information_request,AI pre-label; review required; source post 60168
+Phil",information_request,"AI pre-label; reviewed, kept; source post 60168"
 "The 2 lines are not a result of the high end trinitron tube, these
 2 wires will be found on all 17"" trinitron tubes (e.g., Mitsubishi 17"",
 Sony 1604, etc).  On 14"" Sony tubes, you'll find one wire.
@@ -226,14 +226,14 @@ The T560i uses a Trinitron SA tube which, when viewed as a complete tube,
 has a larger diameter than the standard Trinitron tube.  This results in
 a flatter screen than other 17"" monitors using the standard trinitron
 (which has a vertically flat but not horizontally flat surface), and
-apparently the ability to provide a tighter beam focus.",technical_response_report,AI pre-label; review required; source post 60272
+apparently the ability to provide a tighter beam focus.",technical_response_report,"AI pre-label; reviewed, kept; source post 60272"
 "The joystick reads in anolog values through a digital port. How?
     You send a command to the port to read it, then you time how long
     it takes for the joystick port to set a certain bit.  This time
     is proportional to the joystick position.  Obviously, since time
     is used as a position, you cannot get rid of this ridiculus waste
     of time.  If you wrote your own routine instead of the BIOS, it
-    would speed it up some, but the time would still be there.",technical_response_report,AI pre-label; review required; source post 60282
+    would speed it up some, but the time would still be there.",technical_response_report,"AI pre-label; reviewed, kept; source post 60282"
 "How hot should the CPU in a 486-33 DX machine be?
 
 Currently it gets so hot that I can not hold a finger on it for more than
@@ -241,10 +241,10 @@ Currently it gets so hot that I can not hold a finger on it for more than
 
 I keep a big fan blowing on it, but am considering using a heat sink.
 
-Any advice?",troubleshooting_request,AI pre-label; review required; source post 60693
+Any advice?",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60693"
 "How is the CMOS backed-up? Dry cell batteries or ni-cad cell?
 
-Your batteries may be dead.",technical_response_report,AI pre-label; review required; source post 58921
+Your batteries may be dead.",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 58921"
 "Computer: 286-25 mhz
 Bus: ISA (12.5 mhz)
 Drive: Maxtor 7213A (213 mb)
@@ -263,10 +263,10 @@ I still want to know if some (most ?) IDE drives can handle bus speeds > 8 mhz.
 
 PS: A friend with a 286-20 and a new Maxtor 7245 (245 meg IDE) drive gets
 between 800 - 1000 k/sec (can't remember exactly).  I think the bus is running
-at 8 mhz in this case.",information_request,AI pre-label; review required; source post 60245
+at 8 mhz in this case.",information_request,"AI pre-label; reviewed, kept; source post 60245"
 "PC Mag only got around 9-10 Winmarks when they tested the Steal 24.  It sounds
 like you are ok.
-jamesc",technical_response_report,AI pre-label; review required; source post 60752
+jamesc",technical_response_report,"AI pre-label; reviewed, kept; source post 60752"
 "I have a WANGTEK tape controller card (Revision E) that was used with the
 Sytos backup system to take backups of a friend's system. That system has
 crashed and I'm attempting to restore it.
@@ -283,7 +283,7 @@ There is a bank of dip switches on the card which are set to:
 UPUP      UPUP
 ------OPEN----------
 
-Thanks for your time.",troubleshooting_request,AI pre-label; review required; source post 60485
+Thanks for your time.",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60485"
 "Excuse me to every one.
 I am an Amiga owner and tired to have the same graphic modes.
 So I saw on nn there was a little bridgeboard that made the
@@ -583,13 +583,13 @@ under OS/2 and be compatible with Stacker (and other Disk Compression S/W).
 
 Please advise .....
 
-Divya",information_request,AI pre-label; review required; source post 60160
+Divya",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60160"
 "I would realy like to hear from someone that has one of these NANAO T560i
 monitors that is driving it with a Diamond SpeedStar 24x. With the 24x
 set up to run at its 58.1 khz 72.0hz output mode, and realy driving the
 hell out of the monitor. Just woundering if the NANAO T560i would fall
 apart with poor low capabilities like my (3) Sony 1604s did with the 24x
-driving their balls off...Sam",information_request,AI pre-label; review required; source post 60480
+driving their balls off...Sam",information_request,"AI pre-label; reviewed, kept; source post 60480"
 "Help....
 
 I need to implement COM3 and COM4 on a board that I'm designing and I'm
@@ -607,7 +607,7 @@ Please answer by email to :-
 
 thanks in advance
 
-Neil Watkinson.",information_request,AI pre-label; review required; source post 58902
+Neil Watkinson.",information_request,"AI pre-label; reviewed, kept; source post 58902"
 "Since the losers that sold me the hard disk for my computer are
 so generous, I need the info to set this drive from master to
 slave. Any help would be greatly appreciated.  Please reply via e-mail.
@@ -622,13 +622,13 @@ Jeff
 *  of hardware and software. Buy Canadian music. Quit smoking. *
 *  Take up running. FM synthesis is the CGA of audio.          *
 *                            [email omitted]        *
-****************************************************************",information_request,AI pre-label; review required; source post 60390
+****************************************************************",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60390"
 "Do you have the specs for this monitor?  What have they changed from the
 F550i?
 
 Do you know if their is going to be a new T560i soon? (a T560iW?)
 
-Thanks.",information_request,AI pre-label; review required; source post 60463
+Thanks.",information_request,"AI pre-label; reviewed, kept; source post 60463"
 "[...]
 
 I am not an expert. My understanding is the watts output of the power
@@ -638,7 +638,7 @@ Typically, a 200W power supply is sufficient to power a PC.
 
 Hope this help.
 
-Lau Hon-Wah",technical_response_report,AI pre-label; review required; source post 60237
+Lau Hon-Wah",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60237"
 "Does it do it to all tapes?  Were the two tapes that it unwound of the same
 type from the same batch?  The reason I ask is that I bought some generic tapes
 that did this and found that the tape markers were not fully punched out and
@@ -679,12 +679,12 @@ Scott Hiles
 
 Standard disclaimer:
   The opinions expressed are those of my own and do not necessarily
-  reflect those of the DOD or the Navy.  I accept full responsibility.",technical_response_report,AI pre-label; review required; source post 59001
+  reflect those of the DOD or the Navy.  I accept full responsibility.",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 59001"
 "does anybody have any info on this monitor or the manufacturers?
 
 all help through e-mail please.
 
-Scotty.",information_request,AI pre-label; review required; source post 58984
+Scotty.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 58984"
 "Help!!!!!!!!!!!!!!!!!!!!! My computer from Gateway is freezing up on me.
 Gateway tech support couldn't help me. They want more specifics on when
 it freezes up.  I DID!  Anyway, here it is.  If the keyboard is left idle
@@ -708,7 +708,7 @@ System is:  486SX-33
             Microsoft mouse
 Thanks,
 
-El Guapo",troubleshooting_request,AI pre-label; review required; source post 60361
+El Guapo",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60361"
 "OK, I'll try one more time with this one. If ANYONE out there has ANY
 information on MicroScience hard drives and how to set the jumpers
 (and where they are?) for master/slave configurations. I will gladly
@@ -716,7 +716,7 @@ accept any info, as I have a 110M'er sitting in my room collecting dust
 just waiting for me to install huge applications. :) Thanks in advance.
 (And yes, I regulary check the IDE Harddisk Spec that is posted here.)
 
--= Adam Cheal =-   [email omitted]",information_request,AI pre-label; review required; source post 60404
+-= Adam Cheal =-   [email omitted]",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60404"
 "Hi,
 
 I just disassembled my old XT and get 2 disk drives - 30M hard drive and a
@@ -733,7 +733,7 @@ I just disassembled my old XT and get 2 disk drives - 30M hard drive and a
 
  AV
 
--- Via DLG Pro v0.995",information_request,AI pre-label; review required; source post 60135
+-- Via DLG Pro v0.995",information_request,"AI pre-label; reviewed, kept; source post 60135"
 "Is it possible to buy a serial I/O card with the 16550 UART's built in
 (rather than having to buy them separately, and socketing them in)?
 
@@ -749,7 +749,7 @@ Does such a beast exist? Now the hard part - where can I get one in Australia,
 preferably Brisbane?
 
 Thanks,
-Geoff Green ([email omitted])",information_request,AI pre-label; review required; source post 60746
+Geoff Green ([email omitted])",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60746"
 "Hi,
 
 I'm kind of new at the pc stuff.  My machine has 4 serial ports.  Com 1 and3
@@ -764,11 +764,11 @@ Phil
 Phil Hunt                          ""Wherever you go, there you are!""
 Howtek, Inc.
 
-Internet: [email omitted]   uucp: {decvax|harvard}!mv!howtek!phil",information_request,AI pre-label; review required; source post 60194
+Internet: [email omitted]   uucp: {decvax|harvard}!mv!howtek!phil",information_request,"AI pre-label; reviewed, kept; source post 60194"
 "I have 2 new SMC 270E ARCNET cards for sale . They are brand new. $50 each
 
 [email omitted]
-Wally Waggoner",technical_response_report,AI pre-label; review required; source post 60756
+Wally Waggoner",technical_response_report,"AI pre-label; reviewed, kept; source post 60756"
 "Has anyone connected a high-res, fixed frequency monitor to their PC?
 I have a mitubishi monitor that does 1024x768 at 60hz, but won't do
 any other resolutions.  All the video cards designed for this sort of
@@ -780,7 +780,7 @@ mitsu for Windows or X-windows (under Linux or 3BSD).
 
 Any suggestions would be greatly appreciated.  E-mail, please.
 
-Thanks,",information_request,AI pre-label; review required; source post 60925
+Thanks,",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60925"
 "HELP!  I really got ripped off and I need some help unripping myself.
 
 I bought a Maxtor 4380 300mb ESDI HDD from Hi-Tech for $300, then paid to
@@ -806,14 +806,14 @@ option to trick the controller into thinking it's got less then 1024 cyls,
 and everything else selected is standard, maybe I need to use a different
 head skew or something?  I don't know.
 
-ANYONE WHO KNOWS HOW TO FIX THIS PROBLEM PLEASE TELL ME HOW!!!! HELP!!!!",troubleshooting_request,AI pre-label; review required; source post 60556
+ANYONE WHO KNOWS HOW TO FIX THIS PROBLEM PLEASE TELL ME HOW!!!! HELP!!!!",information_request,"AI pre-label; reviewed, changed from troubleshooting_request; source post 60556"
 "Do you recall which issue this was in? I posted a message related to this a
 while back to provoke an argument so that I could get the straight dope on
 this. This article would probably give me all the definitive answers that I
 want.
 
 Ed Stasic
-[email omitted]",information_request,AI pre-label; review required; source post 60566
+[email omitted]",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60566"
 "Here's a document that I wrote some time back.  It's slightly
 out-of-date, now that DOS 6 has been released, but much of it is still
 useful.
@@ -1356,7 +1356,7 @@ not sure.  Use it at your own risk.
 Local Variables:
 fill-column:	72
 eval:		(auto-fill-mode nil)
-End:",technical_response_report,AI pre-label; review required; source post 60207
+End:",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60207"
 "I bet it suddenly started sticking when you  started leaving the PC running the
 menu all night.  There is a limitation/bug in the date roll-over software in
 PC's that means you have to be doing something like waiting for keyboard input
@@ -1368,13 +1368,13 @@ them, but I think you have to change the menu program (if you have the sources)
 or add a TSR or system patch or something.  As far as I know the CMOS clock
 keeps the right time (in fact about 7 seconds/day better than DOS's clock).
 
-Mark Aitchison, University of Canterbury.",technical_response_report,AI pre-label; review required; source post 60472
+Mark Aitchison, University of Canterbury.",technical_response_report,"AI pre-label; reviewed, kept; source post 60472"
 "Would someone please email me the pinout for a PS/2 6-pin mini DIN mouse
 port?  I'm trying to make an adapter for a serial mouse, and the dealer who
 knows what adapter works with the mouse I bought doesn't have it in stock.
 I have several different adapters, but none of them make sense based on
 what sketchy information I have about the port (they have connections to
-""reserved"" pins).",information_request,AI pre-label; review required; source post 60457
+""reserved"" pins).",information_request,"AI pre-label; reviewed, kept; source post 60457"
 "If you are talking about laser jet 4 then I believe it has to be postscript.
 I don't see any advantage to using PCL when you have a peice of hardware
 plugged into the LJ4 that is doing the work and it can support any language
@@ -1404,7 +1404,7 @@ demo though).
 I don't know how many other similar products are out there but I would be
 surprised if there are several.
 
-Gordon Lang",technical_response_report,AI pre-label; review required; source post 60255
+Gordon Lang",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60255"
 "thought I'd post this as well as e-mail it, just in case anyone else is
 interested in this info.....
 
@@ -1435,26 +1435,26 @@ to take advantage of it.
 btw, they send these out free, as long as you don't abuse it.
 
 later,
-   --jim",technical_response_report,AI pre-label; review required; source post 60356
+   --jim",technical_response_report,"AI pre-label; reviewed, kept; source post 60356"
 "Has anyone here dealt with Tangent?  I'm looking at an 486 system
  they have that has an EISA backplane with a VESA slot for video.
  The SCSI contoller they use is made by Aorta.  I've never heard
  of this brand.  Can anyone comment on Tangent or the controller?
 
  Thanks,
- David",information_request,AI pre-label; review required; source post 58999
+ David",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 58999"
 "First off, with all these huge software packages and files that
 they produce, IDE may no longer be sufficient for me (510 Mb limit).
 Second, (rumor is) Microsoft recognizes the the importance of SCSI
 and will support it soon. I'm just not sure if it's on DOS, Win, or NT.
 At any rate, the deal is with Corel who makes (I hear) a good
-cohesive set of SCSI drivers.",technical_response_report,AI pre-label; review required; source post 60232
+cohesive set of SCSI drivers.",technical_response_report,"AI pre-label; reviewed, kept; source post 60232"
 "Is there anybody who has (or can point me in the right direction) any
 information about protected mode? Also interested in protected mode viewed from
 a OS point of view.
 
 	Thanks in advance
-		Kjetil Kolin",information_request,AI pre-label; review required; source post 60759
+		Kjetil Kolin",information_request,"AI pre-label; reviewed, kept; source post 60759"
 "My Western Digital also has three sets of pins on the back. I am using it with
 another hard drive as well and the settings for the jumpers were written right
 on the circuit board of the WD drive......MA SL ??
@@ -1464,7 +1464,7 @@ circuit board, I'll open my machine and tell you what mine are.......
 
 Kevin Holly
 McMaster University, Hamilton, Ontario
-[email omitted]",technical_response_report,AI pre-label; review required; source post 60208
+[email omitted]",troubleshooting_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60208"
 "Hi,
 
 I've got a Victor PC/XT with a 20 MB harddisk in it. The controller is
@@ -1484,7 +1484,7 @@ How can I solve my problem, any suggestions?
 
 If you need more info, mail me, please ([email omitted]).
 
---Bas.",information_request,AI pre-label; review required; source post 60276
+--Bas.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60276"
 "Two questions:
 1: I'm trying to figure out how to access cmos advanced chip setting on a
 EISA motherboard (AIR) that has AMI bios..specifically I would like to set
@@ -1495,7 +1495,7 @@ able to do it..any help in this area would be greatly appreciated.
 am looking for jumper settings on a 5099EN24 drive..
 
 Thanks in advance.
-Tony",information_request,AI pre-label; review required; source post 60235
+Tony",information_request,"AI pre-label; reviewed, kept; source post 60235"
 "I recently purchased the then current Pkg.# 486dx-33 for $2395 (but changed
 to NEC 3FGx monitor upgrade). Buy this Pkg. #3 now - for $100 more, you now
 get a bigger HD - 340mb with @256 HD cache. 30 days ago, when I bought this
@@ -1506,7 +1506,7 @@ card is your choice. I stayed with the Diamond Speedstar Pro. Zeos Tech
 Support is really good - call after normal business hours to get the
 fastest access. The hardest part about buying a Zeos is the wait till it is
 delivered - once you order you can hardly wait to get it! There are quite a
-few good mail order houses around - lots of bang for buck with Zeos.",technical_response_report,AI pre-label; review required; source post 60209
+few good mail order houses around - lots of bang for buck with Zeos.",technical_response_report,"AI pre-label; reviewed, kept; source post 60209"
 "I'm looking into getting an external, reasonably fast (<350 ms avg access time)
 Multispin CD-ROM drive that supports ""Photo CD Multi Session"", has audio
 output, and SCSI interface for connection to the PAS16 SCSI port. Does anyone
@@ -1514,7 +1514,7 @@ have any comments/experiences/warnings/recommendations they'd like to share
 concerning the Texel DM-5024 and/or Toshiba TXM-3401E and/or others. THANKS!
 
 						Hal R. Brand
-						[email omitted]",information_request,AI pre-label; review required; source post 61011
+						[email omitted]",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 61011"
 "Does anybody out there have or used to have an HD controller from
 Perstor System Inc. (which is out of business I believe)?  My friend
 received an old PC which happens to have such a controller and I am
@@ -1534,7 +1534,7 @@ I would appreciate your reply directly to my e-mail address below.
 
 Thanks,
 
-Ray  ([email omitted])",information_request,AI pre-label; review required; source post 60869
+Ray  ([email omitted])",information_request,"AI pre-label; reviewed, kept; source post 60869"
 "If anyone has any experience with the ALR ProVEISA 486DX2 system I would
 be interested to hear your impressions of it, and of ALR in general.
 
@@ -1544,16 +1544,16 @@ Thank you.
 
 ---
  * WinQwk 2.0b#108 * Mark Seltzer,28 Ravina Cres,Toronto,Ont M4J 3M1,Canada.
-   RoseMail 2.10 : RoseNet<=>Usenet Gateway : Rose Media 416-733-2285",information_request,AI pre-label; review required; source post 60417
+   RoseMail 2.10 : RoseNet<=>Usenet Gateway : Rose Media 416-733-2285",information_request,"AI pre-label; reviewed, kept; source post 60417"
 "I seem to recall that 486s run somewhere close to the boiling point of water.
 Anyone have an exact temperature?
 
 Anyway, putting a CPU fan/heat sink on it won't hurt and could help. Depends
-on how paranoid you are...",technical_response_report,AI pre-label; review required; source post 60700
+on how paranoid you are...",technical_response_report,"AI pre-label; reviewed, kept; source post 60700"
 "The floppy is served by DMA on the motherboard,
 and original DMA-controller can't reach more than the first
 16MB (The address-space of the ISA-bus)
-joerg",technical_response_report,AI pre-label; review required; source post 60419
+joerg",technical_response_report,"AI pre-label; reviewed, kept; source post 60419"
 "there is a file out there (look for it with archie) that is called
 'theref22.zip' which has lots of info on various PC things,
 amongst which is also a detailed description of all Floppy controller
@@ -1563,7 +1563,7 @@ it is possible to read an entire track including all gaps, sector
 headers etc.   by setting sector size to something very large (like
 8K).
 
-willem",technical_response_report,AI pre-label; review required; source post 60149
+willem",technical_response_report,"AI pre-label; reviewed, kept; source post 60149"
 "Yeah.  Sounds typical.  Windows makes all sorts of extra demands on hardware,
 and therefore your machine can't keep up with things.  Ever notice how when
 acessing the floppies in Windows, everything else slows to a crawl?  I
@@ -1572,12 +1572,12 @@ and sometimes the backup program loses.  Be glad.  I can't even run in
 medium speed with CP backup on my machine, supposedly because I have a SCSI
 machine which places extra demands on the data bus.
 
-don",technical_response_report,AI pre-label; review required; source post 60444
+don",technical_response_report,"AI pre-label; reviewed, kept; source post 60444"
 "I used the standard installation program to put MS-DOS 6.0 on my
 machine with Stacker 3.0 already installed.  No problems.  I kept Stacker,
 rather than switch.
 	I am very pleased with the memory I gained since I did not have a
-memory manager.  I also like the multiple boot feature.",technical_response_report,AI pre-label; review required; source post 60689
+memory manager.  I also like the multiple boot feature.",technical_response_report,"AI pre-label; reviewed, kept; source post 60689"
 "Wow, you guys are really going wild on this IDE vs. SCSI thing, and I think
 it's great!
 
@@ -1614,7 +1614,7 @@ HD's SCSI-2?
 
 Thanks for any comments.
 
-Randy",information_request,AI pre-label; review required; source post 61009
+Randy",information_request,"AI pre-label; reviewed, kept; source post 61009"
 "Hai,
 
 In a few days I'm going to buy a new motherboard with local-bus(ses).
@@ -1641,12 +1641,12 @@ For the people in Holland:
 Kan iemand me misschien vertellen waar de W32 in Nederland te verkrijg
 is? Het liefst in de omgeving van Amsterdam!
 
-Thanks in advance,			Erik Stel ([email omitted])",information_request,AI pre-label; review required; source post 60490
+Thanks in advance,			Erik Stel ([email omitted])",information_request,"AI pre-label; reviewed, kept; source post 60490"
 "[much deleted]
 
 amazing.  I could not find _one_ reference to waffle in all of this.
 
-followups redirected out.",technical_response_report,AI pre-label; review required; source post 60572
+followups redirected out.",technical_response_report,"AI pre-label; reviewed, kept; source post 60572"
 "I would like advice on how to configure my 486 to accept:
 - Com1 + Com2  (currently on IRQ 4 and 3)
 - LPT1 (IRQ7)
@@ -1668,7 +1668,7 @@ newsgroup - I assume there is an FAQ somewhere (rather, I'm
 sure someone will tell me about it....)
 
 thanks
-Mark Fraser",troubleshooting_request,AI pre-label; review required; source post 58912
+Mark Fraser",troubleshooting_request,"AI pre-label; reviewed, kept; source post 58912"
 "How about 250MB/s for 64-bit VLB or 350MB/s for QuickRing {Apple's
 implimentation of VLB (Byte 10/92:132)} QuickRing is interesting in that
 it allows interleaving with other card so that the 350MB/s can be divided
@@ -1684,7 +1684,7 @@ ditzes around at ~30MB/s with a burst mode: 80MB/s.
 IDA can't handle VLB speed never mind QuickRings's speed so it is out.
 EISA pokes along at NuBus Mac II speeds {~15MB/s burst mode: 33MB/s}
  so VLB and QuickRing are slowed down by it.
-PCI is a competing interface that is still in development.",technical_response_report,AI pre-label; review required; source post 60146
+PCI is a competing interface that is still in development.",technical_response_report,"AI pre-label; reviewed, kept; source post 60146"
 "why does my keyboard not have a cents key ?
 C
 
@@ -1696,12 +1696,12 @@ like to have my 2 cents worth or $ 0.02 (boaring)
 
 China Cat BBS                               c-cat![email omitted]
 (301)604-5976 1200-14,400 8N1               ...uunet!mimsy!anagld!c-cat!david
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=",information_request,AI pre-label; review required; source post 60887
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=",information_request,"AI pre-label; reviewed, kept; source post 60887"
 "I think it would be a great idea to have a new group created:
 
 comp.sys.ibm.pc.flame.therapy
 
-anybody agree?",technical_response_report,AI pre-label; review required; source post 58826
+anybody agree?",technical_response_report,"AI pre-label; reviewed, kept; source post 58826"
 "Selling -
 
           Arnet Multiport card. Four serial ports on one card (16450s)
@@ -1710,7 +1710,7 @@ too).  Aggregate is probably around 64Kb.
 
    Offers?  Also willing to swap for monitor.
 
-                                    Lee  ([email omitted])",technical_response_report,AI pre-label; review required; source post 60528
+                                    Lee  ([email omitted])",troubleshooting_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60528"
 "In PC Magazine April 27, 1993:29 ""Although SCSI is twice as fasst as ESDI,
 20% faster than IDE, and support up to 7 devices its acceptance ...has
 long been stalled by incompatability problems and installation headaches.""
@@ -1719,7 +1719,7 @@ int eh same article the PC would will get plug and play SCSI {from the
 article it seems you get plug and play SCSI-1 only since SCSI-2 in FULL
 implimentation has TEN NOT 7 devices.}
 SCSI-1 intergration is sited as another part of the MicroSoft Plug and play
-program.",technical_response_report,AI pre-label; review required; source post 60197
+program.",technical_response_report,"AI pre-label; reviewed, kept; source post 60197"
 "Good luck finding an MX17S.  When I was looking around back in
 December/January, Mag wasn't producing any because they couldn't get
 tubes from Sony.  I asked when they expected to restart production as
@@ -1727,7 +1727,7 @@ I was willing to wait a few months to get an MX17S but they said not
 any time soon.  I wound up getting a T560i and am extremely happy with
 it.
 
-David",technical_response_report,AI pre-label; review required; source post 60243
+David",technical_response_report,"AI pre-label; reviewed, kept; source post 60243"
 "Windows Sources Magazine reviewed a number of 17"" monitors recently
 and they too said that the Nanao T560i was the best monitor to get if
 you had the money. But they also said that the Mitsubishi Diamond Pro
@@ -1738,7 +1738,7 @@ Has anyone actually seen any of these? I am also thinking of buying a
 17"" monitor and was going to consider the Mitsubishi. If I remember
 correctly, I think its viewing area is 16"" measured diagonally.
 
-Thanks.",information_request,AI pre-label; review required; source post 60195
+Thanks.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60195"
 "Hi All,
 
   I have heard that somewhere there exist programmable keyboards, eg. one
@@ -1752,7 +1752,7 @@ which wouldn't look too neat, besides, what would one do from an XT?)
 
   Great thanks in advance,
 
-Andrew.",information_request,AI pre-label; review required; source post 58905
+Andrew.",information_request,"AI pre-label; reviewed, kept; source post 58905"
 "Like who, f'rinstance?  When I bought my system (November), no first, second,
 or third tier vendor could touch the price for the hardware/software
 combination I got from GW2000.
@@ -1770,7 +1770,7 @@ love it, and the ones who hate it.  You don't hear from the folks in the
 middle very often...
 
 They have rough edges, no doubt about it; but they give good value per dollar,
-and use almost all top-quality components.",technical_response_report,AI pre-label; review required; source post 60141
+and use almost all top-quality components.",technical_response_report,"AI pre-label; reviewed, kept; source post 60141"
 "Help!
   I'm trying to configure NCSA Telnet v2.3.05 to work with a 3C503 ethernet
 board.  I can use FTP fine, but whenever I attempt to use Telnet, the
@@ -1778,7 +1778,7 @@ machine hangs with a blank screen and a blinking green cursor.  Any ideas?
 
 Please e-mail:
 	[email omitted]
-	[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60559
+	[email omitted]",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60559"
 "Well it seems that I have a soundblaster card for sale since
 I recently purchased a SBPro. The card comes complete, In mint
 condition; with box, manuals,docs ,disks and original packaging.
@@ -1787,21 +1787,21 @@ Respond before APRIL 28!!!!!!!!!!!!!
 
 e-mail at [email omitted]
 
-J.M.",technical_response_report,AI pre-label; review required; source post 60729
+J.M.",technical_response_report,"AI pre-label; reviewed, kept; source post 60729"
 "Pentium processors / motherboards are not available to the general public as
 of yet.  Intel has released them to companies such as Gateway and Dell
 to do testing, etc.  It'll be a while...
 
 Mike Bitz                   Internet: [email omitted]
 Research and Development              [email omitted]
-Dakota State University       Bitnet: [email omitted]",technical_response_report,AI pre-label; review required; source post 60379
+Dakota State University       Bitnet: [email omitted]",technical_response_report,"AI pre-label; reviewed, kept; source post 60379"
 "I got a harddisk shipped with an IDE specification but not the
 SCSI spec. Would someone tell me how to set the jumper on
 the harddrive? Thanks.  Please email response.
 
 Philip Sinn
 [email omitted]
-University of Washington",information_request,AI pre-label; review required; source post 60543
+University of Washington",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60543"
 "I need some help with a multi port serial board of unknown origin.  I'm
 hoping someone knows what this board is, or, even better, what the various
 switches and jumbers are used for.
@@ -1821,7 +1821,7 @@ across the bottom.  There is a box for serial number, but it is blank.
 Immediately below the words ""SERIAL NO"", but not in the box left for
 the S/N, are the numbers ""1990 2 8"".
 
-Anyone have any clues?  Your help is greatly appreciated.",information_request,AI pre-label; review required; source post 60732
+Anyone have any clues?  Your help is greatly appreciated.",information_request,"AI pre-label; reviewed, kept; source post 60732"
 "Hi there.  We just bought a 486 DX2/66 Gateway system with a 2 meg ATI
 Ultra Pro video card.  Everything seems to work fine except for the
 Windows Drivers for 800x600 24 bit, and 800x600 and 1024x768 16 bit
@@ -1853,7 +1853,7 @@ DOS 6.0
 Windows 3.1
 Mach 32 drivers version 1.5 (build 59)
 
-Thanks in advance.",troubleshooting_request,AI pre-label; review required; source post 60711
+Thanks in advance.",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60711"
 "I am looking for a CDROM audio cable to connect my Toshiba 3401B (L/R audio) to
 the Pro Audio Spectrum 16 sound card.  Thanks in advance for any pointers...
 
@@ -1862,7 +1862,7 @@ the Pro Audio Spectrum 16 sound card.  Thanks in advance for any pointers...
 / ___) (_   _) | ___) | || | | ___)     | |     /  \       Network Manager
 \__  \   | |   | _)_  | || | | _)_      | |__  | || |     [email omitted]
 (____/   |_|   |____)  \__/  |____)     |____) |_||_|      (310) 985-4750
-CALSTATE UNIVERSITY LONG BEACH, 1250 Bellflower Blvd. Long Beach, CA  90840",information_request,AI pre-label; review required; source post 60586
+CALSTATE UNIVERSITY LONG BEACH, 1250 Bellflower Blvd. Long Beach, CA  90840",information_request,"AI pre-label; reviewed, kept; source post 60586"
 "What do I need to do to configure this drive as a slave?
 Model# CP30101G
 
@@ -1876,7 +1876,7 @@ Jeff
 *  of hardware and software. Buy Canadian music. Quit smoking. *
 *  Take up running. FM synthesis is the CGA of audio.          *
 *                            [email omitted]        *
-****************************************************************",information_request,AI pre-label; review required; source post 60432
+****************************************************************",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60432"
 "I have one and it is my favorite CD-ROM drive so far.  I also have
 a NEC-74 and have had experience with several other drives (Various
 Phillips drives)
@@ -1886,7 +1886,7 @@ needs 2 hands), the XA handling (The NEC needs to be re-booted to go from
 XA to ROM while the 3401 does it on the fly), All in all I am seriously
 considering replacing my NEC with another Toshiba.
 
-						JWS",technical_response_report,AI pre-label; review required; source post 60370
+						JWS",technical_response_report,"AI pre-label; reviewed, kept; source post 60370"
 "The above does not tell the proper story of SCSI:
 SCSI-I: 8-bit asynchronous {~1.5MB/s ave}, synchronous {5MB/s max} transfer
 base.
@@ -1929,7 +1929,7 @@ When one knows the FACTS behind the numbers then one realizes that the
 article knows what it is talking about {even if it does not tell HOW the
 figures came about} while  [email omitted] is throwing out
 ranges that don't tell SQUAT {Since he IGNORES SCSI-1 devices with
-SCSI-2 chips his ranges tell even LESS then intended.} }",technical_response_report,AI pre-label; review required; source post 60247
+SCSI-2 chips his ranges tell even LESS then intended.} }",technical_response_report,"AI pre-label; reviewed, kept; source post 60247"
 "The last I heard, the author was having some problems in his immediate
 family and had delayed the continuation of development for a time.
 This was some months ago.
@@ -1938,7 +1938,7 @@ It's a shame.  The driver is the best memory manager I have found
 ANYWHERE.  It doesn't require V8086 mode (like QEMM) so it works with
 Ultima 7.  It doesn't take ANY memory (runs, then exits).
 
-If only the EMM provider were a little faster and more stable.",technical_response_report,AI pre-label; review required; source post 60550
+If only the EMM provider were a little faster and more stable.",technical_response_report,"AI pre-label; reviewed, kept; source post 60550"
 "PLEASE: response directly to me ([email omitted])
         by email.  IF there are a sufficient number of interesting
         responses, I will post a summary (on April 24 or 25).
@@ -1958,12 +1958,12 @@ and (if possible) what motherboard & BIOS
 
 Thanks in advance,
 Robert Luoma      ([email omitted])
-   --> all flames will be stored on my WORN drive <--",information_request,AI pre-label; review required; source post 60563
+   --> all flames will be stored on my WORN drive <--",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60563"
 "I am looking at buying some Companion brand VLB/ISA/EISA motherboards with
 HINT chipsets.  Has anybody had any experience with this board (good or bad)?
 Any information would be helpful!
 
-thanks",information_request,AI pre-label; review required; source post 60424
+thanks",information_request,"AI pre-label; reviewed, kept; source post 60424"
 "As of today I will no longer be a contact for Zeos International on the net.
 This responsibility has been taken over by another tech ([email omitted]) and I
 am moving up and on (mo money, mo money :)).  I just wanted to thank all of the
@@ -1973,7 +1973,7 @@ customers with as easy access as possible when they have questions/problems and
 being on the net is an big step in the right direction.  I hope that other
 companies will follow suit (as Weitek and others have done). Again, thanks.
 
----JRE---",technical_response_report,AI pre-label; review required; source post 60262
+---JRE---",technical_response_report,"AI pre-label; reviewed, kept; source post 60262"
 "I believe that any VL/EISA/ISA motherboard that uses the HINT chipset
 is limited to 24-bit EISA DMA (where 'real' EISA DMA is 32-bit).  The
 HINT EISA DMA has the 16 mb ram addressing limitation of ISA.  For this
@@ -1986,7 +1986,7 @@ DMA.
 
 Other than this limitation, the motherboard works quite well (I am using
 mine with DOS 5, Windows 3.1, and UNIX S5R3.2).  Also with Adaptec 1742a
-EISA SCSI host adapter.",technical_response_report,AI pre-label; review required; source post 60696
+EISA SCSI host adapter.",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60696"
 "XGA or XGA-2?  For the original XGA you just need something that can do
 1024x768 at 45/90Hz interlaced (just tell them ""8514 compatible"" and they
 should get the idea).  For the XGA-2, get what you like.  I prefer multi-
@@ -1999,7 +1999,7 @@ in modes like 800x600x64k colors noninterlaced, or at higher modes like
 Dick Kaul            | My opinions only, not official IBM positions, etc--
 IBM XGA Development  | they'd make me wear a suit if I were to speak for IBM.
 Boca Raton, FL       | ""Shhhh... The maestro is decomposing.""
-[email omitted]",technical_response_report,AI pre-label; review required; source post 60170
+[email omitted]",technical_response_report,"AI pre-label; reviewed, kept; source post 60170"
 "I just installed a DX2-66 CPU in a clone motherboard, and tried mounting a CPU
 cooler on the chip.  After about 1/2 hour, the weight of the cooler was enough
 to dislodge the CPU from its mount.  It ended up bending a few pins
@@ -2009,7 +2009,7 @@ cooler back on.  So far so good.
 
 Have others had this problem?  How do you ensure that the weight of
 the CPU fan and heatsink do not eventually work the CPU out of its
-socket when mounting the motherboard in a vertical case?",information_request,AI pre-label; review required; source post 60695
+socket when mounting the motherboard in a vertical case?",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60695"
 "Hello folks!
 
 I have an Archive XL5580 (internal QIC-80) tape drive, which is pretty
@@ -2021,7 +2021,7 @@ The problem: Although the DOS-based QICstream software works just fine,
 both the Norton and Central Point backup programs for Windows fail unless
 I switch the machine to non-turbo speed (I'm using a 486DX/33 EISA).  Since
 the DOS software works, it can't be a hardware problem, can it?  Has anyone
-seen similar problems?  Any solutions?  Thanks in advance.",troubleshooting_request,AI pre-label; review required; source post 60158
+seen similar problems?  Any solutions?  Thanks in advance.",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60158"
 "I recently decided to try using emm386.exe for a memory manager and when I
 tried to print to my printer in lpt1 from word55 I wouldn't work.  It would
 send the linefeeds for the top margin and then the printer READY light would
@@ -2029,7 +2029,7 @@ go off and stop working.  I disabled emm386.exe and the problem went away.
 I would like to continue using emm386.exe if possible.  I would greatly
 appreciate any comments or suggestions!!  please send them to [email omitted],
 
-[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60474
+[email omitted]",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60474"
 "We are trying to connect an Olivetti XM4311 5"" floppy drive as the second
 drive on a Panasonic 286 machine.  It seems to sort of talk to it (gets it
 spinning and stepping) but gives a ""Disk not ready"" error.
@@ -2041,7 +2041,7 @@ switches and think that may be the problem.
 Any information, or advice (other than ""junk the stupid thing"" :) would be
 most appreciated, thanks.  (email reply preferred).
 
-[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60375
+[email omitted]",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60375"
 "Hi!
 I got hold of an old Zenith 286 Laptop with model# ZWL-183-45
 
@@ -2055,7 +2055,7 @@ Thanks for your help.
 
 -- Michael
 
-Michael Thurbin ([email omitted])",information_request,AI pre-label; review required; source post 60363
+Michael Thurbin ([email omitted])",information_request,"AI pre-label; reviewed, kept; source post 60363"
 "This might be a silly question but I have to ask it anyway. I am in
 the process of purchasing an EISA/VL Bus 486 DX2-66 computer and I
 found two places that sell machines that have what I want and have the
@@ -2078,7 +2078,7 @@ clear choice?  Does anyone know anything positive or negative about
 either company? Has anyone ever heard of Cache motherboards? Should I
 go with Micron just because it has the Micronics motherboard? etc.
 
-Thanks very much in advance for any information.",information_request,AI pre-label; review required; source post 60188
+Thanks very much in advance for any information.",information_request,"AI pre-label; reviewed, kept; source post 60188"
 "They don't have a conflict because technically LPT1: does not use
 IRQ7!.
      The Parallel printer processor (the actual number escapes
@@ -2095,10 +2095,10 @@ usually enable this feature as it make monitoring COM port
 activity easier than polling the serial UART, thus probably
 getting the sound card slighty confused!.
 
-Windows may be a different story....",technical_response_report,AI pre-label; review required; source post 60476
+Windows may be a different story....",technical_response_report,"AI pre-label; reviewed, kept; source post 60476"
 "What is address interliving? and memmory modules  interliving?
 Thanks in advance for the info.
-Robert.",information_request,AI pre-label; review required; source post 60387
+Robert.",information_request,"AI pre-label; reviewed, kept; source post 60387"
 "We are trying to install a donated hard disk (Miniscribe
 vintage 1988) on a supercheap ancient Compaq XT for
 use in education.  The only problem is that the
@@ -2119,7 +2119,7 @@ know.  E-mail is best, but I'll also be watching the
 newsgroup postings.
 
 Thanks in advance,
--Robert",information_request,AI pre-label; review required; source post 60263
+-Robert",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60263"
 "Hi everyone,
 	I have a question regarding my stack on my pc.  I am programming
 in Turbo C 3.0 and my program is rather large (model large too).  I keep
@@ -2142,12 +2142,12 @@ Thanks in advance,
 Sean Mars
 Email [email omitted]
 Carroll College
-Waukesha, WI",troubleshooting_request,AI pre-label; review required; source post 60779
+Waukesha, WI",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60779"
 "In evolution of 80-x86 data path width has been doubled from
 8 to 16 t0 32 bits but the speed of data processing has not increased at
 same rate.The question is Why? What is relationship bettween data path width and data processing speed?
 Thanks in advance for the input.
-Robert.",information_request,AI pre-label; review required; source post 60386
+Robert.",information_request,"AI pre-label; reviewed, kept; source post 60386"
 "Hi to all you PC gurus!
 
 I'm new to these groups and so please forgive me if my questions are frequently
@@ -2169,10 +2169,10 @@ those routines already (as opposed to buying them separately)?
 Much thanks in advance for any help.
 
 Mitchel Soltys
-[email omitted]",troubleshooting_request,AI pre-label; review required; source post 60244
+[email omitted]",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60244"
 "You can try to get into the setup byt pressing CTRL-ALT-INS or
 	CTRL-ALT-PrintScreen on most PC's. That should give you an option
-	to set regarding the drives to boot from.",technical_response_report,AI pre-label; review required; source post 60251
+	to set regarding the drives to boot from.",technical_response_report,"AI pre-label; reviewed, kept; source post 60251"
 "Recommended for what, DOS? That is a junk.
 
 	Linux + gcc. Fire up gcc to compile libc and kernel at the
@@ -2185,7 +2185,7 @@ Mitchel Soltys
 	change bus speed
 	swap RAM.
 
-H.J.",technical_response_report,AI pre-label; review required; source post 60656
+H.J.",technical_response_report,"AI pre-label; reviewed, kept; source post 60656"
 "Technically there is no reason why a chip set cannot support a 486DX50 and
 a 25MHz local bus.
 
@@ -2195,11 +2195,11 @@ the main CPU clock and allow for many more slots due to the user of buffers.
 This will allow the use of ever faster CPUs with the same standard I/O
 cards. Until the next buss spec...
 
-Guy",technical_response_report,AI pre-label; review required; source post 58998
+Guy",technical_response_report,"AI pre-label; reviewed, kept; source post 58998"
 "I've seen a listing of a Seagate 1G IDE hard drive.
 
 Windows NT already supports SCSI, a variety of adapters, for disk,
-tape, and CD-ROM.  So does OS/2 2.0.",technical_response_report,AI pre-label; review required; source post 60428
+tape, and CD-ROM.  So does OS/2 2.0.",technical_response_report,"AI pre-label; reviewed, kept; source post 60428"
 "I was just reading in PC Magazine that the peripherals in a PC with an
 ISA bus can only access 16MB of memory.  Also, that some video cards on
 the ISA bus look for a memory aperture to map their memory to.  So that
@@ -2210,7 +2210,7 @@ Can someone explain this in more detail.  Is there a way around this
 limit.
 
 If you email me a response, I will summarize.
-	-Bo	[email omitted]",information_request,AI pre-label; review required; source post 60298
+	-Bo	[email omitted]",information_request,"AI pre-label; reviewed, kept; source post 60298"
 "Has anyone taken a look at the new ViewSonic 17? They claim
    1280x1024 at 76Hz.  How does it compare with the T560i in terms of
    price, and quality of display?
@@ -2218,14 +2218,14 @@ If you email me a response, I will summarize.
 I'm interested in the new ViewSonic 17 as well.  Has anyone seen one
 of these monitors in the flesh?
 
-- Tony",information_request,AI pre-label; review required; source post 60694
+- Tony",information_request,"AI pre-label; reviewed, kept; source post 60694"
 "Did I once hear that in order for the date to advance, something, like a
 clock, *has* to make a Get Date system call? Apparently, the clock
 hardware interrupt and BIOS don't do this (date advance) automatically. The
 Get Date call notices that a ""midnight reset"" flag has been set, and then
 then advances the date.
 
-Anybody with more info?",information_request,AI pre-label; review required; source post 60487
+Anybody with more info?",information_request,"AI pre-label; reviewed, kept; source post 60487"
 "B
 
 You shouldn't have troubles.  I have heard of machines having problems
@@ -2242,21 +2242,21 @@ be on the safe side.
  . WinQwk 2.0b#0 . Unregistered Evaluation Copy
  * KMail 2.95d W-NET HQ, hal9k.ann-arbor.mi.us, +1 313 663 4173 or 3959
 
-----",technical_response_report,AI pre-label; review required; source post 58917
+----",technical_response_report,"AI pre-label; reviewed, kept; source post 58917"
 "There is a benchmark program called COMPTEST said CYRIX CPUs have a bug
 so they cannot run the program. Also may be NeXTSTEP 486?
 
 						regards,
 
 						Desmond Li
-						LUT, UK.",technical_response_report,AI pre-label; review required; source post 60540
+						LUT, UK.",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60540"
 "MINE has a 16450 sodered right on the card.  Why would you need the 16550
 anyway?  From what I've heard, when you're multitasking, its FIFO buffer keeps
 you from loosing data.  Is this right?
 
 Bryan Luff
 Math & Comp. Sci.
-Cal. U. of PA",technical_response_report,AI pre-label; review required; source post 58994
+Cal. U. of PA",technical_response_report,"AI pre-label; reviewed, kept; source post 58994"
 "^^^
 How long does he have to take in fixing it?  Does he have to use new
 parts when he repairs it or can he substitute used parts without your
@@ -2290,12 +2290,12 @@ good service, too. But if you think all local dealers give consistenly good
 service, you are wrong.  I have many anectdotes to prove my point,
 but I'm sure there are others on the net can do a better job than I can.
 
-- Ted Drude ([email omitted])",technical_response_report,AI pre-label; review required; source post 58993
+- Ted Drude ([email omitted])",technical_response_report,"AI pre-label; reviewed, kept; source post 58993"
 "Can anybody send CONNER CP-321 harddisk specifications?
 It has 612 Cyl, and 4 HD, but I am more intrested in its time-out values,
 precomp, etc.
 
-Heikki Haldre Internet: [email omitted]",information_request,AI pre-label; review required; source post 60423
+Heikki Haldre Internet: [email omitted]",information_request,"AI pre-label; reviewed, kept; source post 60423"
 "Sorry if this has been beaten to death on this forum.
 
 I am looking seriously at buying a 486 DX / 33 from Gateway.
@@ -2314,7 +2314,7 @@ Please advise!!
 
 Thanks in advance!
 
-Vasudev Murthy",information_request,AI pre-label; review required; source post 60684
+Vasudev Murthy",information_request,"AI pre-label; reviewed, kept; source post 60684"
 "I am looking for good add-on font cartridge for HP LaserJet II.
 I found in PC Magazine article IQ Enginnering and Pacific Data Products
 are well-known maker of cartridge for HP LaserJet series. But I couldn't find
@@ -2325,7 +2325,7 @@ Any suggestions please.
 Thanks in advance,
 
   Hakamata Atsushi
-  Sony Corporation    Osaki Technology Center",information_request,AI pre-label; review required; source post 60508
+  Sony Corporation    Osaki Technology Center",information_request,"AI pre-label; reviewed, kept; source post 60508"
 "Hay all:
 
     Has anyone out there heard of any performance stats on the fabled p24t.
@@ -2333,7 +2333,7 @@ Thanks in advance,
 pentium would be.  Any info would be helpful.
 
 Later
-BoB",information_request,AI pre-label; review required; source post 60718
+BoB",information_request,"AI pre-label; reviewed, kept; source post 60718"
 "(How is 0-40 twice 1.25? Do you just pick whatever SCSI setup that makes
 the statment ""correct""?)
 Even if you could make such a statement it would be meaningless unless
@@ -2350,7 +2350,7 @@ Something is missing there. :) Anyway, I agree. There's a lot of
 opportunity for marketing jingo like ""SCSI-2 compliant"" which tells
 you nothing about the performance, whether it has ""WIDE"" support, etc.
 
-What does it use? Hopefully a good NCR chip (e.g. 53c710)",technical_response_report,AI pre-label; review required; source post 60294
+What does it use? Hopefully a good NCR chip (e.g. 53c710)",troubleshooting_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60294"
 "misc.entrepreneurs,misc.wanted,pnw.forsale,uw.pc.ibm,seattle.forsale,uw.
 .forsale,misc.forsale,
 misc.forsale.computers.d,misc.forsale.computers.pc-clone,misc.forsale.co
@@ -2369,7 +2369,7 @@ I am waiting for an offer.
 	(206) 685-3793 (work)
 	(206) 524-7218 (FAX)
 INTERNET: [email omitted]
-UUCP:	  uw-beaver!atmos.washington.edu!yuri",information_request,AI pre-label; review required; source post 60391
+UUCP:	  uw-beaver!atmos.washington.edu!yuri",information_request,"AI pre-label; reviewed, kept; source post 60391"
 "I just bought a new IDE hard drive for my system to go with the one
 I already had.  My problem is this.  My system only had a IDE cable
 for one drive, so I had to buy cable with two drive connectors
@@ -2381,7 +2381,7 @@ in the cable to align these.
 Secondly, the cable has like a connector at two ends and one between them.
 I figure one end goes in the controler and then the other two go into
 the drives.  Does it matter which I plug into the ""master"" drive
-and which into the ""Slave""?  any help appreciated.  thanks...",information_request,AI pre-label; review required; source post 60820
+and which into the ""Slave""?  any help appreciated.  thanks...",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60820"
 "Netters!
 
 I need a cdrom drive as my order was cancelled and thought 'Why not ask
@@ -2418,7 +2418,7 @@ name:    J-V Meuldijk                                          [ o o ]
 address: gildelaar 4                                            \_=_/
          4847 hw teteringen       fax:     +3176-600220         _| |_
          holland                  e-mail:  [email omitted]      / \_/ \
-_____________________________________________________________oOOO___OOOo__",information_request,AI pre-label; review required; source post 60239
+_____________________________________________________________oOOO___OOOo__",information_request,"AI pre-label; reviewed, kept; source post 60239"
 "I've been intently following the MAG thread while waiting for
 mine to arrive in the mail. There seems to be a lot of
 complaints about minor alignment problems with the MX15F. One
@@ -2436,14 +2436,14 @@ are the norm or are most of their monitors perfect? I don't want
 to send it back and get one with the same or an even worse
 problem. Does the factory consider this kind of thing normal
 and ship their monitors with less than perfect alignment?
-Are other netters just living with these kind of imperfections?",troubleshooting_request,AI pre-label; review required; source post 60240
+Are other netters just living with these kind of imperfections?",information_request,"AI pre-label; reviewed, changed from troubleshooting_request; source post 60240"
 "I need to know the Pins to connect to make a loopback connector for a serial
 port so I can build one.  The loopback connector is used to test the
 serial port.
 
 Thanks for any help.
 
-Steve",information_request,AI pre-label; review required; source post 60536
+Steve",information_request,"AI pre-label; reviewed, kept; source post 60536"
 "National Semiconductor are one that I know of.
 
 Cheers,
@@ -2459,28 +2459,28 @@ UUCP:       ..!uunet!munnari!sserve.adfa.oz.au!compsol!root
 FidoNet:    3:620/262
 If a train station is where the train stops, what's a workstation?!
 
- * Origin: % Compact Solutions % Canberra ACT Australia % (3:620/262)",technical_response_report,AI pre-label; review required; source post 60489
+ * Origin: % Compact Solutions % Canberra ACT Australia % (3:620/262)",technical_response_report,"AI pre-label; reviewed, kept; source post 60489"
 "Does anyone have enough experience to report whether disk data
 compression has any effect on the optimal disk sector interleave?
 Offhand, I expect that the time required to decompress disk data
 would increase the optimum disk sector interleave.
-                                              - Alan Hinds",information_request,AI pre-label; review required; source post 60736
+                                              - Alan Hinds",information_request,"AI pre-label; reviewed, kept; source post 60736"
 "OK, the small programme that can be used to switch a SunCD drive into
 2048 bytes/block mode for use with MSDOS/Adaptec/APSI it now available
 by 'ftp' from
 
-	ftp.novell.de ([IP omitted]) pub/pc/adaptec/cdblksize.zip",technical_response_report,AI pre-label; review required; source post 60155
+	ftp.novell.de ([IP omitted]) pub/pc/adaptec/cdblksize.zip",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 60155"
 "My fiance has a pc-junior and wants to upgrade to a full 386.  Does anyone
 know if we could use the monitor it came with on a new machine?  I heard
 it's MCGA or EGA, but not sure which.  Also, does it use cards, so we can
 use the drive controller, floppy, etc?
 
 Thanks for the help!
--Bryan",information_request,AI pre-label; review required; source post 60377
+-Bryan",information_request,"AI pre-label; reviewed, kept; source post 60377"
 "Maybe its a monitor problem.  You mentioned that you swapped cards, but not
 monitors.  Perhaps that could be it.
 
-Dan",technical_response_report,AI pre-label; review required; source post 58840
+Dan",troubleshooting_request,"AI pre-label; reviewed, changed from technical_response_report; source post 58840"
 "yo,yo,yo .
 the western digital hd will hve it marked either s,m,a
 put jumper on the s ""its printed on the circuitry underkneth it.
@@ -2488,7 +2488,7 @@ put jumper on the s ""its printed on the circuitry underkneth it.
 hope i helped i had the same problem.
 bye..
 later daze.
-[email omitted]",technical_response_report,AI pre-label; review required; source post 60500
+[email omitted]",technical_response_report,"AI pre-label; reviewed, kept; source post 60500"
 "A weird thing has happened to my computer lately,
 it gets locked (stops doing anything) at any instance
 without any reason whatsover. I might be using
@@ -2504,7 +2504,7 @@ Thanks. Any help will be really appreciated.
 
 E-mail if possible as sometimes i can't access this service.
 
-Enrique",troubleshooting_request,AI pre-label; review required; source post 60494
+Enrique",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60494"
 "[stuff deleted]
                                        ^^
 
@@ -2515,7 +2515,7 @@ design (or some special deal with Zeos).
 +----------------------------------------------------------------+
 Stephen Lau, Elec. Engineering, Univ. of Hawaii
 *Using a friend's account while waiting for my new grad. account*
-+              Death to FM synthesis! Go Gus!                    +",technical_response_report,AI pre-label; review required; source post 58983
++              Death to FM synthesis! Go Gus!                    +",technical_response_report,"AI pre-label; reviewed, kept; source post 58983"
 "Can somone explain to me all the stuff about modems...
 like v.32 v.42 HST USRobotics...
 
@@ -2524,16 +2524,16 @@ why cheap 14.4 can' t cannot connect fast to some modems...
 just explain to me everything!!!  thanks..
 
 ... We must believe in free will.  We have no choice.
-___ Blue Wave/QWK v2.12",information_request,AI pre-label; review required; source post 60517
+___ Blue Wave/QWK v2.12",information_request,"AI pre-label; reviewed, kept; source post 60517"
 "I have a Conner-disk model CP30061G (200Mb ??) with no info at all. The only thing I know is that
 is normally used with Compaq-machines.
 Please, send me information on switch-settings, geometry and so on.
 It looks like a normal IDE-disk but is it possible to use it with a standard IDE-controller??
 
--- Michael",information_request,AI pre-label; review required; source post 60362
+-- Michael",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60362"
 "I can't imagine why someone would leave their computer on all of
 the time to start with. Its like leaving your lights tv, radio
-and everything in the house on all of the time to me.....Nuts",technical_response_report,AI pre-label; review required; source post 60478
+and everything in the house on all of the time to me.....Nuts",technical_response_report,"AI pre-label; reviewed, kept; source post 60478"
 "HI,
     Recently, when I run the Norton Disk surface test, I realize a slow
 down in harddisk accessing.  At begining of the test, the harddisk will
@@ -2546,7 +2546,7 @@ only slow down for a certain section of the disk and turn back to the
 original speed after it gets over the section.  I am wondering whether
 it is a harddisk problem or some other problems. Anyway help or comment
 will be appriciate....
-                                                 Shane Cheney Wang",troubleshooting_request,AI pre-label; review required; source post 60186
+                                                 Shane Cheney Wang",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60186"
 "I own an 80386sx, 16Mhz, 2Mb ram machine and am finding it too slow for
 certain games such as X-wing. I was in a Computer store there the other
 day and saw a series of Gamecards which claim to speed up your machine
@@ -2555,7 +2555,7 @@ machine had bought one or seen one of these Gamecards and whether or not
 they do actually work!
 	Any help here would be much appreciated,
 		Thanks in advance,
-			Greg.",information_request,AI pre-label; review required; source post 60669
+			Greg.",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60669"
 "Fellow netters,
 
 I'm in the market for a hand scanner.  However, I don't know anyone who has
@@ -2585,7 +2585,7 @@ recommend it.  Also, if you know of another scanner within the price range
 (under $225) that would be a better deal, please E-Mail me.  Any and all help
 would be greatly appreciated.
 
-- Kevin Harter",information_request,AI pre-label; review required; source post 60439
+- Kevin Harter",information_request,"AI pre-label; reviewed, kept; source post 60439"
 "Re: Problems with S3-initialization
 
 As described the manual the following steps must be done for th initialization
@@ -2620,10 +2620,10 @@ Our machine is a 486 DX/2 with EISA bus and a S3 86C805 local bus.
 
 Andreas Disteli
 Institut fuer Computersysteme, ETH Zuerich
-email: [email omitted]",technical_response_report,AI pre-label; review required; source post 60219
+email: [email omitted]",technical_response_report,"AI pre-label; reviewed, kept; source post 60219"
 "I am selling a USR HST 14.4k baud modem with v42bis compression upgrades.
 THere is no manual, as it was lost going from one side of the U.S. to the other at some point.  THe modem is setup for max throughput, and it has built in help, but a quick reference guide on the bottom of it, so its use it not difficult by any means.
-Any offers?",technical_response_report,AI pre-label; review required; source post 58980
+Any offers?",information_request,"AI pre-label; reviewed, changed from technical_response_report; source post 58980"
 "[deleted]
 
 I'm sorry if I'm misunderstanding your post, but DRAM *does not* have to
@@ -2648,7 +2648,7 @@ trailing phase of normal access cycle or as an individual cycle.
 
 [other stuff deleted]
 
-Ken Nakata",technical_response_report,AI pre-label; review required; source post 60193
+Ken Nakata",technical_response_report,"AI pre-label; reviewed, kept; source post 60193"
 "Still no good.  WatchIT TV will not work on a with local bus video.
 It will not work in any high reolution modes either.  The people who
 make the card assure me that they will have a card available in June
@@ -2659,7 +2659,7 @@ Thanks
 
 Michael Grant
 ([email omitted]) or
-([email omitted])",troubleshooting_request,AI pre-label; review required; source post 60281
+([email omitted])",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60281"
 "[]
 
 	""These LPT1, COM1, disk controller are call devices.  There are
@@ -2678,7 +2678,7 @@ This precludes letting another card assert interrupt number 7.
 When two or more devices in an ISA bus PC share an interrupt, it's
 because they're implemented by a single card.
 
-  -=- Andrew Klossner  ([email omitted])",technical_response_report,AI pre-label; review required; source post 60697
+  -=- Andrew Klossner  ([email omitted])",technical_response_report,"AI pre-label; reviewed, kept; source post 60697"
 "I just purchased a Viewsonic 17 and and Orchid P9000.  In short, I am happy
 with the monitor and unhappy with the card.  I have spent a lot more time
 futzing with the card, so that is what I am going to write about.  The monitor
@@ -2755,7 +2755,7 @@ but this time maybe I'd better.  My testing is totally unconnected with my
 work (I program under UNIX on Decstations) is done completely without the
 knowledge, blessing, or equipment of my company.
 
-geoff sherwood",technical_response_report,AI pre-label; review required; source post 60275
+geoff sherwood",technical_response_report,"AI pre-label; reviewed, kept; source post 60275"
 "This may be the dumbest question of the year, but is there a
 way to 'piggyback' or expand a 6-slot motherboard (all 16-bit)
 to get the usual 8?  My case has slots for 8, and I'd like to
@@ -2766,7 +2766,7 @@ as I can put my I/O card, MIDI card, and Soundblaster card there.
 My other cards are 16 bit (IDE/Floppy, SVGA, modem).
 
 If there is such an expander, does that screw up performance of
-everything else?  I'd hate to buy a new motherboard! :-(",information_request,AI pre-label; review required; source post 58927
+everything else?  I'd hate to buy a new motherboard! :-(",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 58927"
 "You might try asking on one of the comp.sys.ibm.* echos (the best one
 may be comp.sys.ibm.pc.hardware).  I say this because the conversion
 seems more geared toward a PC user wanting to use that monitor, than
@@ -2784,14 +2784,14 @@ tried this, but that would be my guess...
 
 ...you might want to price mono VGA monitors anyways - it may be cheaper
 to go that route than to do the conversion; besides, with the Falcon and
-beyond, VGA/SVGA/multisync monitors will probably be the way to go...",technical_response_report,AI pre-label; review required; source post 60745
+beyond, VGA/SVGA/multisync monitors will probably be the way to go...",technical_response_report,"AI pre-label; reviewed, kept; source post 60745"
 "What 4 or more com port boards are available for PCs?
 We want standard com ports, so no need to mention the expensive
 coprocessed ones.
 
 They should either be able to share IRQs or be able to use IRQs 8-15.
 
-Thanks for any info...",information_request,AI pre-label; review required; source post 60482
+Thanks for any info...",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60482"
 "I have a 386/40 motherboard with AMI BIOS.
 I haven't located the little motherboard manual yet,
 and suddenly it's giving me 10 beeps when I turn the power on.
@@ -2800,7 +2800,7 @@ then gave all kinds of problems, in Windows and outside it.
 After multiple reboots, now it only gives 10 beeps and sits there?
 
 Anybody know what 10 beeps means?
-Thanks.",troubleshooting_request,AI pre-label; review required; source post 60557
+Thanks.",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60557"
 "I think the original respondent (Guy Dawson?) was refering to something
 much more elementary.
 
@@ -2811,7 +2811,7 @@ If you have a small disk (50 meg or less), I would recommend that it remain
 a single partition. Unless you have some other consideration.
 
 If you have a large disk (greater than 200 meg), multiple partitions can
-make sense.",technical_response_report,AI pre-label; review required; source post 60305
+make sense.",technical_response_report,"AI pre-label; reviewed, kept; source post 60305"
 "Computers are a special case.. and it's a pretty good idea to
  leave them on.. cuz everytime you turn on a computer, you're
  putting a surge of electricity through its delicate components.
@@ -2822,7 +2822,7 @@ make sense.",technical_response_report,AI pre-label; review required; source pos
  look like much when it come time to fix your computer.
 
 					My $.02 worth..
-					  N. Ngo",technical_response_report,AI pre-label; review required; source post 60492
+					  N. Ngo",technical_response_report,"AI pre-label; reviewed, kept; source post 60492"
 "While rummaging through a box of old PC (5150) parts, I found a half-size
 board that looks like a comm port board.  It was made by Forte Data Systems and
 has a copyright date of 1986 on it.  The board provides a male 24-pin connector
@@ -2833,7 +2833,7 @@ time, but the system did not recognise a comm port.
 Does anyone have a clue as to what this board might be or how to configure it?
 I could use another comm port if it's free.
 
-Bryan",information_request,AI pre-label; review required; source post 60175
+Bryan",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60175"
 "Who said ISA was necessary?  EISA or VLB are the only interfaces worth
 investing thousands of dollars (e.g. a new pc's worth of money ) in .
 
@@ -2886,7 +2886,7 @@ all on the same card.
 
 Simply put, SCSI is handier than IDE.  No mysterious jumpers to figure out.
 
-Greg.",technical_response_report,AI pre-label; review required; source post 60357
+Greg.",technical_response_report,"AI pre-label; reviewed, kept; source post 60357"
 "1. Dont rely on benchmarks. They often show incorrect due to different
    TSR programs.
 
@@ -2908,7 +2908,7 @@ SWEDEN
 Tel: +46-(0)60-117775			- ACT Sweden -
 Fax: Nope!			 Advanced Computer Technology
 BBS: Not yet...
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-",technical_response_report,AI pre-label; review required; source post 58968
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-",technical_response_report,"AI pre-label; reviewed, kept; source post 58968"
 "With a sound card on interrupt 5, two serial ports (one for modem on i4,
 one for Miracle Piano on i3) and a printer port on i7, I have run out of
 low interrupts.  What I would like is a mouse port with an interrupt of
@@ -2920,7 +2920,7 @@ lower than 7.  Does anyone know of any board for an ISA bus which will
 allow a mouse port (or even a serial port) with high interrupts?
 
 Loran Yourk             (708)979-9378
-AT&T                    [email omitted]",information_request,AI pre-label; review required; source post 60414
+AT&T                    [email omitted]",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60414"
 "I have a similar configuration: Colorado 250mb on 66 DX/2 tower.
 
 	You got suckered in the same way I did.  Silly me, believing
@@ -2941,7 +2941,7 @@ AT&T                    [email omitted]",information_request,AI pre-label; revie
 	file for the tape system.  I would recommend running the backup
 
 	The 250mb cartridges won't do you any good since the drive
-	won't write 250mb of physical data on the tape.",technical_response_report,AI pre-label; review required; source post 60191
+	won't write 250mb of physical data on the tape.",technical_response_report,"AI pre-label; reviewed, kept; source post 60191"
 "In addition to startup time, I leave things running because my PC doubles as
 a fax machine.
 
@@ -2957,11 +2957,11 @@ When unattended, the following are generally running minimized in Win 3.1:
 Clock, WinFax Pro 3.0, Print Manager, MS-Word 1.1, File Manager, Program
 Manager
 
-A random screen saver is generally running too.",troubleshooting_request,AI pre-label; review required; source post 60652
+A random screen saver is generally running too.",technical_response_report,"AI pre-label; reviewed, changed from troubleshooting_request; source post 60652"
 "And again......
                title says it all. WHY?
 
-                      Lee ([email omitted])",information_request,AI pre-label; review required; source post 60527
+                      Lee ([email omitted])",technical_response_report,"AI pre-label; reviewed, changed from information_request; source post 60527"
 "Just to let all you faithful Mitsumi CD Rom owners....
 
 Ever notice QEMM can't load you CD Rom driver high?  Ain't it a bitch?
@@ -2969,7 +2969,7 @@ Ever notice QEMM can't load you CD Rom driver high?  Ain't it a bitch?
 Well, you can call up Quarterdeck's BBS and get a hold of the new drivers
 that CAN be loaded high.  Sorry , I don't have their # on me. :-(
 
-I tested them out and the seem to work great!",technical_response_report,AI pre-label; review required; source post 60399
+I tested them out and the seem to work great!",technical_response_report,"AI pre-label; reviewed, kept; source post 60399"
 "I recently bought a monichrome VGA monitor for $99 that will do
 1024x768 non-interlaced, which seems like a good deal. However, it is
 a fixed-scan rate monitor, and only handles 52 kHz horizontal, I
@@ -2982,14 +2982,14 @@ something else, especially if it wants to do text, I suppose. Anyway:
 
  - if not, can I do so with some sort of different VGA card?
 
-				Peter Desnoyers",information_request,AI pre-label; review required; source post 60174
+				Peter Desnoyers",troubleshooting_request,"AI pre-label; reviewed, changed from information_request; source post 60174"
 "Being a big fan of the official IBM keyboards, I have a PS/2 keyboard attached
 to my clone computer.  I want to know if there is a software utility
 out there that can be used to switch the locations of the ctrl and
 cap locks keys.  Even better, does IBM or any third party make ctrl
 and cap lock key replacements that can be used to visually switch
-the keys as well?",information_request,AI pre-label; review required; source post 60578
-I have the PAS16 / Toshiba 3401 combo and have no problems with it.,technical_response_report,AI pre-label; review required; source post 60288
+the keys as well?",information_request,"AI pre-label; reviewed, kept; source post 60578"
+I have the PAS16 / Toshiba 3401 combo and have no problems with it.,technical_response_report,"AI pre-label; reviewed, kept; source post 60288"
 "The only difference is the time the driver gets loaded. mouse.sys will be
 loaded during the config.sys and therefor before the command.com. mouse.com
 will be loaded during autoexec.bat and so after the command.com.
@@ -3003,14 +3003,14 @@ because some programs won't run with some drivers and I could choose the
 ones I needed during startup. But with DRDOS6, this advantage is gone,
 because DRDOS lets you choose in config.sys which drivers should be loaded.
 
-Michael",technical_response_report,AI pre-label; review required; source post 60657
+Michael",technical_response_report,"AI pre-label; reviewed, kept; source post 60657"
 "Do all SCSI cards for DOS systems require a separate device driver to be loaded
 into memory for each SCSI device hooked up?  Will this also be true of the 32-bit
 OS's?
 
 Thanks.
 
-Randy",information_request,AI pre-label; review required; source post 60974
+Randy",information_request,"AI pre-label; reviewed, kept; source post 60974"
 "For what it's worth (I haven't confirmed it), a Diamond tech-rep told
 me that ALL S3-based video cards use port addresses 0x2E0 and 0x2E8.
 If this is true, it appears that you canNOT use more than one S3 card
@@ -3019,20 +3019,20 @@ in your system.
 Lance Hartmann ([email omitted])
                Yes, that IS a '%' (percent sign) in my network address.
 All statements, comments, opinions, etc. herein reflect those of the author
-and shall NOT be misconstrued as those of IBM or anyone else for that matter.",technical_response_report,AI pre-label; review required; source post 60364
+and shall NOT be misconstrued as those of IBM or anyone else for that matter.",technical_response_report,"AI pre-label; reviewed, kept; source post 60364"
 "In article <[email omitted]>, [email omitted] (R.
 ites:
 a
 The newer the drive, the less problem you will have. The old ten and fifteen
 meg full heights were power hogs, but I have over twenty units that I set up
-running flawlessly with half height drives and/or hard cards.",technical_response_report,AI pre-label; review required; source post 60355
+running flawlessly with half height drives and/or hard cards.",technical_response_report,"AI pre-label; reviewed, kept; source post 60355"
 "I've acquired an old Logitech Series 7 (3-button) mouse, and I'm told
 that this is a bus mouse.  Does anyone want to unload an old
 (pc-clone) bus-card for this mouse?
 
 email replies to:  [email omitted]
 
-thanks.",information_request,AI pre-label; review required; source post 58343
+thanks.",information_request,"AI pre-label; reviewed, kept; source post 58343"
 "Today I recieved a in-warranty replacement for my
 Diamond Speedstar 24X.  On the card I've noticed a few
 changes; mostly there is a new jumper labeled JP5.
@@ -3059,7 +3059,7 @@ chart, but that is it.
 _________________________________________________________
  ________   ___    ___
  _| |__|  | |  \__/  |
-  Bradley   University     armpit of Illinois... Peoria""",information_request,AI pre-label; review required; source post 60396
+  Bradley   University     armpit of Illinois... Peoria""",information_request,"AI pre-label; reviewed, kept; source post 60396"
 "G'day All,
 
 I was looking to build a Parallel Port Digital to Analogue Converter the other
@@ -3098,7 +3098,7 @@ Many thanks for a reply via this conference or email.
 
 +-------------------------------------------------------------------------+
 +-------------------------------------------------------------------------+
-+-------------------------------------------------------------------------+",troubleshooting_request,AI pre-label; review required; source post 60213
++-------------------------------------------------------------------------+",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60213"
 "I have a question regarding sending a NULL character across ethernet
 connection. The actual problem is that emacs (Unix editior) needs
 the NULL character for setting a mark and unfortunately we don't know
@@ -3108,7 +3108,7 @@ BTW control,shift 2 which Ctrl @ does not work.
 
 Thanks
 
-Saeid",information_request,AI pre-label; review required; source post 60662
+Saeid",information_request,"AI pre-label; reviewed, kept; source post 60662"
 "Well, my 14inch VGA 1024x758-interlacing 2.5 year old no brand monitor just
 bit the bullet. I pressed the power switch and a few seconds later, the power
 light went out with a POP. Gawd, it's only been two and half years.
@@ -3122,7 +3122,7 @@ Question: What do I do now???? Buy a new one? Get it fixed? Save up for a
 *really* good one and get by with a cheap EGA monitor for now? I rather save
 my money to upgrade my 386SX to 486-66 though...
 
-Thanks!",troubleshooting_request,AI pre-label; review required; source post 58830
+Thanks!",troubleshooting_request,"AI pre-label; reviewed, kept; source post 58830"
 "Someone Else, could you please comment on that. I have just bought
 a Twincom 14.4DFi, which has a Rockwell chipset. It wasn't cheap
 so I would like to hear of problems I'm likely to run into.
@@ -3133,14 +3133,14 @@ of the Rockwell chips is marked RC144DP.
 But still I would like to hear more of the above mentioned firmware
 problems.
 
-Niels",information_request,AI pre-label; review required; source post 60516
+Niels",information_request,"AI pre-label; reviewed, kept; source post 60516"
 "Hi there,
 
 I think it is time to create a MS DOS 6.0  FAQ since lots of questions
 about it are actually flooding the net.  I won't be able to write it
 my self because of the lack of time/knowledge/experience.
 
-Perry Egelmeers",technical_response_report,AI pre-label; review required; source post 60565
+Perry Egelmeers",technical_response_report,"AI pre-label; reviewed, kept; source post 60565"
 "I have the same question as Guido. It is possible to use the ESDI drive as a master and the IDE drive as the slave ?
 At the moment , I have been using the ESDI drive and recently I bought a IDE drive to use as the 2nd drive .
 The person in the computer shop told me that it is not possible to run 2 disk controller cards together on the same motherboard ( ESDI AND IDE ) but I think there might be some way of making them work. Can anybody enlighten me on this?
@@ -3152,17 +3152,17 @@ G.Chow
 
 [email omitted]
 [email omitted]
-[email omitted]",information_request,AI pre-label; review required; source post 60198
+[email omitted]",information_request,"AI pre-label; reviewed, kept; source post 60198"
 "I also use IRQ 5.  But there is one disadvantage.  Some games assume that
 the board is using IRQ 7 and have no way to adjust this setting.  I had
-trouble with some of the Lucas Films games.",technical_response_report,AI pre-label; review required; source post 60164
+trouble with some of the Lucas Films games.",technical_response_report,"AI pre-label; reviewed, kept; source post 60164"
 "Just a quick THANKS to the many who explained the backing up of my
 masters.  Apparently they are NOT copy-protected; I just used a program that
 is unable to handle high-density (old shit).  I was surprised to hear that
 ""NO programs on high-density disks have copy protection,"" which someone
 back there said.  Huh!  Learn something new every day!
 
-						- Mitch",technical_response_report,AI pre-label; review required; source post 58911
+						- Mitch",technical_response_report,"AI pre-label; reviewed, kept; source post 58911"
 "Hi,
 
 I'm looking to buy a 17"" monitor soon, and it seems that I can't decide what
@@ -3175,7 +3175,7 @@ Actually, any related opinions at buying a 17"" monitor will be welcomed.
 
  Thanks in advance,
 
- [email omitted]",information_request,AI pre-label; review required; source post 60169
+ [email omitted]",information_request,"AI pre-label; reviewed, kept; source post 60169"
 "Hi,
 	would someone please email (and post)
 the AVI (Microsoft) file format.  I wish to
@@ -3189,7 +3189,7 @@ Thank you
 Mark Gregory Lecturer [email omitted] PH(03)6603243 FAX(03)6621060
 Royal Melbourne Institute of Technology,
 Department of Communication and Electronic Engineering,
-P.O. Box 2476V, Melbourne, Victoria, 3001. AUSTRALIA.",information_request,AI pre-label; review required; source post 60577
+P.O. Box 2476V, Melbourne, Victoria, 3001. AUSTRALIA.",information_request,"AI pre-label; reviewed, kept; source post 60577"
 "Is it possible to connect a atari monochrome monitor to some kind of VGA card?
 
 If someone have done this please let me know how.
@@ -3200,7 +3200,7 @@ If someone have done this please let me know how.
      l  \ /  l  ___  ( \/ )          Max Brante   [email omitted]
      l l l l l / _ \  \  /
      l l\_/l l( (_) l /  \	Institutionen f|r teknisk databehandling
-     l_l   l_l \__l_l(_/\_)               Uppsala Universitet",information_request,AI pre-label; review required; source post 58923
+     l_l   l_l \__l_l(_/\_)               Uppsala Universitet",information_request,"AI pre-label; reviewed, kept; source post 58923"
 "After a rough start purchasing a 486 system (see earlier post), I'm trying
 again.  I'm looking at the following system offered by EPS Technologies:
 
@@ -3229,7 +3229,7 @@ Thanks in advance,
 -Toby Loftus
 TAL@BROWNVM
 [email omitted]
-Brown University",information_request,AI pre-label; review required; source post 58973
+Brown University",information_request,"AI pre-label; reviewed, kept; source post 58973"
 "^^^^^^^^^^^^
 How do you do bus-mastering on the ISA bus?
 
@@ -3246,7 +3246,7 @@ but from their PC technical manual (page 2-93):
 direct memory access (DMA) for record data transfers.""
 I expect to see something similar for the PC-AT HDD adapter.
 So the lowly low-density original PC FDD card used DMA and the PC-AT
-HDD controller doesn't!?!?  That makes real sense.",technical_response_report,AI pre-label; review required; source post 60466
+HDD controller doesn't!?!?  That makes real sense.",technical_response_report,"AI pre-label; reviewed, kept; source post 60466"
 "Hi.  Recently my svga monitor has been acting up by taking about
 3 minutes to warm up.
 
@@ -3266,7 +3266,7 @@ years and never seen this happen to a monitor yet.
 I'd really appreciated any help that you fellow netters can offer.
 Thanks a lot.
 
-Edwin",troubleshooting_request,AI pre-label; review required; source post 60296
+Edwin",troubleshooting_request,"AI pre-label; reviewed, kept; source post 60296"
 "Please help if you can with the following strange problem:
 
   The Maxtor 340 drive in my 386 clone would from time to
@@ -3313,7 +3313,7 @@ AUTOEXE.BAT
   MODE CON CODEPAGE PREPARE=((437) C:\DOS\EGA.CPI)
   MODE CON CODEPAGE SELECT=437
   KEYB SG,,C:\DOS\KEYBOARD.SYS
-  C:\SYSTEM\MSCDEX /D:NECCD /L:d /v",troubleshooting_request,AI pre-label; review required; source post 58909
+  C:\SYSTEM\MSCDEX /D:NECCD /L:d /v",troubleshooting_request,"AI pre-label; reviewed, kept; source post 58909"
 "Hi world,
 
         I want to buy a Spirit II 14400 Data/Fax modem (made in U.S.A.).
@@ -3334,7 +3334,7 @@ Please leave me a e-mail.
 
 Thank you very much.
 
-Leung (from Hong Kong University)",information_request,AI pre-label; review required; source post 60378
+Leung (from Hong Kong University)",information_request,"AI pre-label; reviewed, kept; source post 60378"
 "Howdy,
 
 Sorry if this has been covered before:
@@ -3357,7 +3357,7 @@ installations).  Any suggestions would be greatly appreciated (except for
 
 Thanks in advance,
 
-Paul ""Mr. SCSI... NOT!"" Fincke",troubleshooting_request,AI pre-label; review required; source post 58986
+Paul ""Mr. SCSI... NOT!"" Fincke",troubleshooting_request,"AI pre-label; reviewed, kept; source post 58986"
 "Please reply via e-mail since this is job related:
 
 I have a Colorado Jumbo back-up system at one of my places of
@@ -3368,4 +3368,4 @@ cleaning?
 
 Any and all comments will be appreciated!
 
-Stephen Husak",troubleshooting_request,AI pre-label; review required; source post 58966
+Stephen Husak",troubleshooting_request,"AI pre-label; reviewed, kept; source post 58966"
