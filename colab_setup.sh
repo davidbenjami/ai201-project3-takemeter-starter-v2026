@@ -6,7 +6,6 @@ cd ai201-project3-takemeter-starter-v2026
 pip install -r requirements.txt
 python test.py
 
-%ls
 
 
 
