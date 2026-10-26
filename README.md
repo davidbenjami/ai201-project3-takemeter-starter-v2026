@@ -117,7 +117,7 @@ No label is above the 70% cap, and every label is inside the 20–60% band in cr
 
 ## The Training Run
 
-**Status:** Trained on the final `labels.csv` (200 rows) with notebook sections 1–5. The run wrote `results.json` and `test_split.csv`.
+**Status:** Retrained on the reviewed `labels.csv` (200 rows, after the 45 label changes described below) with notebook sections 1–5. The run wrote `results.json` and `test_split.csv`, replacing the earlier run on the pre-review labels.
 
 **Hardware:** Apple Silicon GPU (`mps`), torch 2.14.1.
 
@@ -127,7 +127,29 @@ No label is above the 70% cap, and every label is inside the 20–60% band in cr
 
 **What I changed from the defaults, and why:** I raised the epochs from 3 to 5 and the learning rate from `2e-5` to `5e-5`. A first run with the defaults on an earlier 180-row version of the data predicted almost every post as `information_request`. With only about 140 training posts, the default settings left the model too few update steps to learn the smaller labels.
 
-**Split sizes (stratified 70/15/15):** train 139 · validation 31 · test 30. Only 4 `troubleshooting_request` posts landed in the test split, so that label's F1 will move a lot between seeds.
+**Split sizes (stratified 70/15/15):** train 139 · validation 31 · test 30.
+
+| Label | Train | Val | Test |
+|---|---:|---:|---:|
+| `troubleshooting_request` | 36 | 8 | 8 |
+| `information_request` | 49 | 11 | 11 |
+| `technical_response_report` | 54 | 12 | 11 |
+
+The review doubled `troubleshooting_request` in the test split from 4 posts to 8. That is still few enough that its F1 will move a lot between seeds.
+
+**Results (seed 42, test split of 30):**
+
+| Measure | Value |
+|---|---:|
+| Accuracy | 0.467 |
+| Macro F1 | 0.357 |
+| F1 — `troubleshooting_request` (n=8) | 0.000 |
+| F1 — `information_request` (n=11) | 0.545 |
+| F1 — `technical_response_report` (n=11) | 0.526 |
+| Accuracy, most-confident third | 0.500 |
+| Accuracy, least-confident third | 0.300 |
+
+**What happened:** This run scored lower than the run on the pre-review labels (accuracy 0.733, macro F1 0.644). The model never predicted `troubleshooting_request`: 7 of the 8 test posts in that label went to `information_request`, and 6 of the 11 `technical_response_report` posts went there too. The training loss was still falling at epoch 5 (1.09 → 0.72, validation 1.06 → 0.84), so the model is underfitting rather than overfitting. My review moved 23 posts from `information_request` to `troubleshooting_request`, which put the hardest boundary into all three splits. The earlier score was higher partly because that boundary was mostly absent from the old test split. I am leaving the diagnosis and the fix for unit 6.
 
 ## How I Used AI
 

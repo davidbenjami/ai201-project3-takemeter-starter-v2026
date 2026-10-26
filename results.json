@@ -1,50 +1,50 @@
 {
   "seed": 42,
   "n_test": 30,
-  "accuracy": 0.7333333333333333,
-  "f1_macro": 0.6444444444444445,
+  "accuracy": 0.4666666666666667,
+  "f1_macro": 0.35725677830940983,
   "per_label": {
     "troubleshooting_request": {
-      "precision": 1.0,
-      "recall": 0.25,
-      "f1": 0.4,
-      "support": 4
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
     },
     "information_request": {
-      "precision": 0.6470588235294118,
-      "recall": 0.8461538461538461,
-      "f1": 0.7333333333333333,
-      "support": 13
+      "precision": 0.4090909090909091,
+      "recall": 0.8181818181818182,
+      "f1": 0.5454545454545454,
+      "support": 11
     },
     "technical_response_report": {
-      "precision": 0.8333333333333334,
-      "recall": 0.7692307692307693,
-      "f1": 0.8,
-      "support": 13
+      "precision": 0.625,
+      "recall": 0.45454545454545453,
+      "f1": 0.5263157894736842,
+      "support": 11
     }
   },
   "confusion": {
     "troubleshooting_request": {
-      "troubleshooting_request": 1,
-      "information_request": 3,
-      "technical_response_report": 0
+      "troubleshooting_request": 0,
+      "information_request": 7,
+      "technical_response_report": 1
     },
     "information_request": {
       "troubleshooting_request": 0,
-      "information_request": 11,
+      "information_request": 9,
       "technical_response_report": 2
     },
     "technical_response_report": {
       "troubleshooting_request": 0,
-      "information_request": 3,
-      "technical_response_report": 10
+      "information_request": 6,
+      "technical_response_report": 5
     }
   },
   "confidence": {
-    "mean_when_right": 0.6321941614151001,
-    "mean_when_wrong": 0.6206592321395874,
-    "accuracy_most_confident_third": 0.8,
-    "accuracy_least_confident_third": 0.6,
+    "mean_when_right": 0.47798606753349304,
+    "mean_when_wrong": 0.4520984888076782,
+    "accuracy_most_confident_third": 0.5,
+    "accuracy_least_confident_third": 0.3,
     "n_per_third": 10
   },
   "device": "mps",
