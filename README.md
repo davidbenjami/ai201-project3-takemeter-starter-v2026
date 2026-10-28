@@ -165,6 +165,12 @@ The review doubled `troubleshooting_request` in the test split from 4 posts to 8
 - *What came back:* Draft criteria for accuracy, macro F1, per-label F1, class balance, and confidence.
 - *What I changed:* I tied the boundary rule to current hardware faults versus general information requests and noted that the final dataset needs more troubleshooting examples.
 
+**Moment 3 (unit 6)**
+
+- *What I asked for:* Help running the Unit 6 steps and drafting the write-up.
+- *What came back:* Claude Code ran `baseline.py` (with my definitions, and with bare names) and the notebook's three-seed section before and after the fix, then drafted the Unit 6 sections from the result files.
+- *What I changed:* I wrote my baseline prediction and committed it before the baseline ran. My labels on the staff set and the adjudication of every disagreement are my own work and are not drafted by AI.
+
 **Pre-labelling disclosure:** 180 of the 200 rows in `labels.csv` are AI pre-labels (`candidate_posts.csv` rows 1–20 and 41–200), and I reviewed every one of them. I kept 135 and changed 45, and the `note` column records which (`AI pre-label; reviewed, kept` or `AI pre-label; reviewed, changed from <label>`). Most changes were on the hardest boundary: 23 `information_request` → `troubleshooting_request`, plus 9 `technical_response_report` → `information_request`, 6 `information_request` → `technical_response_report`, 4 `technical_response_report` → `troubleshooting_request`, 2 `troubleshooting_request` → `information_request`, and 1 `troubleshooting_request` → `technical_response_report`. The other 20 rows (21–40) are my own cold labels, marked `cold; labelled unaided`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
@@ -179,12 +185,17 @@ The review doubled `troubleshooting_request` in the test split from 4 posts to 8
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
 
+Both columns are scored on the same 30 held-out posts in `test_split.csv`. The baseline is `facebook/bart-large-mnli` zero-shot, prompted with my three definitions from `label_definitions.txt`. The trained column is my Unit 5 `results.json` (seed 42, 5 epochs). Difference is Trained − Baseline.
+
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.433 | 0.467 | +0.033 |
+| Macro F1 | 0.404 | 0.357 | -0.047 |
+| F1 — `information_request` | 0.222 | 0.545 | +0.323 |
+| F1 — `technical_response_report` | 0.615 | 0.526 | -0.089 |
+| F1 — `troubleshooting_request` | 0.375 | 0.000 | -0.375 |
+
+I also ran the baseline once with bare label names and no definitions (`baseline_results_bare_names.json`): accuracy **0.500**, macro F1 **0.451**.
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
@@ -196,7 +207,9 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 
+My prediction was half right. The baseline beat the trained model on macro F1 (0.404 vs. 0.357) only because it found some `troubleshooting_request` posts (F1 0.375 vs. 0.000). The trained model still won on accuracy by one post (0.467 vs. 0.433). Its only clear win was `information_request`, and that comes from predicting `information_request` for 22 of the 30 posts, not from learning the label. **At 5 epochs, fine-tuning added nothing.** Both models are close to each other and not far above a uniform guess on three labels.
 
+The bare-names run is the bigger surprise: it beat both. My definitions made the baseline *worse* overall (0.433 vs. 0.500). They doubled `troubleshooting_request` F1 (0.182 → 0.375) but wrecked `information_request` (0.545 → 0.222): with the definitions, 9 of the 11 real `information_request` posts were sent to another label (5 to `technical_response_report`, 4 to `troubleshooting_request`). My `information_request` definition lists so many things (instructions, specifications, compatibility, recommendations, reference information) that a general model doesn't recognise any single post as matching it.
 
 ---
 
@@ -205,31 +218,45 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
+5 epochs, the Unit 5 settings. Seed 42 reproduces my Unit 5 `results.json` exactly. Trained on the Mac's Apple Silicon GPU (`mps`), as recorded in `results_three_seeds_before.json`.
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.65 on each seed | 0.467 | 0.467 | 0.533 | MISSED |
+| 2. Macro F1 | ≥ 0.60 on each seed | 0.357 | 0.332 | 0.515 | MISSED |
+| 3. Lowest per-label F1 | ≥ 0.50 for every label | 0.000 (`troubleshooting`) | 0.000 (`troubleshooting`) | 0.429 (`troubleshooting`) | MISSED |
+| 4. Label balance | each label 20–60% | 26.0 / 35.5 / 38.5% | same | same | MET |
+| 5. Confidence (most-confident third, accuracy) | ≥ 70% correct when confident | 0.50 | 0.80 | 0.70 | MISSED |
+
+The notebook's spread table:
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.467 | 0.467 | 0.533 | 0.067 |
+| Macro F1 | 0.357 | 0.332 | 0.515 | 0.183 |
+| F1 — `troubleshooting_request` | 0.000 | 0.000 | 0.429 | 0.429 |
+| F1 — `information_request` | 0.545 | 0.400 | 0.476 | 0.145 |
+| F1 — `technical_response_report` | 0.526 | 0.595 | 0.640 | 0.114 |
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+Seed 42, before:
+
+| true \ predicted | troubleshooting_request | information_request | technical_response_report |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **troubleshooting_request** | 0 | 7 | 1 |
+| **information_request** | 0 | 9 | 2 |
+| **technical_response_report** | 0 | 6 | 5 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
 
-
+7 of the 8 real `troubleshooting_request` posts were called `information_request`, and 0 went the other way. The model didn't learn my hardest boundary at all: a post about a fault happening now gets filed as a general information request. The direction is entirely one way because the model never predicts `troubleshooting_request` on this seed. The other seeds fail differently: seed 7 sent 7 of 8 `troubleshooting_request` and 8 of 11 `information_request` posts to `technical_response_report`. When the model hasn't learned a boundary, it falls back to whichever label it happens to lean towards on that seed. The bare-names baseline made the same 7-of-8 `troubleshooting_request` → `information_request` mistake on these posts without any training.
 
 ---
 
@@ -240,11 +267,11 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.65 on each seed | MISSED | 0.467 / 0.467 / 0.533. Even the best seed is 0.117 short. |
+| 2 | Macro F1 | ≥ 0.60 on each seed | MISSED | 0.357 / 0.332 / 0.515. No seed reaches it. |
+| 3 | Per-label F1 | ≥ 0.50 for every label on each seed | MISSED | `troubleshooting_request` is 0.000 on two seeds and 0.429 on the third. |
+| 4 | Label balance | each label 20–60% of the 200 rows | MET | 52 / 71 / 77 rows = 26.0 / 35.5 / 38.5%. This is a property of the dataset, so it is the same on every seed. |
+| 5 | Confidence | ≥ 70% correct among predictions with confidence ≥ 0.80 | MISSED | The notebook records confidence by thirds, not at a 0.80 cut-off, so I used the most-confident third as the nearest measure: 0.50 / 0.80 / 0.70. It fails on seed 42. Mean confidence was only 0.40–0.55, so very few predictions can have reached 0.80 at all. |
 
 **Diagnoses**
 
@@ -257,7 +284,18 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
+**Criteria 1–3: an undertrained model, measured on too few posts, on a boundary that may be labelled inconsistently.**
 
+1. **Not enough training (model problem).** Training loss was still falling at epoch 5 (1.09 → 0.72). Mean confidence was 0.40–0.55, barely above the 0.33 of a uniform guess over three labels. Seed 7 put almost everything into one label. A model that had learned the boundaries and still got them wrong would be confident and wrong; this one is unsure about everything. This is the cause I tested in Milestone 5.
+2. **Too few posts to measure reliably (data problem).** The test split is 30 posts, with 8 `troubleshooting_request`. One post is 3.3 points of accuracy and can move that label's F1 by more than 0.1. After the fix, accuracy spread across seeds grew to 0.267. That means my criteria can't be called reliably from a 200-post dataset, whatever the model does.
+3. **The `troubleshooting_request` / `information_request` boundary (labelling or genuinely hard — not yet settled).** The evidence points at this pair:
+   - 23 of the 45 labels I changed during review moved from `information_request` to `troubleshooting_request`, so this is where the AI pre-labeller and I disagreed most.
+   - The zero-shot model, with no training on my labels, made the same 7-of-8 error as my trained model.
+   - Many troubleshooting posts are worded as questions, and my rule depends on whether the fault is happening *now*, which the wording doesn't always show.
+
+   This evidence can't tell me whether I applied the rule loosely or the pair is genuinely hard. The agreement report is the instrument for that, and it is incomplete: I haven't finished labelling the staff set yet (see below). If my staff-set disagreements mostly fall in pile (a), I applied a written rule loosely, and that points to inconsistency in my 200 labels on exactly this pair. If they fall mostly in (b) or (c), the boundary is genuinely hard.
+
+**Criterion 5: confidence that doesn't track correctness (model problem).** Before the fix, the model was unsure about everything. After 15 epochs, mean confidence rose to 0.80–0.89, but on seed 42 the model was *more* confident when wrong (0.878) than when right (0.797). Its most-confident third was correct only 30% of the time. With 140 training posts, more training made the model more confident without making it more accurate.
 
 ---
 
@@ -268,6 +306,8 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
      Remember you labelled these 30 under the STAFF taxonomy in
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
+
+> **Not done yet.** `data/staff_labels.csv` (from my TF) is in the repo, but my own labels in `my_staff_labels.csv` are still blank. To finish: label all 30 posts as `analysis`, `hot_take` or `reaction` under `data/staff_taxonomy.md` without looking at the staff file, run `python agreement.py`, and fill in the rate and one block per disagreement below.
 
 **Agreement rate:** ___ / 30 = ___%
 
@@ -317,26 +357,49 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** One setting: `EPOCHS` from 5 to 15 in `takemeter.ipynb`. Everything else is the same: labels, model, learning rate (5e-5), batch size (16), max length and seeds.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** Diagnosis 1, not enough training. Loss was still falling at epoch 5, confidence was close to a uniform guess, and one seed collapsed onto a single label. Of my three diagnoses, this was the only one I could test with a single change and no new labelling.
 
 ### Run Log — After
 
+`results_three_seeds_after.json`, 15 epochs, same three seeds and splits, same `mps` device.
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.65 on each seed | 0.367 | 0.567 | 0.633 | MISSED |
+| 2. Macro F1 | ≥ 0.60 on each seed | 0.362 | 0.564 | 0.617 | MISSED |
+| 3. Lowest per-label F1 | ≥ 0.50 for every label | 0.333 (`troubleshooting`) | 0.471 (`troubleshooting`) | 0.500 (`troubleshooting`) | MISSED |
+| 4. Label balance | each label 20–60% | 26.0 / 35.5 / 38.5% | same | same | MET |
+| 5. Confidence (most-confident third, accuracy) | ≥ 70% correct when confident | 0.30 | 0.70 | 0.70 | MISSED |
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.367 | 0.567 | 0.633 | 0.267 |
+| Macro F1 | 0.362 | 0.564 | 0.617 | 0.255 |
+| F1 — `troubleshooting_request` | 0.333 | 0.471 | 0.500 | 0.167 |
+| F1 — `information_request` | 0.400 | 0.522 | 0.600 | 0.200 |
+| F1 — `technical_response_report` | 0.353 | 0.700 | 0.750 | 0.397 |
+
+Seed 42, after:
+
+| true \ predicted | troubleshooting_request | information_request | technical_response_report |
+|---|---|---|---|
+| **troubleshooting_request** | 3 | 3 | 2 |
+| **information_request** | 5 | 5 | 1 |
+| **technical_response_report** | 2 | 6 | 3 |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
 
+**Partly, but no criterion changed from MISSED to MET.**
 
+- **What improved:** Averaged over the three seeds, accuracy rose from 0.489 to 0.522, macro F1 from 0.401 to 0.514, and `troubleshooting_request` F1 from 0.143 to 0.435. The model now predicts `troubleshooting_request` on every seed instead of never. Seed 2024 meets criteria 2 and 3 and is 0.017 short on accuracy.
+- **What got worse:** Seed 42 fell from 0.467 to 0.367 accuracy. The accuracy spread across seeds grew from 0.067 to 0.267, which the notebook flags as too unstable to trust.
+
+So more epochs fixed the *undertraining*: the model now uses all three labels. It didn't fix the *boundary*. On seed 42, the troubleshooting/information confusion now runs both ways (3 one way, 5 the other) instead of 7 one way. A symmetric confusion like that suggests the pair is hard to separate from these posts, not that the model lacks training.
 
 ---
 
@@ -344,12 +407,15 @@ The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
-
+- **Criteria 1 and 2 (accuracy, macro F1).** Next I would label about 100 more posts, aimed at the troubleshooting/information boundary, and re-audit the 23 posts I moved across that boundary during review. I'd also report the average over more seeds, because with a 30-post test split one post moves accuracy by 3.3 points. I stopped because Milestone 5 allows one change, and labelling 100 posts is the larger job. The agreement report should say first whether re-auditing is worth it.
+- **Criterion 3 (per-label F1).** `troubleshooting_request` is still the weakest label on every seed (0.333–0.500). The fix is the same as for 1 and 2: more examples and a sharper rule. I'd rewrite the decision rule around a visible cue, such as "the writer describes a symptom on their own machine", instead of the writer's intent.
+- **Criterion 5 (confidence).** More training made the model overconfident: on seed 42 it was more confident when wrong than when right. I'd stop training at the best validation epoch instead of a fixed count, and add the confidence count at the 0.80 cut-off to the notebook so the criterion can be measured directly. I stopped because that would be a second change.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
+I meant `troubleshooting_request` to capture a fault happening to the writer's machine right now, however the post is worded. The model instead learned roughly "is this post a question?": at 5 epochs it sent 7 of 8 troubleshooting posts to `information_request` and none the other way, and even at 15 epochs the two labels still swap 8 posts on seed 42.
 
 
 <!-- ═════════════════════════════════════════════════════════════════════
