@@ -190,6 +190,8 @@ The review doubled `troubleshooting_request` in the test split from 4 posts to 8
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
+The zero-shot baseline will beat my trained model. My Unit 5 model scored 0.467 accuracy and 0.357 macro F1 and never predicted `troubleshooting_request`, so a general model reading my three definitions should at least pick up posts that describe a current fault.
+
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
