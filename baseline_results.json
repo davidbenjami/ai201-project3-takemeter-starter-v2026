@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.43333333333333335,
+    "f1_macro": 0.4042022792022792,
+    "per_label": {
+      "information_request": {
+        "precision": 0.2857142857142857,
+        "recall": 0.18181818181818182,
+        "f1": 0.2222222222222222,
+        "support": 11
+      },
+      "technical_response_report": {
+        "precision": 0.5333333333333333,
+        "recall": 0.7272727272727273,
+        "f1": 0.6153846153846153,
+        "support": 11
+      },
+      "troubleshooting_request": {
+        "precision": 0.375,
+        "recall": 0.375,
+        "f1": 0.375,
+        "support": 8
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Do all SCSI cards for DOS systems require a separate device driver to be loaded\ninto memory for each SCSI device hooked up?  Will this also be true of the 32-bit\nOS's?\n\nThanks.\n\nRandy",
+      "gold": "information_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I have one and it is my favorite CD-ROM drive so far.  I also have\na NEC-74 and have had experience with several other drives (Various\nPhillips drives)\n\n\tThe 3401 is faster than the NEC, I like its door better (the NEC\nneeds 2 hands), the XA handling (The NEC needs to be re-booted to go from\nXA to ROM while the 3401 does it on the fly), All in all I am seriously\nconsidering replacing my NEC with another Toshiba.\n\n\t\t\t\t\t\tJWS",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "Hello,\n\n\tI have a 486sx25 ISA machine with Pheonix BIOS.  Currently I have\n8 megabytes of RAM installed via eight 1 MG SIMMS on the motherboard: ie.\nboth banks are full, and there is no space for more SIMMS.  I am thinking\nof running OS2 on my machine and Possibly Linux with X windows, and I know\nthat more RAM would be helpful.  However with SIMMS, the only solution I\ncan see is to sell my 8 Megs for about $180, and by 4 4mg SIMMS for about\n$400 used. Apart from the fact that I can't afford the price right now,\nthe entire process of selling RAM and buying it used probably means that\nthe machine might be down for a number of days which I would rather\navoid...\n\nSo my question is, do the AT RAM boards that plug into a free slot work\nwell with a 486 ISA machine. I have seen some being sold used for about\n$90 with 4 Mg with space for another 4Mg's.  If these boards do work, how\ndo they do it?  Is a device driver needed, or will the BIOS pickup the\nextra RAM as it does with the SIMMS on the mother board? I know that the\nISA expansions slots are 16-bits and 486 SIMM memory is 32 bits, so\nprobably all of this is just wishful thinking... However any help is truly\nappreciated.\n\n-Eric\n\n[email omitted]",
+      "gold": "information_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I got a harddisk shipped with an IDE specification but not the\nSCSI spec. Would someone tell me how to set the jumper on\nthe harddrive? Thanks.  Please email response.\n\nPhilip Sinn\n[email omitted]\nUniversity of Washington",
+      "gold": "troubleshooting_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "Howdy,\n\nSorry if this has been covered before:\n\nOne of my PC illiterate friends asked me to help him install DRDOS 6.0 on his\nNEC Powermate SX (386SX 16).  Of course, I said \"No problem\" and went to work.\nUnfortunately, the DRDOS refuses to recognize the hard drive during\ninstallation, even though I am still able to boot off of the hard drive using\nthe old DOS.  After openning it up I discovered it was using an 8-bit\nSeagate SCSI controller on a ST-157N SCSI 40Mbtye drive.  I then booted\nwith DRDOS 6.0 off of the floppy a second time and ran fdisk to see if\nI could access the drive.  Lo and behold the primary 46.5 Mbyte partition\nwas intact (created by DOS 3.1 no less, I didn't think you could go over a\n32Mbyte partition in the older DOSes. I could be wrong...).  I then tried\nto remove the primary partition, which it wouldn't allow me to do.  I am\nunaware of anything special that has to be done with a SCSI drive (I\nkinda expected it to work just like an IDE/MFM/RLL drive for DOS\ninstallations).  Any suggestions would be greatly appreciated (except for\n\"Throw it in the garbage and buy a new PC\")...\n\nThanks in advance,\n\nPaul \"Mr. SCSI... NOT!\" Fincke",
+      "gold": "troubleshooting_request",
+      "predicted": "information_request"
+    },
+    {
+      "text": "Would someone please email me the pinout for a PS/2 6-pin mini DIN mouse\nport?  I'm trying to make an adapter for a serial mouse, and the dealer who\nknows what adapter works with the mouse I bought doesn't have it in stock.\nI have several different adapters, but none of them make sense based on\nwhat sketchy information I have about the port (they have connections to\n\"reserved\" pins).",
+      "gold": "information_request",
+      "predicted": "information_request"
+    },
+    {
+      "text": "With a sound card on interrupt 5, two serial ports (one for modem on i4,\none for Miracle Piano on i3) and a printer port on i7, I have run out of\nlow interrupts.  What I would like is a mouse port with an interrupt of\n10, 11, or 12 (which ever interrupt the PS/2 mouse port uses) in in ISA\ni486 computer.  I called technical support of Microsoft, Logitech, & ATI\n(checked what interrupts the mouse port on the ATI video cards can use)\nand they all said the only interrupts possible on these cards was ones\nlower than 7.  Does anyone know of any board for an ISA bus which will\nallow a mouse port (or even a serial port) with high interrupts?\n\nLoran Yourk             (708)979-9378\nAT&T                    [email omitted]",
+      "gold": "troubleshooting_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "Technically there is no reason why a chip set cannot support a 486DX50 and\na 25MHz local bus.\n\nI'm waiting for the mezzianine (sp?) VL bus that will be decoupled from\nthe main CPU clock and allow for many more slots due to the user of buffers.\n\nThis will allow the use of ever faster CPUs with the same standard I/O\ncards. Until the next buss spec...\n\nGuy",
+      "gold": "technical_response_report",
+      "predicted": "information_request"
+    },
+    {
+      "text": "Hello fellow netlanders.\n\nI have a Genius Mouse model GM-6, but no driver for it.\nIt's a 3 button mouse. If anyone that;s got one of theese\ncould mail me a driver (config.sys or autoexec.bat) I would\nbe very happy.",
+      "gold": "troubleshooting_request",
+      "predicted": "information_request"
+    },
+    {
+      "text": "I recently decided to try using emm386.exe for a memory manager and when I\ntried to print to my printer in lpt1 from word55 I wouldn't work.  It would\nsend the linefeeds for the top margin and then the printer READY light would\ngo off and stop working.  I disabled emm386.exe and the problem went away.\nI would like to continue using emm386.exe if possible.  I would greatly\nappreciate any comments or suggestions!!  please send them to [email omitted],\n\n[email omitted]",
+      "gold": "troubleshooting_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "HELP!  I really got ripped off and I need some help unripping myself.\n\nI bought a Maxtor 4380 300mb ESDI HDD from Hi-Tech for $300, then paid to\nget it repaired, for about another $300.  Here's the deal:  The thing works\nfine!  It low level formats, etc without any bad spots at all!  AND THEN...\n(Jaws Music) sectors start going bad!  EEK!!!  One at a time.  Norton disk\ndoctor keeps marking some U and some C.  That FIXES it.  For about 5 minutes.\n\nThen next day when I run NDD on it again: NO DICE more uncorrectable and\ncorrectable sectors.  AHHHHHUUUURRRRRRGGGGGHHHHH!!!!!  So I fugure: \"Ok, NDD's\njust not being thurough enough, I'll use Spinrite, I heard that works well.\"\nWhat happens?  Spinrite goes and returns the clusters to active use!!!\nAHHHUUUURRRRRRGGGGGHHHH!!!!  NDD undoes it of course.  The problem seams to\nbe getting worse and worse.  HOWEVER when the HDD is low level formatted\nagain the problem goes away for a while, only to return in a day or so.\n\nI'm so pissed off right now I'm considering buying another HDD, and I really\ncan't afford it.\n\nI'm using SMARTDRIVE, and WINDOWS 3.1 (I'm not using the 32 bit disk access\nthough, I know that can create problems).  The disk is using the second\noption to trick the controller into thinking it's got less then 1024 cyls,\nand everything else selected is standard, maybe I need to use a different\nhead skew or something?  I don't know.\n\nANYONE WHO KNOWS HOW TO FIX THIS PROBLEM PLEASE TELL ME HOW!!!! HELP!!!!",
+      "gold": "information_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "I've been intently following the MAG thread while waiting for\nmine to arrive in the mail. There seems to be a lot of\ncomplaints about minor alignment problems with the MX15F. One\narticle contained a comment that the owner called the factory\nand was told that his screen rotation was within spec (1/4\").\n\nWell, my monitor arrived last night and, sure enough, it has\na very noticable barrel distortion. It's not dramatic, but it\nis there and it is especially noticable when the image doesn't\nfill the entire screen. The fact that it is worse on the right\nside doesn't help matters.\n\nWhat I'm trying to find out is if these minor imperfections\nare the norm or are most of their monitors perfect? I don't want\nto send it back and get one with the same or an even worse\nproblem. Does the factory consider this kind of thing normal\nand ship their monitors with less than perfect alignment?\nAre other netters just living with these kind of imperfections?",
+      "gold": "information_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "Cyrix have released a 386 pin-conpatible 486 clone. Designed to upgrade\nold 16 & 20MHz 386's the chips are also clockdoubling. Thus a 16MHz 386\ncan be transformed into a 32MHz 486, with a single chip upgrade.\n\nUnfortunately in Australia the DRu2 sells for $700A (16MHz) and $1000A\n(20MHz), about 1.5x the price of a 486dx33 motherboard with two vlb slots!!!\n\nHow much do these thing cost in the States?\nHow well do they work?\n\nThanks for any info,\n\n             Steven Pemberton        \\o/        486 NoteBook\n      ------------------------------- | ----------------------------\n          [email omitted]      / \\          OS/2 2.0",
+      "gold": "troubleshooting_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "Could some kind soul please email ma a response since i don't have\nmuch time to read this group.\n\n Question: I have a 170 MB hard drive which currently has 10 MB left.\nHow much space will DoubleSpace allow me to have?? I have a 486 50 w/ 4\nMB Ram if it matters.\n\nThanks in advance\n\nJason",
+      "gold": "information_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I would realy like to hear from someone that has one of these NANAO T560i\nmonitors that is driving it with a Diamond SpeedStar 24x. With the 24x\nset up to run at its 58.1 khz 72.0hz output mode, and realy driving the\nhell out of the monitor. Just woundering if the NANAO T560i would fall\napart with poor low capabilities like my (3) Sony 1604s did with the 24x\ndriving their balls off...Sam",
+      "gold": "information_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "Is there a FAQ on Cyrix 486DLC? Could anyone please repost it or\nemail to me, if I missed it? Thanks in advance.\n\n... Alexander Poylisher, Internet: [email omitted]; FidoNet: 1:2603/106\n---\n \u00fe Blue Wave/QWK v2.12 \u00fe",
+      "gold": "troubleshooting_request",
+      "predicted": "information_request"
+    },
+    {
+      "text": "National Semiconductor are one that I know of.\n\nCheers,\nBen\nBen Elliston\nBachelor of Engineering (Computer Engineering)\nUniversity of Canberra\n\nEmail:      [email omitted]\n\nAlso:       [email omitted]\nUUCP:       ..!uunet!munnari!sserve.adfa.oz.au!compsol!root\nFidoNet:    3:620/262\nIf a train station is where the train stops, what's a workstation?!\n\n * Origin: % Compact Solutions % Canberra ACT Australia % (3:620/262)",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I think it is an ESDI controller if you need the doco i can help you.\n\n  Stefan",
+      "gold": "technical_response_report",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "Hi,\n\nI'm looking to buy a 17\" monitor soon, and it seems that I can't decide what\nmonitor I should buy. I have a MAG 17S (this is a .25 dpi version and it using\na TRINITON tube) and a NANAO 560i in mind.\n\nDoes anyone know of any specification or problems these monitor have?\n\nActually, any related opinions at buying a 17\" monitor will be welcomed.\n\n Thanks in advance,\n\n [email omitted]",
+      "gold": "information_request",
+      "predicted": "information_request"
+    },
+    {
+      "text": "I recently purchased the then current Pkg.# 486dx-33 for $2395 (but changed\nto NEC 3FGx monitor upgrade). Buy this Pkg. #3 now - for $100 more, you now\nget a bigger HD - 340mb with @256 HD cache. 30 days ago, when I bought this\npkg., it was 245mb with @132K HD cache. This is a great deal although it is\ngenerally recommended you at least upgrade to the 15' Zeos (CTX) monitor for\n$99 more I believe.  Whether you also upgrade to the Diamond Viper video\ncard is your choice. I stayed with the Diamond Speedstar Pro. Zeos Tech\nSupport is really good - call after normal business hours to get the\nfastest access. The hardest part about buying a Zeos is the wait till it is\ndelivered - once you order you can hardly wait to get it! There are quite a\nfew good mail order houses around - lots of bang for buck with Zeos.",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I think the original respondent (Guy Dawson?) was refering to something\nmuch more elementary.\n\nEvery partition (whether it is the entire disk or not) has two FATs and\nan initial directory.\n\nIf you have a small disk (50 meg or less), I would recommend that it remain\na single partition. Unless you have some other consideration.\n\nIf you have a large disk (greater than 200 meg), multiple partitions can\nmake sense.",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "there is a file out there (look for it with archie) that is called\n'theref22.zip' which has lots of info on various PC things,\namongst which is also a detailed description of all Floppy controller\ncommands, I think hard drive controller commands are not there.\n\nit is possible to read an entire track including all gaps, sector\nheaders etc.   by setting sector size to something very large (like\n8K).\n\nwillem",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "What 4 or more com port boards are available for PCs?\nWe want standard com ports, so no need to mention the expensive\ncoprocessed ones.\n\nThey should either be able to share IRQs or be able to use IRQs 8-15.\n\nThanks for any info...",
+      "gold": "troubleshooting_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "thought I'd post this as well as e-mail it, just in case anyone else is\ninterested in this info.....\n\nIn article <[email omitted]>\n\nI suggest that you go direct to the original (and preferred...best quality)\nsource for all of this, just as you would (at least, should) for the chips\nthemselves:  National Semiconductor.  you can reach them at 1-800-272-9959.\nthey no longer package the data sheets in a book, as they did when I got\nmine, but you can get them as individual sets of data sheets.  you want, as\na minimum, the following:\n\n   *) 2 sets of data sheets:\n      *) NS16450/INS8250A/NS16C450/INS82C50A\n      *) NS16550AF\n\n   *) 2 application notes (yes, GET THESE!):\n      *) AN-491 The NS16550A: UART Design and Application Considerations\n      *) AN-493 A Comparison of the INS8250, NS16450 and NS16550AF Series\n         of UARTs\n\nboth of the application notes I listed have proven to be AT LEAST as\nvaluable as the data sheets themselves (more, actually).  AN-491, in\nparticular, is an exceptionally well-written application note that goes\ninto detail about how and why the 16550 does what it does, and how best\nto take advantage of it.\n\nbtw, they send these out free, as long as you don't abuse it.\n\nlater,\n   --jim",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I just purchased a Viewsonic 17 and and Orchid P9000.  In short, I am happy\nwith the monitor and unhappy with the card.  I have spent a lot more time\nfutzing with the card, so that is what I am going to write about.  The monitor\nis pretty.  The moires I had under Simcity on my 17\" Magnavox went away.  It\nisn't as heavy as I thought it would be (45 lbs, I think).  So much for the\nmonitor.  On to the bitch session and test results.\n\nIn going with the modern trend, the Orchid P9000 card only supports 16 colors\nin 640x480 mode without a driver.  Of course, this breaks any DOS program\nwhich uses SVGA modes (like most of my CD-ROMs).  The Compudyne Whiplash VGA,\nOrchid Fahrenheit 1280, and Orchid F. VLB all share this limitation.  Those\nare all S3 cards, which means it is an S3 problem for them (the P9000 uses\na Weitek VGA chip which also doesn't support them).  The Hercules Graphite\ncard does seem to have these modes, but I didn't run the same test cases as\nI did on the other boards during the brief time I had it.  It was able to\nprint the splash screen for the Grolier's Encyclopedia, though, which the S3\ncards just printed as hash, which is why I suspect the SVGA modes are supported.\n\nThe supported resolutions really annoy me.  You can do 1280x1024 at 75Hz if\nyou tell the driver you have an NEC 5FG (they only have about six monitors\nlisted plus 'Generic', and if you choose Generic you can't get any high\nrefreshes at ALL).  But at 1024x768 you are limited to 70Hz.  Seems to me\nthat the hardware should be able to support the bandwidth (if it can do 75Hz\nat 1280 it sure should be able to do it at 1024!).  Higher vertical resolution\nwas the main reason I bought the card over the Orchid F. VLB I currently have,\nand it will do 1024x768x70 Hz as well.\n\nThe higher graphics modes all crash HP Dashboard.  I just got off the phone\nwith Orchid, and with the 1.1 drivers (I don't know what I have) he was unable\nto recreate the problem.  On the plus side, their tech rep was as helpful as\nhe could be and booted up the program on his computer to verify he didn't have\nthe problem.  He didn't know why they limited the refresh to 70 Hz either.\n\nThe board is faster that the OFVLB for most things according to the Hercules\nSpeedy program. This program tests various operations and reports the results\nin pixels/second.  I don't have the numbers for the Graphite card, but they\nwere close to half of the OFVLB (ie, slower) but that was running in a 20MHz\n386, ISA, so the numbers aren't really comparable.  The following numbers\nwere all obtained using a 486, 33 MHz, AIR motherboard (UMC chipset), with\n8 MB memory.  I give ranges because the program reports the numbers as it\ncomputes them, and these tend to jump around a bit.\n\nK means thousand (not 1024), M means million, pixels per second\n\n             Orchid Fahrenheit VLB                  Orchid P9000\nChip                 S3 805                          Weitek 9000\nDIB to Screen        182K - 190K                     228K - 240K\nMemory to Screen     5.9M - 6.2M                     8.4M - 8.9M\nScreen to Screen     14M - 14.8M                     29M - 30.8M\nVector, solid        2.4M                            2.8M - 2.9M\nVector, styled       55K - 58K                       449K - 473K\nPolygon, shaded      1.8M - 2.1M                     1.6M - 1.9M\nPolygon, hatched     6.9M - 7.9M                     1.3M - 1.7M\nTernary Rops         1.9M - 2.4M                     477K - 520K\nFont                 130K - 160K                     46K - 55K / 1.2M\n\nThe DIB to Screen test takes a device independent bitmap of a face and transfers\nit to the screen.  I have no idea what is being done internally as far as\nconversions go.  The memory to screen takes the same face and copies it to\nthe screen, my guess is after it has been rasterized into a bitmap that can\njust be copied to the video display.  The screen to screen test copies that\nface from place to place on the screen.  Awesome!  Interestingly, the solid\nvectors and shaded polygons show no improvement, and hatched polygons (ie,\nfilled with cross-hatching) and Ternary Rops (whatever they are.  Graphics\noperations like XORs maybe????) are a dead loss on the 9000.  I give two\nnumbers for the 9000 fonts, because I think they are caching.\nWhen the fonts are first drawn on the screen they are done fairly slowly --\n1/3 the speed of the OFVLB.  Then the speed increases dramatically.  Sounds\nlike programming to a benchmark to me....\n\nI make no claims that these numbers mean anything at all.  Its just what\nI saw when I ran them on my computer.  I normally don't write disclaimers,\nbut this time maybe I'd better.  My testing is totally unconnected with my\nwork (I program under UNIX on Decstations) is done completely without the\nknowledge, blessing, or equipment of my company.\n\ngeoff sherwood",
+      "gold": "technical_response_report",
+      "predicted": "information_request"
+    },
+    {
+      "text": "Hi,\n\nI'm kind of new at the pc stuff.  My machine has 4 serial ports.  Com 1 and3\nand 2 &4 share same IRQs.  You mean I can't plug a mouse into Com1 and a modem\ninto com3 and expect both to work?\n\nIf Answer is NO, should I change IRQ's for com ports to be different?  And,\ndoes it really matter which IRQ I set the ports too?\n\nPhil\n\nPhil Hunt                          \"Wherever you go, there you are!\"\nHowtek, Inc.\n\nInternet: [email omitted]   uucp: {decvax|harvard}!mv!howtek!phil",
+      "gold": "information_request",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "Did I once hear that in order for the date to advance, something, like a\nclock, *has* to make a Get Date system call? Apparently, the clock\nhardware interrupt and BIOS don't do this (date advance) automatically. The\nGet Date call notices that a \"midnight reset\" flag has been set, and then\nthen advances the date.\n\nAnybody with more info?",
+      "gold": "information_request",
+      "predicted": "troubleshooting_request"
+    },
+    {
+      "text": "For what it's worth (I haven't confirmed it), a Diamond tech-rep told\nme that ALL S3-based video cards use port addresses 0x2E0 and 0x2E8.\nIf this is true, it appears that you canNOT use more than one S3 card\nin your system.\n\nLance Hartmann ([email omitted])\n               Yes, that IS a '%' (percent sign) in my network address.\nAll statements, comments, opinions, etc. herein reflect those of the author\nand shall NOT be misconstrued as those of IBM or anyone else for that matter.",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "The above does not tell the proper story of SCSI:\nSCSI-I: 8-bit asynchronous {~1.5MB/s ave}, synchronous {5MB/s max} transfer\nbase.\nSCSI-1{faster} this requires a SCSI-2 controller chip and provides\n SCSI-2 {8-bit to 16-bit} speeds with SCSI-1 controlers.\nSCSI-2: 4-6MB/s with 10MB/s burst{8-bit}, 8-12MB/s with 20MB/s burst {16-bit},\nand 15-20MB/s with 40MB/s burst{32-bit/wide and fast}.  16-bit SCSI can be\nwide or fast, it depends on how the port is designed{The Quadras will support\nfast SCSI but not wide when the OS SCSI manager is rewritten since the\nQuardas use a SCSI-1 {non-wide} port}.\n\nThe article in PC Mag 4/27/93:29 was talking about SCSI-1 {SCSI-2 uses\nTEN (10) devices in it native mode, outside its native mode it behaves a\nlot like SCSI-1 (7 devices, slower through put}\n\nas for \"20% faster then IDE\" that seems to be 8-bit SCSI-1 using a SCSI-2\ncontoler chip {The Mac Quadra uses a SCSI-2 controler chip for its SCSI-1\nand gets 6MB/s through put for asynchronous {8-bit} SCSI-1, far in excess of a\nnormal SYNCHRONOUS SCSI-1 output} 120% of 8.3 is 9.96 which is near\nthe burst of a SCSI-1 machine with a SCSI-2 controller chip.\n\nThe PC world seems to have SCSI-1 and SCSI-2 mixed up.  Fact is SCSI-2\ncontroler chips allow near SCSI-2 speeds through a SCSI-1 device\n{As shown in the Mac Quadra} which skews some of the data of SCSI-1 vs\nIDE or ESDI test. I agree that the article COULD have stated that the \"20%\nfaster then IDE\" came off a SCSI-1 device with a SCSI-2 chip.  Maybe it\nwas there and the EDITOR killed it because the article was dealing with\nSCSI-1 NOT SCSI-2 and he did not understand the effect of a SCSI-1 device\nwith a SCSI-2 controller chip.\nSCSI-1 chips are limited to 5/MB max.  SCSI-1 devices with SCSI-2 chips\n{becoming common} produce up to 10Mb/s in 8-bit mode and 20MB/s in 16-bit\nmode {the fast version, SCSI-1 ports cannot use wide SCSI}.  Of cource\nthe prime piece of wierdness is that SCSI-1 devices HAVE SCSI-2 chips\n{or more accurately the machine does}. This allows the best of BOTH\nworlds: high SCSI-2 speeds and cheeper SCSI-1 costs {FULL SCSI-2 hardware\n(port, electronic controller, etc) is VERY expensive.  It ALSO creates\na logistic NIGHTMARE as to how fast SCSI-1 goes.\n\nWhen one knows the FACTS behind the numbers then one realizes that the\narticle knows what it is talking about {even if it does not tell HOW the\nfigures came about} while  [email omitted] is throwing out\nranges that don't tell SQUAT {Since he IGNORES SCSI-1 devices with\nSCSI-2 chips his ranges tell even LESS then intended.} }",
+      "gold": "technical_response_report",
+      "predicted": "technical_response_report"
+    },
+    {
+      "text": "I need to know the Pins to connect to make a loopback connector for a serial\nport so I can build one.  The loopback connector is used to test the\nserial port.\n\nThanks for any help.\n\nSteve",
+      "gold": "information_request",
+      "predicted": "troubleshooting_request"
+    }
+  ]
+}
